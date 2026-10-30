@@ -1,0 +1,534 @@
+{
+  "source": "hotpotqa/rv_llm_judge/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.25,
+    "f1": 0.275,
+    "accuracy": 0.25,
+    "coverage": 0.45,
+    "abstention_rate": 0.55,
+    "selective_accuracy": 0.5555555555555556,
+    "hallucination_rate": 0.2,
+    "claim_precision": 0.6617283950617284,
+    "claims_per_answer": 4.555555555555555,
+    "latency_s": 3.1016999999999997,
+    "llm_calls": 5.45,
+    "gen_tokens": 118.1,
+    "prompt_tokens": 3753.85
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.567,
+      "llm_calls": 5,
+      "gen_tokens": 118,
+      "prompt_tokens": 4177
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.447,
+      "llm_calls": 3,
+      "gen_tokens": 53,
+      "prompt_tokens": 1745,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0193,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker served as Mistress of the Robes to Queen Victoria.",
+          "p_support": 0.9519,
+          "supported": true
+        },
+        {
+          "claim": "Anne Innes-Ker is the daughter of the 7th Duke of Marlborough.",
+          "p_support": 0.9493,
+          "supported": true
+        },
+        {
+          "claim": "The 7th Duke of Marlborough is Anne Innes-Ker's father.",
+          "p_support": 0.9573,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.193,
+      "llm_calls": 5,
+      "gen_tokens": 115,
+      "prompt_tokens": 3561
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.413,
+      "llm_calls": 13,
+      "gen_tokens": 257,
+      "prompt_tokens": 10303,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is the musical fantasy film that is older.",
+          "p_support": 0.884,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks was released in 1971.",
+          "p_support": 0.9787,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol is a musical fantasy film.",
+          "p_support": 0.9819,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.969,
+      "llm_calls": 6,
+      "gen_tokens": 125,
+      "prompt_tokens": 3558,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Donnie Yen starred in Wing Chun.",
+          "p_support": 0.7432,
+          "supported": true
+        },
+        {
+          "claim": "Michelle Yeoh starred in Wing Chun.",
+          "p_support": 0.9595,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a Hong Kong actor.",
+          "p_support": 0.9579,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a martial artist.",
+          "p_support": 0.923,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a film director.",
+          "p_support": 0.9399,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a producer.",
+          "p_support": 0.9086,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is an action choreographer.",
+          "p_support": 0.9662,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen won the world wushu tournament multiple times.",
+          "p_support": 0.9595,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8888888888888888
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.518,
+      "llm_calls": 6,
+      "gen_tokens": 126,
+      "prompt_tokens": 4496
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.718,
+      "llm_calls": 4,
+      "gen_tokens": 115,
+      "prompt_tokens": 2362,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was the king of the Sasanian Empire from March 631 to April 631.",
+          "p_support": 0.9208,
+          "supported": true
+        },
+        {
+          "claim": "The Sasanian Empire succeeded the Parthian Empire.",
+          "p_support": 0.9871,
+          "supported": true
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire from March 631 to April 631.",
+          "p_support": 0.9508,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.854,
+      "llm_calls": 5,
+      "gen_tokens": 122,
+      "prompt_tokens": 3174,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Gardnerville has a greater population than Minden as of the 2010 census.",
+          "p_support": 0.8758,
+          "supported": true
+        },
+        {
+          "claim": "Gardnerville had a population of 5,656 as of the 2010 census.",
+          "p_support": 0.8791,
+          "supported": true
+        },
+        {
+          "claim": "Minden had a population of 3,001 as of the 2010 census.",
+          "p_support": 0.4073,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.594,
+      "llm_calls": 3,
+      "gen_tokens": 62,
+      "prompt_tokens": 1547,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0129,
+          "supported": false
+        },
+        {
+          "claim": "The English crime writer who wrote the 2005 psychological thriller \"The Devil's Feather\" is Minette Walters.",
+          "p_support": 0.2147,
+          "supported": false
+        },
+        {
+          "claim": "\"The Devil's Feather\" is a 2005 psychological thriller novel.",
+          "p_support": 0.0834,
+          "supported": false
+        },
+        {
+          "claim": "\"The Devil's Feather\" is a novel by Minette Walters.",
+          "p_support": 0.9012,
+          "supported": true
+        },
+        {
+          "claim": "Minette Walters is a British author.",
+          "p_support": 0.8366,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.155,
+      "llm_calls": 6,
+      "gen_tokens": 121,
+      "prompt_tokens": 4264
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.266,
+      "llm_calls": 6,
+      "gen_tokens": 118,
+      "prompt_tokens": 4120
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.37,
+      "llm_calls": 3,
+      "gen_tokens": 46,
+      "prompt_tokens": 1646,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "The city situated where Kellyville Ridge is located is the City of Blacktown.",
+          "p_support": 0.8625,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located in the local government area of City of Blacktown.",
+          "p_support": 0.98,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.802,
+      "llm_calls": 5,
+      "gen_tokens": 67,
+      "prompt_tokens": 2839,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0177,
+          "supported": false
+        },
+        {
+          "claim": "Maurice Tourneur was French.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "Greg Mottola is American.",
+          "p_support": 0.9462,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur and Greg Mottola were not both American film directors.",
+          "p_support": 0.83,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.515,
+      "llm_calls": 5,
+      "gen_tokens": 101,
+      "prompt_tokens": 2781,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0133,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr and Mate Pavić have both won a doubles title.",
+          "p_support": 0.2024,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr won over 60 doubles titles.",
+          "p_support": 0.9504,
+          "supported": true
+        },
+        {
+          "claim": "Mate Pavić won the 2016 US Open mixed doubles title.",
+          "p_support": 0.9553,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.02,
+      "llm_calls": 5,
+      "gen_tokens": 120,
+      "prompt_tokens": 3634
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.271,
+      "llm_calls": 5,
+      "gen_tokens": 99,
+      "prompt_tokens": 4961
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.413,
+      "llm_calls": 6,
+      "gen_tokens": 127,
+      "prompt_tokens": 3786
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.526,
+      "llm_calls": 6,
+      "gen_tokens": 123,
+      "prompt_tokens": 4661
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.527,
+      "llm_calls": 6,
+      "gen_tokens": 186,
+      "prompt_tokens": 3671
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.896,
+      "llm_calls": 6,
+      "gen_tokens": 161,
+      "prompt_tokens": 3791
+    }
+  ]
+}

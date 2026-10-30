@@ -1,0 +1,32 @@
+2026-10-29 06:17:50,268 start method=rv_no_abstain dataset=hotpotqa split=dev n=2 todo=2 cfg={"fn": "ragverify", "flags": {"verifier": "hybrid", "abstain": false}}
+2026-10-29 06:17:52,358 Loading faiss with AVX512 support.
+2026-10-29 06:17:52,358 Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-10-29 06:17:52,358 Loading faiss with AVX2 support.
+2026-10-29 06:17:52,358 Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-10-29 06:17:52,372 Loading faiss.
+2026-10-29 06:17:52,397 Successfully loaded faiss.
+2026-10-29 06:17:57,557 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-29 06:17:57,599 Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-10-29 06:17:58,104 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-29 06:17:58,391 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-29 06:17:58,709 HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-29 06:17:58,709 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-29 06:18:00,472 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli "HTTP/1.1 200 OK"
+2026-10-29 06:18:00,745 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-29 06:18:01,106 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-29 06:18:03,193 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli "HTTP/1.1 200 OK"
+2026-10-29 06:18:03,473 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli "HTTP/1.1 200 OK"
+2026-10-29 06:18:04,642 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:06,318 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:07,138 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:08,059 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:09,776 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:09,787 [1/2] 5a83e98e5542992ef85e2387 pred='' abst=True 4.4s calls=4
+2026-10-29 06:18:10,788 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:11,335 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:11,693 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:18:11,695 [2/2] 5abee70a5542994516f45476 pred='Mistress of the Robes' abst=False 1.9s calls=3
+2026-10-29 06:18:11,695 peak_torch_vram_mib=1737
+2026-10-29 06:18:11,696 done

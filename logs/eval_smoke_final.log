@@ -1,0 +1,63 @@
+﻿
+hotpotqa  closed_book        dev_smoke    n= 20 acc=0.150 f1=0.175 abst=0.000 hall=0.850 claimP=0.251 lat=3.01s 
+calls=1.0 err=0
+hotpotqa  cove               dev_smoke    n= 20 acc=0.200 f1=0.225 abst=0.000 hall=0.800 claimP=0.235 lat=5.94s 
+calls=7.3 err=0
+hotpotqa  cove_rag           dev_smoke    n= 20 acc=0.400 f1=0.475 abst=0.050 hall=0.550 claimP=0.567 lat=7.38s 
+calls=7.7 err=0
+hotpotqa  rag                dev_smoke    n= 20 acc=0.400 f1=0.483 abst=0.050 hall=0.550 claimP=0.606 lat=3.39s 
+calls=1.0 err=0
+hotpotqa  rag_abstain        dev_smoke    n= 20 acc=0.350 f1=0.383 abst=0.350 hall=0.300 claimP=0.722 lat=3.33s 
+calls=1.0 err=0
+hotpotqa  ragverify          dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.250 hall=0.400 claimP=0.574 lat=2.58s 
+calls=2.1 err=0
+hotpotqa  ragverify_llama    dev_smoke    n= 20 acc=0.250 f1=0.220 abst=0.400 hall=0.350 claimP=0.620 lat=7.62s 
+calls=3.8 err=0
+hotpotqa  rv_k10             dev_smoke    n= 20 acc=0.350 f1=0.392 abst=0.150 hall=0.500 claimP=0.680 lat=4.03s 
+calls=2.1 err=0
+hotpotqa  rv_llm_judge       dev_smoke    n= 20 acc=0.250 f1=0.275 abst=0.550 hall=0.200 claimP=0.662 lat=3.10s 
+calls=5.5 err=0
+hotpotqa  rv_no_abstain      dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.250 hall=0.400 claimP=0.580 lat=2.97s 
+calls=2.1 err=0
+hotpotqa  rv_no_decomp       dev_smoke    n= 20 acc=0.400 f1=0.483 abst=0.100 hall=0.500 claimP=0.598 lat=1.09s 
+calls=1.0 err=0
+hotpotqa  rv_no_retrieval    dev_smoke    n= 20 acc=0.050 f1=0.050 abst=0.750 hall=0.200 claimP=0.440 lat=6.36s 
+calls=7.9 err=0
+hotpotqa  rv_no_revision     dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.250 hall=0.400 claimP=0.580 lat=2.18s 
+calls=2.0 err=0
+hotpotqa  rv_no_verifier     dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.350 hall=0.300 claimP=0.738 lat=2.07s 
+calls=2.0 err=0
+hotpotqa  selfrag            dev_smoke    n= 20 acc=0.450 f1=0.246 abst=0.050 hall=0.500 claimP=0.514 lat=3.38s 
+calls=2.0 err=0
+triviaqa  closed_book        dev_smoke    n= 20 acc=0.500 f1=0.537 abst=0.000 hall=0.500 claimP=0.453 lat=2.68s 
+calls=1.0 err=0
+triviaqa  cove               dev_smoke    n= 20 acc=0.600 f1=0.616 abst=0.000 hall=0.400 claimP=0.501 lat=5.44s 
+calls=7.8 err=0
+triviaqa  cove_rag           dev_smoke    n= 20 acc=0.600 f1=0.650 abst=0.000 hall=0.400 claimP=0.573 lat=7.88s 
+calls=7.6 err=0
+triviaqa  rag                dev_smoke    n= 20 acc=0.650 f1=0.700 abst=0.000 hall=0.350 claimP=0.669 lat=3.36s 
+calls=1.0 err=0
+triviaqa  rag_abstain        dev_smoke    n= 20 acc=0.550 f1=0.567 abst=0.250 hall=0.200 claimP=0.740 lat=3.64s 
+calls=1.0 err=0
+triviaqa  ragverify          dev_smoke    n= 20 acc=0.500 f1=0.517 abst=0.250 hall=0.250 claimP=0.666 lat=2.65s 
+calls=2.3 err=0
+triviaqa  ragverify_llama    dev_smoke    n= 20 acc=0.500 f1=0.500 abst=0.250 hall=0.250 claimP=0.649 lat=8.99s 
+calls=3.8 err=0
+triviaqa  rv_k10             dev_smoke    n= 20 acc=0.700 f1=0.717 abst=0.100 hall=0.200 claimP=0.599 lat=3.94s 
+calls=2.2 err=0
+triviaqa  rv_llm_judge       dev_smoke    n= 20 acc=0.400 f1=0.467 abst=0.350 hall=0.250 claimP=0.725 lat=2.94s 
+calls=5.0 err=0
+triviaqa  rv_no_abstain      dev_smoke    n= 20 acc=0.550 f1=0.567 abst=0.200 hall=0.250 claimP=0.666 lat=2.66s 
+calls=2.3 err=0
+triviaqa  rv_no_decomp       dev_smoke    n= 20 acc=0.650 f1=0.700 abst=0.000 hall=0.350 claimP=0.659 lat=1.12s 
+calls=1.0 err=0
+triviaqa  rv_no_retrieval    dev_smoke    n= 20 acc=0.350 f1=0.387 abst=0.500 hall=0.150 claimP=0.667 lat=5.71s 
+calls=7.8 err=0
+triviaqa  rv_no_revision     dev_smoke    n= 20 acc=0.550 f1=0.600 abst=0.150 hall=0.300 claimP=0.679 lat=2.16s 
+calls=2.0 err=0
+triviaqa  rv_no_verifier     dev_smoke    n= 20 acc=0.500 f1=0.550 abst=0.350 hall=0.150 claimP=0.796 lat=2.09s 
+calls=2.0 err=0
+triviaqa  selfrag            dev_smoke    n= 20 acc=0.650 f1=0.387 abst=0.000 hall=0.350 claimP=0.496 lat=3.09s 
+calls=2.0 err=0
+
+

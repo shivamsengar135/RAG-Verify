@@ -1,0 +1,537 @@
+{
+  "source": "triviaqa/rv_no_retrieval/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.3,
+    "f1": 0.3866666666666666,
+    "accuracy": 0.35,
+    "coverage": 0.5,
+    "abstention_rate": 0.5,
+    "selective_accuracy": 0.7,
+    "hallucination_rate": 0.15,
+    "claim_precision": 0.6666666666666667,
+    "claims_per_answer": 4.1,
+    "latency_s": 5.711399999999999,
+    "llm_calls": 7.8,
+    "gen_tokens": 272.05,
+    "prompt_tokens": 1050.7
+  },
+  "per_example": [
+    {
+      "id": "sfq_7732",
+      "em": 0.0,
+      "f1": 0.4,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.209,
+      "llm_calls": 7,
+      "gen_tokens": 229,
+      "prompt_tokens": 826,
+      "claims": [
+        {
+          "claim": "Bithynia was located in the northwest of Anatolia.",
+          "p_support": 0.9185,
+          "supported": true
+        },
+        {
+          "claim": "Bithynia bordered the Sea of Marmara.",
+          "p_support": 0.9289,
+          "supported": true
+        },
+        {
+          "claim": "The Sea of Marmara is the sea on which Bithynia was an ancient province.",
+          "p_support": 0.9646,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "jp_758",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.276,
+      "llm_calls": 7,
+      "gen_tokens": 152,
+      "prompt_tokens": 828,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0244,
+          "supported": false
+        },
+        {
+          "claim": "A hafiz is a person who has memorized the Quran.",
+          "p_support": 0.9754,
+          "supported": true
+        },
+        {
+          "claim": "A hafiz is someone who has memorized the entire Quran.",
+          "p_support": 0.9305,
+          "supported": true
+        },
+        {
+          "claim": "The Quran is a book.",
+          "p_support": 0.9768,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "odql_10060",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.94,
+      "llm_calls": 8,
+      "gen_tokens": 416,
+      "prompt_tokens": 1089
+    },
+    {
+      "id": "qb_9577",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.56,
+      "llm_calls": 8,
+      "gen_tokens": 217,
+      "prompt_tokens": 1050
+    },
+    {
+      "id": "sfq_4811",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 4.856,
+      "llm_calls": 7,
+      "gen_tokens": 236,
+      "prompt_tokens": 856,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.025,
+          "supported": false
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' was named Reg Varney.",
+          "p_support": 0.947,
+          "supported": true
+        },
+        {
+          "claim": "Reg Varney played Reg Varney in 'On the Buses'.",
+          "p_support": 0.2124,
+          "supported": false
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' was named after Reg Varney.",
+          "p_support": 0.1391,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "qb_547",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 7.146,
+      "llm_calls": 9,
+      "gen_tokens": 340,
+      "prompt_tokens": 1368,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0153,
+          "supported": false
+        },
+        {
+          "claim": "'The Weeping Woman' is the work of Pablo Picasso.",
+          "p_support": 0.9713,
+          "supported": true
+        },
+        {
+          "claim": "'The Weeping Woman' is one of the works created by Pablo Picasso.",
+          "p_support": 0.9823,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "qb_6271",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.541,
+      "llm_calls": 7,
+      "gen_tokens": 170,
+      "prompt_tokens": 831,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0221,
+          "supported": false
+        },
+        {
+          "claim": "The sidekick of cartoon superhero DangerMouse is Penfold.",
+          "p_support": 0.5832,
+          "supported": true
+        },
+        {
+          "claim": "Penfold is the reliable sidekick and assistant of DangerMouse.",
+          "p_support": 0.0825,
+          "supported": false
+        },
+        {
+          "claim": "Penfold is in the cartoon series.",
+          "p_support": 0.8322,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "qz_952",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.163,
+      "llm_calls": 9,
+      "gen_tokens": 392,
+      "prompt_tokens": 1440
+    },
+    {
+      "id": "wh_51",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.517,
+      "llm_calls": 9,
+      "gen_tokens": 209,
+      "prompt_tokens": 1330
+    },
+    {
+      "id": "odql_9626",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.171,
+      "llm_calls": 8,
+      "gen_tokens": 399,
+      "prompt_tokens": 1081
+    },
+    {
+      "id": "tb_361",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.375,
+      "llm_calls": 8,
+      "gen_tokens": 301,
+      "prompt_tokens": 1198
+    },
+    {
+      "id": "bt_1060",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.672,
+      "llm_calls": 7,
+      "gen_tokens": 228,
+      "prompt_tokens": 795,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0248,
+          "supported": false
+        },
+        {
+          "claim": "Hans Christian Andersen wrote \"The Ugly Duckling\".",
+          "p_support": 0.9677,
+          "supported": true
+        },
+        {
+          "claim": "Hans Christian Andersen is a renowned Danish author.",
+          "p_support": 0.9646,
+          "supported": true
+        },
+        {
+          "claim": "Hans Christian Andersen is known for his fairy tales.",
+          "p_support": 0.9782,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "bb_3448",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.165,
+      "llm_calls": 9,
+      "gen_tokens": 289,
+      "prompt_tokens": 1396
+    },
+    {
+      "id": "qb_6356",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.486,
+      "llm_calls": 7,
+      "gen_tokens": 218,
+      "prompt_tokens": 819,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.1827,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king of England for two years.",
+          "p_support": 0.0573,
+          "supported": false
+        },
+        {
+          "claim": "Richard III ruled from 1483.",
+          "p_support": 0.9454,
+          "supported": true
+        },
+        {
+          "claim": "Richard III died in 1485.",
+          "p_support": 0.9715,
+          "supported": true
+        },
+        {
+          "claim": "The period of time Richard III ruled is about two years.",
+          "p_support": 0.089,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "odql_4457",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.838,
+      "llm_calls": 8,
+      "gen_tokens": 330,
+      "prompt_tokens": 986
+    },
+    {
+      "id": "qw_8714",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.738,
+      "llm_calls": 7,
+      "gen_tokens": 227,
+      "prompt_tokens": 889,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0153,
+          "supported": false
+        },
+        {
+          "claim": "Touchstone is a clown.",
+          "p_support": 0.7892,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone is a comedic character.",
+          "p_support": 0.9752,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone is a court jester.",
+          "p_support": 0.8832,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone appears in Shakespeare's \"As You Like It\".",
+          "p_support": 0.9598,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "sfq_11784",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.788,
+      "llm_calls": 8,
+      "gen_tokens": 329,
+      "prompt_tokens": 1069
+    },
+    {
+      "id": "qz_5044",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.024,
+      "llm_calls": 7,
+      "gen_tokens": 195,
+      "prompt_tokens": 833,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0712,
+          "supported": false
+        },
+        {
+          "claim": "John Denver had chart hits which included \"Annie's Song\" and \"Rocky Mountain High\".",
+          "p_support": 0.9667,
+          "supported": true
+        },
+        {
+          "claim": "John Denver had chart hits.",
+          "p_support": 0.9832,
+          "supported": true
+        },
+        {
+          "claim": "\"Annie's Song\" and \"Rocky Mountain High\" are chart hits.",
+          "p_support": 0.966,
+          "supported": true
+        },
+        {
+          "claim": "John Denver is the person who had chart hits which included \"Annie's Song\" and \"Rocky Mountain High\".",
+          "p_support": 0.9627,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "jp_1626",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.574,
+      "llm_calls": 7,
+      "gen_tokens": 172,
+      "prompt_tokens": 799,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0165,
+          "supported": false
+        },
+        {
+          "claim": "Hugh Hefner started the magazine that is called Playboy.",
+          "p_support": 0.9284,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner founded Playboy magazine.",
+          "p_support": 0.9404,
+          "supported": true
+        },
+        {
+          "claim": "Playboy magazine was founded in 1953.",
+          "p_support": 0.9377,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qb_9094",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.189,
+      "llm_calls": 9,
+      "gen_tokens": 392,
+      "prompt_tokens": 1531
+    }
+  ]
+}

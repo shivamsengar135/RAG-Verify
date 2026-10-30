@@ -1,0 +1,171 @@
+2026-10-30 03:02:29,917 start method=rv_no_verifier dataset=triviaqa split=dev n=50 todo=50 cfg={"fn": "ragverify", "flags": {"verifier": "none"}}
+2026-10-30 03:02:31,515 Loading faiss with AVX512 support.
+2026-10-30 03:02:31,515 Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-10-30 03:02:31,515 Loading faiss with AVX2 support.
+2026-10-30 03:02:31,515 Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-10-30 03:02:31,515 Loading faiss.
+2026-10-30 03:02:31,547 Successfully loaded faiss.
+2026-10-30 03:02:35,081 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-30 03:02:35,097 Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-10-30 03:02:35,556 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-30 03:02:35,878 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-30 03:02:36,194 HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-30 03:02:36,194 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-30 03:02:36,437 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:37,523 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:38,650 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:38,651 [1/50] sfq_7732 pred='the Euxine Sea' abst=False 2.0s calls=2
+2026-10-30 03:02:39,459 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:40,582 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:40,583 [2/50] jp_758 pred='The Quran' abst=False 1.9s calls=2
+2026-10-30 03:02:41,847 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:43,311 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:43,311 [3/50] odql_10060 pred='' abst=True 2.7s calls=2
+2026-10-30 03:02:44,119 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:45,081 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:45,082 [4/50] qb_9577 pred='Edmund' abst=False 1.7s calls=2
+2026-10-30 03:02:46,044 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:46,943 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:46,943 [5/50] sfq_4811 pred='Stan' abst=False 1.8s calls=2
+2026-10-30 03:02:47,757 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:48,820 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:48,820 [6/50] qb_547 pred='Pablo Picasso' abst=False 1.8s calls=2
+2026-10-30 03:02:49,455 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:50,399 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:50,400 [7/50] qb_6271 pred='Penfold' abst=False 1.5s calls=2
+2026-10-30 03:02:51,171 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:52,320 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:52,320 [8/50] qz_952 pred='' abst=True 1.9s calls=2
+2026-10-30 03:02:53,019 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:54,018 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:54,019 [9/50] wh_51 pred='Avro' abst=False 1.6s calls=2
+2026-10-30 03:02:55,070 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:56,716 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:56,717 [10/50] odql_9626 pred='' abst=True 2.6s calls=2
+2026-10-30 03:02:57,935 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:59,101 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:02:59,102 [11/50] tb_361 pred='' abst=True 2.3s calls=2
+2026-10-30 03:02:59,876 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:00,816 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:00,817 [12/50] bt_1060 pred='Hans Christian Andersen' abst=False 1.7s calls=2
+2026-10-30 03:03:01,764 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:03,149 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:03,149 [13/50] bb_3448 pred='' abst=True 2.3s calls=2
+2026-10-30 03:03:04,022 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:05,242 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:05,243 [14/50] qb_6356 pred='2 years' abst=False 2.0s calls=2
+2026-10-30 03:03:06,383 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:07,585 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:07,586 [15/50] odql_4457 pred='' abst=True 2.3s calls=2
+2026-10-30 03:03:08,497 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:09,516 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:09,517 [16/50] qw_8714 pred='A court fool or jester' abst=False 1.8s calls=2
+2026-10-30 03:03:10,216 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:11,205 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:11,205 [17/50] sfq_11784 pred='' abst=True 1.6s calls=2
+2026-10-30 03:03:11,894 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:13,213 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:13,214 [18/50] qz_5044 pred='John Denver' abst=False 2.0s calls=2
+2026-10-30 03:03:13,871 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:15,113 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:15,114 [19/50] jp_1626 pred='Playboy' abst=False 1.9s calls=2
+2026-10-30 03:03:16,093 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:17,397 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:17,398 [20/50] qb_9094 pred='Northern Ireland' abst=False 2.2s calls=2
+2026-10-30 03:03:18,266 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:19,588 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:19,589 [21/50] bb_4656 pred='Beaujolais nouveau' abst=False 2.1s calls=2
+2026-10-30 03:03:24,664 thermal pause: 5s (GPU now 54 C)
+2026-10-30 03:03:25,642 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:26,673 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:26,674 [22/50] qz_6079 pred='Fresco' abst=False 2.0s calls=2
+2026-10-30 03:03:27,461 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:28,738 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:28,738 [23/50] qw_5723 pred='7 books' abst=False 2.0s calls=2
+2026-10-30 03:03:29,882 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:30,972 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:30,973 [24/50] qz_5598 pred='' abst=True 2.2s calls=2
+2026-10-30 03:03:32,048 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:33,353 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:33,353 [25/50] odql_4592 pred='Salvador Allende' abst=False 2.3s calls=2
+2026-10-30 03:03:34,520 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:36,016 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:36,018 [26/50] qz_2478 pred='' abst=True 2.6s calls=2
+2026-10-30 03:03:36,812 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:38,139 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:38,139 [27/50] tb_666 pred='Red-eye gravy' abst=False 2.1s calls=2
+2026-10-30 03:03:38,994 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:39,948 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:39,948 [28/50] sfq_25828 pred='Yann Martel' abst=False 1.8s calls=2
+2026-10-30 03:03:40,657 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:41,642 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:41,643 [29/50] sfq_15185 pred='Peter principle' abst=False 1.7s calls=2
+2026-10-30 03:03:42,171 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:43,324 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:43,325 [30/50] qw_8893 pred='3' abst=False 1.6s calls=2
+2026-10-30 03:03:44,227 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:45,559 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:45,560 [31/50] qw_12770 pred='Ming dynasty' abst=False 2.2s calls=2
+2026-10-30 03:03:46,452 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:47,561 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:47,562 [32/50] qg_2790 pred='gold' abst=False 1.9s calls=2
+2026-10-30 03:03:48,600 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:49,992 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:49,993 [33/50] sfq_14165 pred='Camille Saint-Saëns' abst=False 2.4s calls=2
+2026-10-30 03:03:55,072 thermal pause: 5s (GPU now 55 C)
+2026-10-30 03:03:57,338 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:58,561 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:03:58,562 [34/50] dpql_4461 pred='' abst=True 3.5s calls=2
+2026-10-30 03:03:59,505 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:00,434 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:00,434 [35/50] qb_8937 pred='' abst=True 1.8s calls=2
+2026-10-30 03:04:01,572 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:02,708 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:02,709 [36/50] qg_3242 pred='' abst=True 2.2s calls=2
+2026-10-30 03:04:03,583 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:04,803 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:04,803 [37/50] odql_7825 pred='Glockenspiel' abst=False 2.0s calls=2
+2026-10-30 03:04:05,982 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:07,266 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:07,267 [38/50] odql_351 pred='George Blake' abst=False 2.4s calls=2
+2026-10-30 03:04:08,029 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:09,065 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:09,066 [39/50] sfq_21531 pred='Caernarfon' abst=False 1.7s calls=2
+2026-10-30 03:04:09,861 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:10,965 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:10,966 [40/50] qg_1126 pred='Eva Braun' abst=False 1.9s calls=2
+2026-10-30 03:04:12,245 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:13,198 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:13,199 [41/50] sfq_25799 pred='' abst=True 2.2s calls=2
+2026-10-30 03:04:14,012 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:15,266 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:15,267 [42/50] qg_3386 pred='Anne Frank' abst=False 2.0s calls=2
+2026-10-30 03:04:15,893 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:16,801 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:16,802 [43/50] qg_3683 pred='Langley' abst=False 1.5s calls=2
+2026-10-30 03:04:18,125 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:19,708 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:19,710 [44/50] odql_6852 pred='' abst=True 2.9s calls=2
+2026-10-30 03:04:24,809 thermal pause: 5s (GPU now 54 C)
+2026-10-30 03:04:26,138 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:27,530 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:27,531 [45/50] odql_113 pred='A Countess from Hong Kong' abst=False 2.7s calls=2
+2026-10-30 03:04:28,563 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:29,549 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:29,550 [46/50] sfq_16000 pred='The Small Faces' abst=False 2.0s calls=2
+2026-10-30 03:04:30,346 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:31,359 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:31,360 [47/50] dpql_3467 pred='Willie Nelson' abst=False 1.8s calls=2
+2026-10-30 03:04:32,069 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:33,012 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:33,013 [48/50] sfq_19691 pred='Vodka' abst=False 1.6s calls=2
+2026-10-30 03:04:33,812 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:35,441 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:35,442 [49/50] wh_3778 pred='Enigma' abst=False 2.4s calls=2
+2026-10-30 03:04:36,086 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:36,943 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-30 03:04:36,944 [50/50] qb_5618 pred='local butcher' abst=False 1.4s calls=2
+2026-10-30 03:04:36,945 peak_torch_vram_mib=137
+2026-10-30 03:04:36,945 done

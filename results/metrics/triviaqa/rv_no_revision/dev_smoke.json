@@ -1,0 +1,718 @@
+{
+  "source": "triviaqa/rv_no_revision/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.5,
+    "f1": 0.6,
+    "accuracy": 0.55,
+    "coverage": 0.85,
+    "abstention_rate": 0.15000000000000002,
+    "selective_accuracy": 0.6470588235294118,
+    "hallucination_rate": 0.3,
+    "claim_precision": 0.6791316526610645,
+    "claims_per_answer": 4.294117647058823,
+    "latency_s": 2.1612999999999998,
+    "llm_calls": 2.0,
+    "gen_tokens": 76.45,
+    "prompt_tokens": 1201.4
+  },
+  "per_example": [
+    {
+      "id": "sfq_7732",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.017,
+      "llm_calls": 2,
+      "gen_tokens": 77,
+      "prompt_tokens": 1319,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0148,
+          "supported": false
+        },
+        {
+          "claim": "Bithynia was an ancient province on the Euxine Sea.",
+          "p_support": 0.9672,
+          "supported": true
+        },
+        {
+          "claim": "Bithynia bordered on the Euxine Sea to the north-east.",
+          "p_support": 0.7957,
+          "supported": true
+        },
+        {
+          "claim": "The Euxine Sea is located along the Pontic coast.",
+          "p_support": 0.8948,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "jp_758",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.661,
+      "llm_calls": 2,
+      "gen_tokens": 51,
+      "prompt_tokens": 1213,
+      "claims": [
+        {
+          "claim": "A hafiz is a person who has memorized the Quran.",
+          "p_support": 0.9754,
+          "supported": true
+        },
+        {
+          "claim": "A hafiz is a person who has completely memorized the Quran.",
+          "p_support": 0.9702,
+          "supported": true
+        },
+        {
+          "claim": "Passages [1] and [4] state that a hafiz is a person who has completely memorized the Quran.",
+          "p_support": 0.8529,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "odql_10060",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.225,
+      "llm_calls": 2,
+      "gen_tokens": 140,
+      "prompt_tokens": 1352
+    },
+    {
+      "id": "qb_9577",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.316,
+      "llm_calls": 2,
+      "gen_tokens": 51,
+      "prompt_tokens": 1171,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0232,
+          "supported": false
+        },
+        {
+          "claim": "The first name of Blackadder in the UK television series 'Blackadder' is Edmund.",
+          "p_support": 0.9315,
+          "supported": true
+        },
+        {
+          "claim": "Edmund Blackadder is portrayed as the anti-hero in the series.",
+          "p_support": 0.9454,
+          "supported": true
+        },
+        {
+          "claim": "Edmund Blackadder's first name is explicitly mentioned in the passages.",
+          "p_support": 0.9612,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "sfq_4811",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.193,
+      "llm_calls": 2,
+      "gen_tokens": 83,
+      "prompt_tokens": 1162,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.025,
+          "supported": false
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' was called Stan.",
+          "p_support": 0.9067,
+          "supported": true
+        },
+        {
+          "claim": "Stan is a bus driver.",
+          "p_support": 0.848,
+          "supported": true
+        },
+        {
+          "claim": "Stan works for the Luxton and District Bus Company.",
+          "p_support": 0.9236,
+          "supported": true
+        },
+        {
+          "claim": "Stan Butler is Reg Varney.",
+          "p_support": 0.8267,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "qb_547",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.044,
+      "llm_calls": 2,
+      "gen_tokens": 85,
+      "prompt_tokens": 1124,
+      "claims": [
+        {
+          "claim": "The artist who painted \"The Weeping Woman\" is Pablo Picasso.",
+          "p_support": 0.9713,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" is an oil on canvas.",
+          "p_support": 0.9793,
+          "supported": true
+        },
+        {
+          "claim": "Pablo Picasso painted \"The Weeping Woman\".",
+          "p_support": 0.9615,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in France.",
+          "p_support": 0.978,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in 1937.",
+          "p_support": 0.977,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "qb_6271",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.188,
+      "llm_calls": 2,
+      "gen_tokens": 73,
+      "prompt_tokens": 1263,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0221,
+          "supported": false
+        },
+        {
+          "claim": "The sidekick of cartoon superhero DangerMouse is Penfold.",
+          "p_support": 0.5832,
+          "supported": true
+        },
+        {
+          "claim": "In the 1981 TV series, Penfold is mentioned as Danger Mouse's sidekick.",
+          "p_support": 0.9774,
+          "supported": true
+        },
+        {
+          "claim": "Penfold assists Danger Mouse in various adventures.",
+          "p_support": 0.8948,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qz_952",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.448,
+      "llm_calls": 2,
+      "gen_tokens": 60,
+      "prompt_tokens": 1058,
+      "claims": [
+        {
+          "claim": "A point in tennis that has to be replayed is called a let.",
+          "p_support": 0.6261,
+          "supported": true
+        },
+        {
+          "claim": "In tennis, a point needs to be replayed due to external factors.",
+          "p_support": 0.8749,
+          "supported": true
+        },
+        {
+          "claim": "A \"let\" is given in tennis.",
+          "p_support": 0.0959,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "wh_51",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.779,
+      "llm_calls": 2,
+      "gen_tokens": 66,
+      "prompt_tokens": 1189,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.2516,
+          "supported": false
+        },
+        {
+          "claim": "The manufacturer of the British World War II bomber the Lancaster is Avro.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "The majority of Lancasters were manufactured by Avro.",
+          "p_support": 0.9573,
+          "supported": true
+        },
+        {
+          "claim": "Avro has a factory in Chadderton, Greater Manchester.",
+          "p_support": 0.9656,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "odql_9626",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.742,
+      "llm_calls": 2,
+      "gen_tokens": 70,
+      "prompt_tokens": 1373,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0219,
+          "supported": false
+        },
+        {
+          "claim": "The song of a Venetian Gondolier is called \"List and learn\".",
+          "p_support": 0.0405,
+          "supported": false
+        },
+        {
+          "claim": "This song is number 1 in the list of musical numbers.",
+          "p_support": 0.0706,
+          "supported": false
+        },
+        {
+          "claim": "The list of musical numbers is explicitly mentioned.",
+          "p_support": 0.9607,
+          "supported": true
+        },
+        {
+          "claim": "The song is performed by the Gondoliers.",
+          "p_support": 0.6243,
+          "supported": true
+        },
+        {
+          "claim": "The Gondoliers are Antonio, Marco, and Giuseppe.",
+          "p_support": 0.026,
+          "supported": false
+        },
+        {
+          "claim": "The Chorus of Contadine performs the song.",
+          "p_support": 0.8903,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.42857142857142855
+    },
+    {
+      "id": "tb_361",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.926,
+      "llm_calls": 2,
+      "gen_tokens": 82,
+      "prompt_tokens": 1225
+    },
+    {
+      "id": "bt_1060",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.818,
+      "llm_calls": 2,
+      "gen_tokens": 76,
+      "prompt_tokens": 975,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0248,
+          "supported": false
+        },
+        {
+          "claim": "Hans Christian Andersen wrote \"The Ugly Duckling\".",
+          "p_support": 0.9677,
+          "supported": true
+        },
+        {
+          "claim": "\"The Ugly Duckling\" is a literary fairy tale.",
+          "p_support": 0.9838,
+          "supported": true
+        },
+        {
+          "claim": "Hans Christian Andersen is a Danish poet and author.",
+          "p_support": 0.7663,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "bb_3448",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.233,
+      "llm_calls": 2,
+      "gen_tokens": 90,
+      "prompt_tokens": 1127,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0854,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process is applying the waving lotion or 'reagent'.",
+          "p_support": 0.0522,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process involves applying waving lotion or 'reagent'.",
+          "p_support": 0.0876,
+          "supported": false
+        },
+        {
+          "claim": "According to passage [3], the final stage of a hair perming process involves applying waving lotion or 'reagent'.",
+          "p_support": 0.0443,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process involves chemically breaking and reforming the hair's cross-linking bonds.",
+          "p_support": 0.8984,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.2
+    },
+    {
+      "id": "qb_6356",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.865,
+      "llm_calls": 2,
+      "gen_tokens": 72,
+      "prompt_tokens": 1174,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.1827,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king of England for 2 years.",
+          "p_support": 0.0552,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king from 1483.",
+          "p_support": 0.9489,
+          "supported": true
+        },
+        {
+          "claim": "Richard III died in 1485.",
+          "p_support": 0.9715,
+          "supported": true
+        },
+        {
+          "claim": "1485 is 2 years after 1483.",
+          "p_support": 0.4863,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "odql_4457",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.917,
+      "llm_calls": 2,
+      "gen_tokens": 111,
+      "prompt_tokens": 1373,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0242,
+          "supported": false
+        },
+        {
+          "claim": "Alan Freed coined the term \"Rock and Roll\".",
+          "p_support": 0.9515,
+          "supported": true
+        },
+        {
+          "claim": "Marshall Lytle was Haley's bass player.",
+          "p_support": 0.9635,
+          "supported": true
+        },
+        {
+          "claim": "Marshall Lytle claimed that his songs, including \"Rock the Joint\", inspired Alan Freed to coin the phrase \"rock and roll\".",
+          "p_support": 0.9543,
+          "supported": true
+        },
+        {
+          "claim": "Alan Freed played the music that he referred to as \"rock and roll\".",
+          "p_support": 0.9713,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "qw_8714",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.233,
+      "llm_calls": 2,
+      "gen_tokens": 81,
+      "prompt_tokens": 1192,
+      "claims": [
+        {
+          "claim": "Touchstone is a court fool or jester.",
+          "p_support": 0.6706,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone is described as a court fool or jester in the passage.",
+          "p_support": 0.691,
+          "supported": true
+        },
+        {
+          "claim": "The passage is about the play \"As You Like It\".",
+          "p_support": 0.9771,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "sfq_11784",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.315,
+      "llm_calls": 2,
+      "gen_tokens": 54,
+      "prompt_tokens": 1138,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0316,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman was the first Olympic heavyweight boxing gold medallist to become world professional heavyweight boxing champion.",
+          "p_support": 0.0268,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman won the Olympic Games Heavyweight Gold Medal.",
+          "p_support": 0.0262,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman became a world professional heavyweight boxing champion.",
+          "p_support": 0.2689,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "qz_5044",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.531,
+      "llm_calls": 2,
+      "gen_tokens": 54,
+      "prompt_tokens": 1177,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0712,
+          "supported": false
+        },
+        {
+          "claim": "John Denver had chart hits which included \"Annie's Song\" and \"Rocky Mountain High\".",
+          "p_support": 0.9667,
+          "supported": true
+        },
+        {
+          "claim": "John Denver wrote \"Annie's Song\".",
+          "p_support": 0.974,
+          "supported": true
+        },
+        {
+          "claim": "John Denver wrote \"Rocky Mountain High\".",
+          "p_support": 0.9713,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "jp_1626",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.66,
+      "llm_calls": 2,
+      "gen_tokens": 60,
+      "prompt_tokens": 1114,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0165,
+          "supported": false
+        },
+        {
+          "claim": "The magazine that Hugh Hefner started is Playboy.",
+          "p_support": 0.7186,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner is best known for being the founder and chief creative officer of Playboy Enterprises.",
+          "p_support": 0.9553,
+          "supported": true
+        },
+        {
+          "claim": "Playboy Enterprises includes the Playboy magazine.",
+          "p_support": 0.9367,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qb_9094",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.115,
+      "llm_calls": 2,
+      "gen_tokens": 93,
+      "prompt_tokens": 1309
+    }
+  ]
+}

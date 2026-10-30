@@ -1,0 +1,43 @@
+2026-10-27 15:12:06,212 start method=closed_book dataset=hotpotqa split=dev n=20 todo=20 cfg={"fn": "closed_book"}
+2026-10-27 15:12:13,738 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:13,740 [1/20] 5a83e98e5542992ef85e2387 pred='Miami Marlins' abst=False 3.7s calls=1
+2026-10-27 15:12:18,227 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:18,230 [2/20] 5abee70a5542994516f45476 pred='Lady in Waiting' abst=False 4.5s calls=1
+2026-10-27 15:12:23,443 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:23,453 [3/20] 5ab5627b5542992aa134a2ff pred='16,000' abst=False 5.2s calls=1
+2026-10-27 15:12:27,582 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:27,582 [4/20] 5a738225554299623ed4abc3 pred='Bedknobs and Broomsticks' abst=False 4.1s calls=1
+2026-10-27 15:12:30,027 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:30,027 [5/20] 5a8b50475542997f31a41cd4 pred='Dragon Boat Racing' abst=False 2.4s calls=1
+2026-10-27 15:12:32,708 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:32,710 [6/20] 5a7653d25542992db9473765 pred='The Matches' abst=False 2.7s calls=1
+2026-10-27 15:12:36,259 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:36,260 [7/20] 5ab2659e554299340b5254b2 pred='Sassanid Empire' abst=False 3.5s calls=1
+2026-10-27 15:12:38,261 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:38,264 [8/20] 5a7125b95542994082a3e5d5 pred='Minden' abst=False 2.0s calls=1
+2026-10-27 15:12:41,521 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:41,522 [9/20] 5a7f0be055429930675135fe pred='Patricia Highsmith' abst=False 3.3s calls=1
+2026-10-27 15:12:43,684 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:43,685 [10/20] 5abd14c455429924427fceec pred='The Royal Marines' abst=False 2.2s calls=1
+2026-10-27 15:12:47,305 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:47,306 [11/20] 5ae4843455429970de88d997 pred='Manchester United' abst=False 3.6s calls=1
+2026-10-27 15:12:49,341 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:49,342 [12/20] 5ae537895542990ba0bbb234 pred='Sydney, Australia' abst=False 2.0s calls=1
+2026-10-27 15:12:51,749 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:51,750 [13/20] 5addf05a5542997dc79070cd pred='Yes' abst=False 2.4s calls=1
+2026-10-27 15:12:54,389 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:54,391 [14/20] 5a89e8035542992e4fca846d pred='Yes' abst=False 2.6s calls=1
+2026-10-27 15:12:57,015 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:12:57,017 [15/20] 5addd5795542990dbb2f7e9d pred='Republic Records' abst=False 2.6s calls=1
+2026-10-27 15:13:00,042 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:13:00,044 [16/20] 5a84bbb35542991dd0999dc0 pred='Bollywood films' abst=False 3.0s calls=1
+2026-10-27 15:13:02,444 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:13:02,446 [17/20] 5a7e31c055429934daa2fbee pred='Rivermaya' abst=False 2.4s calls=1
+2026-10-27 15:13:04,536 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:13:04,538 [18/20] 5ab66a3555429954757d3290 pred='Dutch' abst=False 2.1s calls=1
+2026-10-27 15:13:06,955 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:13:06,957 [19/20] 5a7c0dab5542997c3ec972d2 pred='The Getty Center' abst=False 2.4s calls=1
+2026-10-27 15:13:10,202 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-27 15:13:10,204 [20/20] 5abefa5b5542997ec76fd3a3 pred='Bowness' abst=False 3.2s calls=1
+2026-10-27 15:13:10,205 peak_torch_vram_mib=0
+2026-10-27 15:13:10,205 done

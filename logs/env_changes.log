@@ -1,0 +1,20 @@
+2026-10-28 15:18  Windows Smart App Control (Code Integrity events 3033/3077) began blocking
+                  .venv pandas 3.1.0 _libs/lib.cp311-win_amd64.pyd; runs from triviaqa/seed1/rag_abstain_llama
+                  onward exited at import (no records written). Same-version reinstall still blocked.
+2026-10-28 ~15:40 Installed pandas 2.3.3 (+ pytz) instead; imports OK, pip check clean. pandas is only
+                  imported transitively (sentence_transformers -> datasets); no model output depends on it.
+                  Grid relaunched; it resumes from finished example ids.
+2026-10-28 15:41  Laptop entered sleep/hibernate; resume failed with bugcheck 0x9F (DRIVER_POWER_STATE_FAILURE), reboot 16:03.
+                  Grid killed during hotpotqa/seed0/rv_no_verifier_llama (1 record kept; run resumes).
+2026-10-28 16:04  Ollama auto-updated 0.40.11 -> 0.40.12 on restart. Probe (20 HotpotQA seed0 qs, files in logs/probe_ollama04012):
+                  final answers identical 20/20 for rag_llama, rag, ragverify; output text identical 20/13/12 of 20
+                  (same-version reruns earlier: 16-17/20). Remaining runs (rv_no_verifier_llama, ragverify_llama) use 0.40.12.
+                  run_grid.py now blocks idle sleep via SetThreadExecutionState.
+2026-10-28 18:54  Bugcheck 0x133 (DPC_WATCHDOG_VIOLATION) crash/reboot during triviaqa/seed1/rv_no_verifier_llama (198/300 kept). Grid relaunched 19:47.
+05:19 main grid finished (78 runs, n=300, 0 errors); aggregated; paper Llama/Self-RAG text filled
+2026-10-29 06:24 ablation grid launched (15 variants x 2 datasets, seed0, --no-claims); all 15 variants smoke-tested on 2 dev questions first
+2026-10-29 19:38 HaluEval prep fix: qa/ mixes paired and single-answer rows; 952/2000 sampled items had empty answers. Now sample from the 10,000 paired rows only (same seed 2026). No results had used the old file.
+2026-10-29 19:41 launched code/run_extras.py (waits for ablation grid; then HaluEval, latency benchmark on 50 dev q, claim precision seed0, ablation table)
+2026-10-30 05:32 extras chain finished (EXTRAS FAILURES: none); latency_table.py run; claim precision + latency added to paper; human_check sheet made (100 items); paper 6 pages, check_paper passed; submission repackaged 2026-10-30
+2026-10-30 05:37 user chose to drop human validation: todo replaced by limitation sentence; error-analysis sample marked single reading; repackaged 2026-10-30
+2026-10-30 05:42 removed stale 'pend.: run in progress' note from Table I caption; repackaged 2026-10-30

@@ -1,0 +1,142 @@
+>> code/run.py --dataset hotpotqa --split dev --method rag --tag full
+>> code/run.py --dataset hotpotqa --split dev --method rag --tag full
+   exit=0 in 15s
+>> code/run.py --dataset triviaqa --split dev --method rag --tag full
+   exit=0 in 17s
+>> code/run.py --dataset hotpotqa --split dev --method rag_abstain --tag full
+   exit=0 in 15s
+>> code/run.py --dataset triviaqa --split dev --method rag_abstain --tag full
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify --tag full
+   exit=0 in 428s
+>> code/run.py --dataset triviaqa --split dev --method ragverify --tag full
+   exit=0 in 459s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_verifier --tag full
+   exit=0 in 16s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_verifier --tag full
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_decomp --tag full
+   exit=0 in 19s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_decomp --tag full
+   exit=0 in 22s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau03 --tag full
+   exit=0 in 494s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau03 --tag full
+   exit=0 in 333s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau07 --tag full
+   exit=0 in 341s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau07 --tag full
+   exit=0 in 359s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau09 --tag full
+   exit=0 in 93s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau09 --tag full
+   exit=0 in 353s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid --tag full
+   exit=0 in 491s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid --tag full
+   exit=0 in 542s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau03 --tag full
+>> code/run.py --dataset hotpotqa --split dev --method rag --tag full
+   exit=0 in 20s
+>> code/run.py --dataset triviaqa --split dev --method rag --tag full
+   exit=0 in 10s
+>> code/run.py --dataset hotpotqa --split dev --method rag_abstain --tag full
+   exit=0 in 10s
+>> code/run.py --dataset triviaqa --split dev --method rag_abstain --tag full
+   exit=0 in 10s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify --tag full
+   exit=0 in 14s
+>> code/run.py --dataset triviaqa --split dev --method ragverify --tag full
+   exit=0 in 14s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_verifier --tag full
+   exit=0 in 10s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_verifier --tag full
+   exit=0 in 10s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_decomp --tag full
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_decomp --tag full
+   exit=0 in 14s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau03 --tag full
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau03 --tag full
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau07 --tag full
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau07 --tag full
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau09 --tag full
+   exit=0 in 14s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau09 --tag full
+   exit=0 in 15s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid --tag full
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid --tag full
+   exit=0 in 14s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau03 --tag full
+   exit=0 in 291s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid_tau03 --tag full
+   exit=0 in 407s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau07 --tag full
+   exit=0 in 433s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid_tau07 --tag full
+   exit=0 in 412s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau09 --tag full
+   exit=0 in 432s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid_tau09 --tag full
+   exit=0 in 412s
+>> code/run.py --dataset hotpotqa --split dev --method rv_llm_judge --tag full
+   exit=0 in 381s
+>> code/run.py --dataset triviaqa --split dev --method rv_llm_judge --tag full
+   exit=0 in 361s
+>> code/evaluate.py --dataset hotpotqa --method rag --split dev --tag full --no-claims
+   exit=0 in 4s
+>> code/evaluate.py --dataset triviaqa --method rag --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rag_abstain --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rag_abstain --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method ragverify --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method ragverify --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_verifier --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_no_verifier --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_decomp --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_no_decomp --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau03 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau03 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau07 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau07 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau09 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau09 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid_tau03 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid_tau03 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid_tau07 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid_tau07 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid_tau09 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid_tau09 --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_llm_judge --split dev --tag full --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_llm_judge --split dev --tag full --no-claims
+   exit=0 in 3s

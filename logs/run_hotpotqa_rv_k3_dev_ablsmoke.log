@@ -1,0 +1,31 @@
+2026-10-29 06:18:48,648 start method=rv_k3 dataset=hotpotqa split=dev n=2 todo=2 cfg={"fn": "ragverify", "cfg": {"retriever": {"k": 3}}, "flags": {"verifier": "hybrid"}}
+2026-10-29 06:18:50,747 Loading faiss with AVX512 support.
+2026-10-29 06:18:50,747 Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-10-29 06:18:50,747 Loading faiss with AVX2 support.
+2026-10-29 06:18:50,747 Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-10-29 06:18:50,757 Loading faiss.
+2026-10-29 06:18:50,782 Successfully loaded faiss.
+2026-10-29 06:18:55,871 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-29 06:18:55,915 Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-10-29 06:18:56,484 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-29 06:18:56,967 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-29 06:18:57,282 HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-29 06:18:58,948 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli "HTTP/1.1 200 OK"
+2026-10-29 06:18:59,231 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-29 06:19:00,304 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-29 06:19:02,423 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli "HTTP/1.1 200 OK"
+2026-10-29 06:19:02,715 HTTP Request: GET https://huggingface.co/api/models/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli "HTTP/1.1 200 OK"
+2026-10-29 06:19:03,744 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:06,617 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:08,217 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:09,246 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:10,350 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:10,351 [1/2] 5a83e98e5542992ef85e2387 pred='' abst=True 6.0s calls=4
+2026-10-29 06:19:11,512 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:12,249 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:12,592 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:19:12,594 [2/2] 5abee70a5542994516f45476 pred='Mistress of the Robes' abst=False 2.2s calls=3
+2026-10-29 06:19:12,594 peak_torch_vram_mib=1978
+2026-10-29 06:19:12,594 done

@@ -1,0 +1,145 @@
+﻿.\.venv\Scripts\python.exe : Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to 
+enable higher rate limits and faster downloads.
+At line:1 char:395
++ ... ISABLE="1"; .\.venv\Scripts\python.exe code\evaluate.py --all 2>$null ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: You ar...ster downloads.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+W1027 16:02:52.826000 23096 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  closed_book        dev_smoke    n= 20 acc=0.150 f1=0.175 abst=0.000 hall=0.850 claimP=0.251 lat=3.01s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  cove               dev_smoke    n= 20 acc=0.200 f1=0.225 abst=0.000 hall=0.800 claimP=0.235 lat=5.94s calls=7.3 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  cove_rag           dev_smoke    n= 20 acc=0.400 f1=0.475 abst=0.050 hall=0.550 claimP=0.567 lat=7.38s calls=7.7 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rag                dev_smoke    n= 20 acc=0.400 f1=0.483 abst=0.050 hall=0.550 claimP=0.606 lat=3.39s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rag_abstain        dev_smoke    n= 20 acc=0.350 f1=0.383 abst=0.350 hall=0.300 claimP=0.722 lat=3.33s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  ragverify          dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.250 hall=0.400 claimP=0.574 lat=2.58s calls=2.1 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  ragverify_llama    dev_smoke    n= 20 acc=0.250 f1=0.220 abst=0.400 hall=0.350 claimP=0.620 lat=7.62s calls=3.8 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_k10             dev_smoke    n= 20 acc=0.350 f1=0.392 abst=0.150 hall=0.500 claimP=0.680 lat=4.03s calls=2.1 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_llm_judge       dev_smoke    n= 20 acc=0.250 f1=0.275 abst=0.550 hall=0.200 claimP=0.662 lat=3.10s calls=5.5 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_no_abstain      dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.250 hall=0.400 claimP=0.580 lat=2.97s calls=2.1 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_no_decomp       dev_smoke    n= 20 acc=0.400 f1=0.483 abst=0.100 hall=0.500 claimP=0.598 lat=1.09s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_no_retrieval    dev_smoke    n= 20 acc=0.050 f1=0.050 abst=0.750 hall=0.200 claimP=0.440 lat=6.36s calls=7.9 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_no_revision     dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.250 hall=0.400 claimP=0.580 lat=2.18s calls=2.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_no_verifier     dev_smoke    n= 20 acc=0.350 f1=0.400 abst=0.350 hall=0.300 claimP=0.738 lat=2.07s calls=2.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  closed_book        dev_smoke    n= 20 acc=0.500 f1=0.537 abst=0.000 hall=0.500 claimP=0.453 lat=2.68s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  cove               dev_smoke    n= 20 acc=0.600 f1=0.616 abst=0.000 hall=0.400 claimP=0.501 lat=5.44s calls=7.8 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  cove_rag           dev_smoke    n= 20 acc=0.600 f1=0.650 abst=0.000 hall=0.400 claimP=0.573 lat=7.88s calls=7.6 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rag                dev_smoke    n= 20 acc=0.650 f1=0.700 abst=0.000 hall=0.350 claimP=0.669 lat=3.36s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rag_abstain        dev_smoke    n= 20 acc=0.550 f1=0.567 abst=0.250 hall=0.200 claimP=0.740 lat=3.64s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  ragverify          dev_smoke    n= 20 acc=0.500 f1=0.517 abst=0.250 hall=0.250 claimP=0.666 lat=2.65s calls=2.3 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  ragverify_llama    dev_smoke    n= 20 acc=0.500 f1=0.500 abst=0.250 hall=0.250 claimP=0.649 lat=8.99s calls=3.8 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rv_k10             dev_smoke    n= 20 acc=0.700 f1=0.717 abst=0.100 hall=0.200 claimP=0.599 lat=3.94s calls=2.2 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rv_llm_judge       dev_smoke    n= 20 acc=0.400 f1=0.467 abst=0.350 hall=0.250 claimP=0.725 lat=2.94s calls=5.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rv_no_abstain      dev_smoke    n= 20 acc=0.550 f1=0.567 abst=0.200 hall=0.250 claimP=0.666 lat=2.66s calls=2.3 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rv_no_decomp       dev_smoke    n= 20 acc=0.650 f1=0.700 abst=0.000 hall=0.350 claimP=0.659 lat=1.12s calls=1.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rv_no_retrieval    dev_smoke    n= 20 acc=0.350 f1=0.387 abst=0.500 hall=0.150 claimP=0.667 lat=5.71s calls=7.8 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rv_no_revision     dev_smoke    n= 20 acc=0.550 f1=0.600 abst=0.150 hall=0.300 claimP=0.679 lat=2.16s calls=2.0 err=0
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, 
+but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config 
+with `tie_word_embeddings=False` to silence this warning.
+triviaqa  rv_no_verifier     dev_smoke    n= 20 acc=0.500 f1=0.550 abst=0.350 hall=0.150 claimP=0.796 lat=2.09s calls=2.0 err=0
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+Retrying in 1s [Retry 1/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+Retrying in 2s [Retry 2/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+Retrying in 4s [Retry 3/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+Retrying in 8s [Retry 4/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+Retrying in 8s [Retry 5/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+Retrying in 1s [Retry 1/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting GET https://huggingface.co/api/models/lytang/MiniCheck-Flan-
+T5-Large/xet-read-token/c3f6482d13e7cc81748e853723befc286f29d949
+Retrying in 2s [Retry 2/5].

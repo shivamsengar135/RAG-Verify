@@ -1,0 +1,682 @@
+{
+  "source": "triviaqa/ragverify_llama/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.4,
+    "f1": 0.5,
+    "accuracy": 0.5,
+    "coverage": 0.75,
+    "abstention_rate": 0.25,
+    "selective_accuracy": 0.6666666666666666,
+    "hallucination_rate": 0.25,
+    "claim_precision": 0.648888888888889,
+    "claims_per_answer": 4.466666666666667,
+    "latency_s": 8.98835,
+    "llm_calls": 3.8,
+    "gen_tokens": 217.45,
+    "prompt_tokens": 2329.25
+  },
+  "per_example": [
+    {
+      "id": "sfq_7732",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.658,
+      "llm_calls": 4,
+      "gen_tokens": 196,
+      "prompt_tokens": 2653,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0148,
+          "supported": false
+        },
+        {
+          "claim": "Bithynia was an ancient province on the Propontis.",
+          "p_support": 0.9752,
+          "supported": true
+        },
+        {
+          "claim": "The Propontis is also known as the Sea of Marmara.",
+          "p_support": 0.967,
+          "supported": true
+        },
+        {
+          "claim": "The Propontis borders the fertile shores of Bithynia.",
+          "p_support": 0.9689,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "jp_758",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.305,
+      "llm_calls": 4,
+      "gen_tokens": 211,
+      "prompt_tokens": 2486,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0244,
+          "supported": false
+        },
+        {
+          "claim": "A hafiz is a person who has memorized the Quran.",
+          "p_support": 0.9754,
+          "supported": true
+        },
+        {
+          "claim": "A hafiz is a person who has completely memorized the Qur'an.",
+          "p_support": 0.9702,
+          "supported": true
+        },
+        {
+          "claim": "The Quran is the book that a hafiz has memorized.",
+          "p_support": 0.9656,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "odql_10060",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.484,
+      "llm_calls": 3,
+      "gen_tokens": 163,
+      "prompt_tokens": 2378
+    },
+    {
+      "id": "qb_9577",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 9.514,
+      "llm_calls": 4,
+      "gen_tokens": 184,
+      "prompt_tokens": 2358,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0232,
+          "supported": false
+        },
+        {
+          "claim": "The first name of Blackadder in the UK television series 'Blackadder' is Edmund.",
+          "p_support": 0.9315,
+          "supported": true
+        },
+        {
+          "claim": "Rowan Atkinson played the role of Edmund Blackadder in the series.",
+          "p_support": 0.9792,
+          "supported": true
+        },
+        {
+          "claim": "Edmund Blackadder was the anti-hero of the show.",
+          "p_support": 0.9781,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "sfq_4811",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.273,
+      "llm_calls": 4,
+      "gen_tokens": 227,
+      "prompt_tokens": 2311,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.025,
+          "supported": false
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' was called Stan Butler.",
+          "p_support": 0.9643,
+          "supported": true
+        },
+        {
+          "claim": "Reg Varney played the main character in the TV show 'On the Buses'.",
+          "p_support": 0.9656,
+          "supported": true
+        },
+        {
+          "claim": "The main character in the TV show 'On the Buses' was a bus driver.",
+          "p_support": 0.9482,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qb_547",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.662,
+      "llm_calls": 2,
+      "gen_tokens": 101,
+      "prompt_tokens": 1009,
+      "claims": [
+        {
+          "claim": "The artist who painted \"The Weeping Woman\" is Pablo Picasso.",
+          "p_support": 0.9713,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" is an oil on canvas.",
+          "p_support": 0.9793,
+          "supported": true
+        },
+        {
+          "claim": "Pablo Picasso painted \"The Weeping Woman\".",
+          "p_support": 0.9615,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in France.",
+          "p_support": 0.978,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in 1937.",
+          "p_support": 0.977,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "qb_6271",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.405,
+      "llm_calls": 4,
+      "gen_tokens": 188,
+      "prompt_tokens": 2566,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0221,
+          "supported": false
+        },
+        {
+          "claim": "The sidekick of cartoon superhero DangerMouse is Penfold.",
+          "p_support": 0.5832,
+          "supported": true
+        },
+        {
+          "claim": "Penfold is mentioned in Passage [1] as being kidnapped by Crumhorn.",
+          "p_support": 0.9669,
+          "supported": true
+        },
+        {
+          "claim": "Crumhorn kidnapped Penfold.",
+          "p_support": 0.9681,
+          "supported": true
+        },
+        {
+          "claim": "Penfold is a recurring character in the Danger Mouse series.",
+          "p_support": 0.955,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "qz_952",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 10.207,
+      "llm_calls": 4,
+      "gen_tokens": 317,
+      "prompt_tokens": 2300
+    },
+    {
+      "id": "wh_51",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 9.715,
+      "llm_calls": 4,
+      "gen_tokens": 258,
+      "prompt_tokens": 2403,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.2516,
+          "supported": false
+        },
+        {
+          "claim": "The manufacturer of the British World War II bomber the Lancaster is Avro.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "Avro is the primary manufacturer of the Lancaster.",
+          "p_support": 0.9086,
+          "supported": true
+        },
+        {
+          "claim": "The majority of Lancasters were built at Avro's factory at Chadderton near Oldham, Greater Manchester.",
+          "p_support": 0.9529,
+          "supported": true
+        },
+        {
+          "claim": "Avro also built Lancasters at Woodford Aerodrome in Cheshire.",
+          "p_support": 0.8715,
+          "supported": true
+        },
+        {
+          "claim": "Avro also built Lancasters at the Austin Motor Company works in Longbridge, Birmingham.",
+          "p_support": 0.9225,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8333333333333334
+    },
+    {
+      "id": "odql_9626",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 11.235,
+      "llm_calls": 4,
+      "gen_tokens": 284,
+      "prompt_tokens": 2802,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0219,
+          "supported": false
+        },
+        {
+          "claim": "The song of a Venetian Gondolier is called a Venetian barcarolle.",
+          "p_support": 0.784,
+          "supported": true
+        },
+        {
+          "claim": "The music of The Gondoliers includes a \"Venetian barcarolle\".",
+          "p_support": 0.0241,
+          "supported": false
+        },
+        {
+          "claim": "A Venetian barcarolle is a type of song associated with Venice itself.",
+          "p_support": 0.9497,
+          "supported": true
+        },
+        {
+          "claim": "A Venetian barcarolle is associated with Venetian Gondoliers.",
+          "p_support": 0.6792,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6
+    },
+    {
+      "id": "tb_361",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.868,
+      "llm_calls": 4,
+      "gen_tokens": 215,
+      "prompt_tokens": 2405,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.052,
+          "supported": false
+        },
+        {
+          "claim": "The country of origin of the character in the 2014 zombie comedy Life After Beth is Haiti.",
+          "p_support": 0.1345,
+          "supported": false
+        },
+        {
+          "claim": "The term \"zombie\" originates from Haitian folklore.",
+          "p_support": 0.9832,
+          "supported": true
+        },
+        {
+          "claim": "The 2014 zombie comedy is called Life After Beth.",
+          "p_support": 0.9681,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "bt_1060",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.477,
+      "llm_calls": 4,
+      "gen_tokens": 156,
+      "prompt_tokens": 1931,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0248,
+          "supported": false
+        },
+        {
+          "claim": "Hans Christian Andersen wrote The Ugly Duckling.",
+          "p_support": 0.9651,
+          "supported": true
+        },
+        {
+          "claim": "Hans Christian Andersen is the Danish poet and author who wrote the literary fairy tale \"The Ugly Duckling\".",
+          "p_support": 0.9612,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "bb_3448",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 11.839,
+      "llm_calls": 4,
+      "gen_tokens": 305,
+      "prompt_tokens": 2361,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0854,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process is chemical treatment.",
+          "p_support": 0.7663,
+          "supported": true
+        },
+        {
+          "claim": "The final stage of a hair perming process involves the application of a chemical solution.",
+          "p_support": 0.9722,
+          "supported": true
+        },
+        {
+          "claim": "The chemical solution is known as a reagent.",
+          "p_support": 0.9767,
+          "supported": true
+        },
+        {
+          "claim": "The chemical solution reacts chemically to soften the hair.",
+          "p_support": 0.9804,
+          "supported": true
+        },
+        {
+          "claim": "The chemical solution allows the hair to mold around the shape of the form.",
+          "p_support": 0.9789,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8333333333333334
+    },
+    {
+      "id": "qb_6356",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.403,
+      "llm_calls": 4,
+      "gen_tokens": 176,
+      "prompt_tokens": 2299,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.1827,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king of England for 2 years.",
+          "p_support": 0.0552,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king from 1483 until his death in 1485.",
+          "p_support": 0.9279,
+          "supported": true
+        },
+        {
+          "claim": "The total number of years Richard III was king is 2.",
+          "p_support": 0.0542,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "odql_4457",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 7.604,
+      "llm_calls": 3,
+      "gen_tokens": 178,
+      "prompt_tokens": 2333
+    },
+    {
+      "id": "qw_8714",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.764,
+      "llm_calls": 4,
+      "gen_tokens": 179,
+      "prompt_tokens": 2410,
+      "claims": [
+        {
+          "claim": "Here is the list of atomic claims:",
+          "p_support": 0.021,
+          "supported": false
+        },
+        {
+          "claim": "Touchstone is a court fool or jester.",
+          "p_support": 0.6706,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone is described as a \"court fool or jester\".",
+          "p_support": 0.4206,
+          "supported": false
+        },
+        {
+          "claim": "Touchstone is a comedic character in the play \"As You Like It\".",
+          "p_support": 0.9759,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "sfq_11784",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.601,
+      "llm_calls": 4,
+      "gen_tokens": 192,
+      "prompt_tokens": 2323,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0316,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman was the first Olympic heavyweight boxing gold medallist to become world professional heavyweight boxing champion.",
+          "p_support": 0.0268,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman was the Olympic heavyweight boxing gold medallist.",
+          "p_support": 0.0291,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman won the Olympic heavyweight boxing gold medal.",
+          "p_support": 0.0376,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman had a professional boxing record.",
+          "p_support": 0.2838,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "qz_5044",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 10.059,
+      "llm_calls": 4,
+      "gen_tokens": 275,
+      "prompt_tokens": 2393
+    },
+    {
+      "id": "jp_1626",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.941,
+      "llm_calls": 4,
+      "gen_tokens": 165,
+      "prompt_tokens": 2199,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0165,
+          "supported": false
+        },
+        {
+          "claim": "The magazine that Hugh Hefner started is Playboy.",
+          "p_support": 0.7186,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner is best known for being the founder and chief creative officer of Playboy Enterprises.",
+          "p_support": 0.9553,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner started the magazine.",
+          "p_support": 0.9284,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qb_9094",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 18.753,
+      "llm_calls": 4,
+      "gen_tokens": 379,
+      "prompt_tokens": 2665
+    }
+  ]
+}

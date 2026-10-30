@@ -1,0 +1,228 @@
+﻿>> code/run.py --dataset hotpotqa --split dev --method closed_book --n 20 --tag smoke
+closed_book | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=2.2s
+  20/20 last=3.2s
+   exit=0 in 69s
+>> code/run.py --dataset triviaqa --split dev --method closed_book --n 20 --tag smoke
+closed_book | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=3.7s
+  20/20 last=3.3s
+   exit=0 in 59s
+>> code/run.py --dataset hotpotqa --split dev --method rag --n 20 --tag smoke
+.\.venv\Scripts\python.exe : W1027 15:14:22.450000 25436 
+Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not 
+supported in Windows or MacOs.
+At line:1 char:395
++ ... ISABLE="1"; .\.venv\Scripts\python.exe code\run_grid.py smoke 2>$null ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (W1027 15:14:22....ndows or MacOs.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rag | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=4.2s
+  20/20 last=3.8s
+   exit=0 in 88s
+>> code/run.py --dataset triviaqa --split dev --method rag --n 20 --tag smoke
+W1027 15:15:46.651000 17084 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rag | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=4.4s
+  20/20 last=3.9s
+   exit=0 in 84s
+>> code/run.py --dataset hotpotqa --split dev --method rag_abstain --n 20 --tag smoke
+W1027 15:17:11.312000 10728 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rag_abstain | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=3.5s
+  20/20 last=2.9s
+   exit=0 in 82s
+>> code/run.py --dataset triviaqa --split dev --method rag_abstain --n 20 --tag smoke
+W1027 15:18:33.066000 18580 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rag_abstain | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=3.4s
+  20/20 last=2.7s
+   exit=0 in 88s
+>> code/run.py --dataset hotpotqa --split dev --method cove --n 20 --tag smoke
+cove | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=5.2s
+  20/20 last=6.4s
+   exit=0 in 126s
+>> code/run.py --dataset triviaqa --split dev --method cove --n 20 --tag smoke
+cove | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=6.6s
+  20/20 last=6.0s
+   exit=0 in 113s
+>> code/run.py --dataset hotpotqa --split dev --method cove_rag --n 20 --tag smoke
+W1027 15:23:56.901000 15496 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+cove_rag | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=6.9s
+  20/20 last=7.3s
+   exit=0 in 159s
+>> code/run.py --dataset triviaqa --split dev --method cove_rag --n 20 --tag smoke
+W1027 15:26:36.993000 26056 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+cove_rag | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=9.5s
+  20/20 last=8.0s
+   exit=0 in 171s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify --n 20 --tag smoke
+W1027 15:29:28.053000 15392 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+ragverify | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=3.4s
+  20/20 last=4.1s
+   exit=0 in 69s
+>> code/run.py --dataset triviaqa --split dev --method ragverify --n 20 --tag smoke
+W1027 15:30:37.841000 24064 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+ragverify | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=1.8s
+  20/20 last=7.1s
+   exit=0 in 71s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_retrieval --n 20 --tag smoke
+W1027 15:31:48.290000 13992 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_no_retrieval | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=6.1s
+  20/20 last=6.1s
+   exit=0 in 138s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_retrieval --n 20 --tag smoke
+W1027 15:34:07.687000 3136 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_no_retrieval | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=8.2s
+  20/20 last=8.2s
+   exit=0 in 127s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_decomp --n 20 --tag smoke
+W1027 15:36:13.578000 13028 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_no_decomp | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=1.0s
+  20/20 last=1.5s
+   exit=0 in 39s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_decomp --n 20 --tag smoke
+W1027 15:36:52.410000 23260 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_no_decomp | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=1.3s
+  20/20 last=1.2s
+   exit=0 in 40s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_verifier --n 20 --tag smoke
+W1027 15:37:32.386000 16296 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_no_verifier | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=2.1s
+  20/20 last=2.4s
+   exit=0 in 54s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_verifier --n 20 --tag smoke
+W1027 15:38:24.771000 11676 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_no_verifier | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=2.4s
+  20/20 last=2.4s
+   exit=0 in 54s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_revision --n 20 --tag smoke
+W1027 15:39:20.593000 8504 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Could not reach the Hub ([WinError 10051] A socket operation was attempted to an unreachable network). Using cached 
+commit hash for 'BAAI/bge-small-en-v1.5'.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_no_revision | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=2.1s
+  20/20 last=2.7s
+   exit=0 in 126s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_revision --n 20 --tag smoke
+W1027 15:41:26.255000 24068 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_no_revision | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=1.7s
+  20/20 last=4.1s
+   exit=0 in 67s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_abstain --n 20 --tag smoke
+W1027 15:42:35.474000 6268 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_no_abstain | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=3.8s
+  20/20 last=4.8s
+   exit=0 in 82s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_abstain --n 20 --tag smoke
+W1027 15:43:56.712000 25476 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_no_abstain | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=1.7s
+  20/20 last=6.6s
+   exit=0 in 76s
+>> code/run.py --dataset hotpotqa --split dev --method rv_llm_judge --n 20 --tag smoke
+W1027 15:45:11.370000 25092 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_llm_judge | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=3.2s
+  20/20 last=3.9s
+   exit=0 in 78s
+>> code/run.py --dataset triviaqa --split dev --method rv_llm_judge --n 20 --tag smoke
+W1027 15:46:29.537000 19672 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_llm_judge | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=2.2s
+  20/20 last=6.1s
+   exit=0 in 76s
+>> code/run.py --dataset hotpotqa --split dev --method rv_k10 --n 20 --tag smoke
+W1027 15:47:45.196000 22416 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_k10 | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=4.0s
+  20/20 last=7.3s
+   exit=0 in 101s
+>> code/run.py --dataset triviaqa --split dev --method rv_k10 --n 20 --tag smoke
+W1027 15:49:25.984000 4092 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_k10 | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=2.7s
+  20/20 last=4.4s
+   exit=0 in 99s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify_llama --n 20 --tag smoke
+W1027 15:51:04.521000 10484 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+ragverify_llama | hotpotqa | dev_smoke: 20/20 to run
+  10/20 last=5.2s
+  20/20 last=5.2s
+   exit=0 in 171s
+>> code/run.py --dataset triviaqa --split dev --method ragverify_llama --n 20 --tag smoke
+W1027 15:53:55.735000 5356 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+ragverify_llama | triviaqa | dev_smoke: 20/20 to run
+  10/20 last=11.2s
+  20/20 last=18.8s
+   exit=0 in 200s
+>> code/selfrag_run.py --dataset hotpotqa --split dev --n 20 --tag smoke
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+W1027 15:57:17.110000 21884 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+W1027 15:57:20.240000 21884 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not 
+work for triton kernels

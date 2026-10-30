@@ -1,0 +1,51 @@
+id,dataset,kind,manual_cause
+5abba4b4554299642a094af3,hotpotqa,lost answer,judge rejects explicitly supported answer
+5ae74fc45542997b22f6a6b4,hotpotqa,wrong answer,scoring artefact (acceptable answer)
+5a74bc1555429929fddd84dd,hotpotqa,lost answer,comparison / yes-no needs combining passages
+5ae603a65542996de7b71af3,hotpotqa,wrong answer,answers a different slot (judge accepts)
+5ae4903855429913cc2044a0,hotpotqa,wrong answer,scoring artefact (acceptable answer)
+5ae72f75554299572ea5476c,hotpotqa,wrong answer,retrieval miss (answer from wrong passage)
+5a8ea03e5542990e94052b81,hotpotqa,lost answer,judge rejects explicitly supported answer
+5ade4fcc5542997c77adeded,hotpotqa,wrong answer,scoring artefact (acceptable answer)
+5ab7e3c45542995dae37e9db,hotpotqa,wrong answer,scoring artefact (acceptable answer)
+5a7ad9865542995eb53be8aa,hotpotqa,lost answer,judge rejects explicitly supported answer
+5ae3fcfc5542995dadf2428c,hotpotqa,wrong answer,answers a different slot (judge accepts)
+5ae0198455429942ec259c1e,hotpotqa,wrong answer,reasoning or reading error over evidence
+5a8a484f5542996c9b8d5e94,hotpotqa,lost answer,draft not grounded in passages (prior knowledge)
+5a8a1b7a5542992d82986ec0,hotpotqa,lost answer,judge rejects explicitly supported answer
+5a8460d5554299123d8c2229,hotpotqa,lost answer,comparison / yes-no needs combining passages
+5ac41379554299204fd21ef1,hotpotqa,lost answer,comparison / yes-no needs combining passages
+5ab85e195542992aa3b8c8c5,hotpotqa,wrong answer,reasoning or reading error over evidence
+5a75d45f5542994ccc918630,hotpotqa,lost answer,comparison / yes-no needs combining passages
+5ae28f43554299492dc91c2f,hotpotqa,wrong answer,reasoning or reading error over evidence
+5adf41a45542993a75d26456,hotpotqa,lost answer,judge rejects explicitly supported answer
+5ac2d1d755429921a00ab053,hotpotqa,lost answer,comparison / yes-no needs combining passages
+5ae75a4c5542997b22f6a6f1,hotpotqa,wrong answer,answers a different slot (judge accepts)
+5ac1276c554299294b2190bc,hotpotqa,lost answer,judge rejects explicitly supported answer
+5a76a8bb5542993569682c76,hotpotqa,lost answer,draft not grounded in passages (prior knowledge)
+5a75eda35542994ccc918661,hotpotqa,wrong answer,scoring artefact (acceptable answer)
+sfq_18832,triviaqa,lost answer,judge rejects explicitly supported answer
+tc_1623,triviaqa,wrong answer,scoring artefact (acceptable answer)
+qz_3903,triviaqa,lost answer,"scoring artefact (noisy gold alias, draft wrong)"
+qw_2462,triviaqa,wrong answer,reasoning or reading error over evidence
+qb_7241,triviaqa,lost answer,judge rejects explicitly supported answer
+qw_243,triviaqa,lost answer,draft not grounded in passages (prior knowledge)
+bt_3739,triviaqa,wrong answer,answers a different slot (judge accepts)
+qz_4443,triviaqa,lost answer,draft not grounded in passages (prior knowledge)
+bb_6033,triviaqa,lost answer,draft not grounded in passages (prior knowledge)
+sfq_8219,triviaqa,wrong answer,retrieval miss (answer from wrong passage)
+qz_5409,triviaqa,wrong answer,answers a different slot (judge accepts)
+qg_1091,triviaqa,lost answer,"scoring artefact (noisy gold alias, draft wrong)"
+tb_1490,triviaqa,lost answer,"scoring artefact (noisy gold alias, draft wrong)"
+wh_2109,triviaqa,wrong answer,reasoning or reading error over evidence
+qz_4575,triviaqa,wrong answer,answers a different slot (judge accepts)
+sfq_19992,triviaqa,lost answer,draft not grounded in passages (prior knowledge)
+tb_1129,triviaqa,lost answer,supporting-claim flag
+qb_9527,triviaqa,wrong answer,reasoning or reading error over evidence
+sfq_14137,triviaqa,wrong answer,answers a different slot (judge accepts)
+sfq_22043,triviaqa,lost answer,judge rejects explicitly supported answer
+dpql_4988,triviaqa,wrong answer,answers a different slot (judge accepts)
+sfq_13715,triviaqa,wrong answer,retrieval miss (answer from wrong passage)
+tc_1421,triviaqa,lost answer,draft not grounded in passages (prior knowledge)
+bb_2583,triviaqa,wrong answer,answers a different slot (judge accepts)
+sfq_20557,triviaqa,wrong answer,retrieval miss (answer from wrong passage)

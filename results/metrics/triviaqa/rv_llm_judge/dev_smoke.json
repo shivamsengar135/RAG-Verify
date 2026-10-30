@@ -1,0 +1,626 @@
+{
+  "source": "triviaqa/rv_llm_judge/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.4,
+    "f1": 0.4666666666666666,
+    "accuracy": 0.4,
+    "coverage": 0.65,
+    "abstention_rate": 0.35,
+    "selective_accuracy": 0.6153846153846154,
+    "hallucination_rate": 0.25,
+    "claim_precision": 0.7252747252747253,
+    "claims_per_answer": 4.384615384615385,
+    "latency_s": 2.941,
+    "llm_calls": 5.05,
+    "gen_tokens": 106.35,
+    "prompt_tokens": 3792.1
+  },
+  "per_example": [
+    {
+      "id": "sfq_7732",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.626,
+      "llm_calls": 4,
+      "gen_tokens": 83,
+      "prompt_tokens": 3239,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0148,
+          "supported": false
+        },
+        {
+          "claim": "Bithynia was an ancient province on the Euxine Sea.",
+          "p_support": 0.9672,
+          "supported": true
+        },
+        {
+          "claim": "Bithynia bordered on the Euxine Sea to the north-east.",
+          "p_support": 0.7957,
+          "supported": true
+        },
+        {
+          "claim": "The Euxine Sea is located along the Pontic coast.",
+          "p_support": 0.8948,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "jp_758",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.78,
+      "llm_calls": 3,
+      "gen_tokens": 54,
+      "prompt_tokens": 2064,
+      "claims": [
+        {
+          "claim": "A hafiz is a person who has memorized the Quran.",
+          "p_support": 0.9754,
+          "supported": true
+        },
+        {
+          "claim": "A hafiz is a person who has completely memorized the Quran.",
+          "p_support": 0.9702,
+          "supported": true
+        },
+        {
+          "claim": "Passages [1] and [4] state that a hafiz is a person who has completely memorized the Quran.",
+          "p_support": 0.8529,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "odql_10060",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.801,
+      "llm_calls": 7,
+      "gen_tokens": 185,
+      "prompt_tokens": 6378
+    },
+    {
+      "id": "qb_9577",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.616,
+      "llm_calls": 3,
+      "gen_tokens": 54,
+      "prompt_tokens": 1978,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0232,
+          "supported": false
+        },
+        {
+          "claim": "The first name of Blackadder in the UK television series 'Blackadder' is Edmund.",
+          "p_support": 0.9315,
+          "supported": true
+        },
+        {
+          "claim": "Edmund Blackadder is portrayed as the anti-hero in the series.",
+          "p_support": 0.9454,
+          "supported": true
+        },
+        {
+          "claim": "Edmund Blackadder's first name is explicitly mentioned in the passages.",
+          "p_support": 0.9612,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "sfq_4811",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.387,
+      "llm_calls": 5,
+      "gen_tokens": 92,
+      "prompt_tokens": 3502,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.025,
+          "supported": false
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' was called Stan.",
+          "p_support": 0.9067,
+          "supported": true
+        },
+        {
+          "claim": "Stan is a bus driver.",
+          "p_support": 0.848,
+          "supported": true
+        },
+        {
+          "claim": "Stan works for the Luxton and District Bus Company.",
+          "p_support": 0.9236,
+          "supported": true
+        },
+        {
+          "claim": "Stan Butler is Reg Varney.",
+          "p_support": 0.8267,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "qb_547",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.418,
+      "llm_calls": 5,
+      "gen_tokens": 94,
+      "prompt_tokens": 3410,
+      "claims": [
+        {
+          "claim": "The artist who painted \"The Weeping Woman\" is Pablo Picasso.",
+          "p_support": 0.9713,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" is an oil on canvas.",
+          "p_support": 0.9793,
+          "supported": true
+        },
+        {
+          "claim": "Pablo Picasso painted \"The Weeping Woman\".",
+          "p_support": 0.9615,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in France.",
+          "p_support": 0.978,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in 1937.",
+          "p_support": 0.977,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "qb_6271",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.269,
+      "llm_calls": 5,
+      "gen_tokens": 82,
+      "prompt_tokens": 3952,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0221,
+          "supported": false
+        },
+        {
+          "claim": "The sidekick of cartoon superhero DangerMouse is Penfold.",
+          "p_support": 0.5832,
+          "supported": true
+        },
+        {
+          "claim": "In the 1981 TV series, Penfold is mentioned as Danger Mouse's sidekick.",
+          "p_support": 0.9774,
+          "supported": true
+        },
+        {
+          "claim": "Penfold assists Danger Mouse in various adventures.",
+          "p_support": 0.8948,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qz_952",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.342,
+      "llm_calls": 4,
+      "gen_tokens": 121,
+      "prompt_tokens": 2594
+    },
+    {
+      "id": "wh_51",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.086,
+      "llm_calls": 4,
+      "gen_tokens": 72,
+      "prompt_tokens": 2861,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.2516,
+          "supported": false
+        },
+        {
+          "claim": "The manufacturer of the British World War II bomber the Lancaster is Avro.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "The majority of Lancasters were manufactured by Avro.",
+          "p_support": 0.9573,
+          "supported": true
+        },
+        {
+          "claim": "Avro has a factory in Chadderton, Greater Manchester.",
+          "p_support": 0.9656,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "odql_9626",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.179,
+      "llm_calls": 3,
+      "gen_tokens": 73,
+      "prompt_tokens": 2365,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0219,
+          "supported": false
+        },
+        {
+          "claim": "The song of a Venetian Gondolier is called \"List and learn\".",
+          "p_support": 0.0405,
+          "supported": false
+        },
+        {
+          "claim": "This song is number 1 in the list of musical numbers.",
+          "p_support": 0.0706,
+          "supported": false
+        },
+        {
+          "claim": "The list of musical numbers is explicitly mentioned.",
+          "p_support": 0.9607,
+          "supported": true
+        },
+        {
+          "claim": "The song is performed by the Gondoliers.",
+          "p_support": 0.6243,
+          "supported": true
+        },
+        {
+          "claim": "The Gondoliers are Antonio, Marco, and Giuseppe.",
+          "p_support": 0.026,
+          "supported": false
+        },
+        {
+          "claim": "The Chorus of Contadine performs the song.",
+          "p_support": 0.8903,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.42857142857142855
+    },
+    {
+      "id": "tb_361",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.521,
+      "llm_calls": 4,
+      "gen_tokens": 126,
+      "prompt_tokens": 3031
+    },
+    {
+      "id": "bt_1060",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.361,
+      "llm_calls": 5,
+      "gen_tokens": 85,
+      "prompt_tokens": 2843,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0248,
+          "supported": false
+        },
+        {
+          "claim": "Hans Christian Andersen wrote \"The Ugly Duckling\".",
+          "p_support": 0.9677,
+          "supported": true
+        },
+        {
+          "claim": "\"The Ugly Duckling\" is a literary fairy tale.",
+          "p_support": 0.9838,
+          "supported": true
+        },
+        {
+          "claim": "Hans Christian Andersen is a Danish poet and author.",
+          "p_support": 0.7663,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "bb_3448",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.586,
+      "llm_calls": 4,
+      "gen_tokens": 96,
+      "prompt_tokens": 2632,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0854,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process is applying the waving lotion or 'reagent'.",
+          "p_support": 0.0522,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process involves applying waving lotion or 'reagent'.",
+          "p_support": 0.0876,
+          "supported": false
+        },
+        {
+          "claim": "According to passage [3], the final stage of a hair perming process involves applying waving lotion or 'reagent'.",
+          "p_support": 0.0443,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process involves chemically breaking and reforming the hair's cross-linking bonds.",
+          "p_support": 0.8984,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.2
+    },
+    {
+      "id": "qb_6356",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.299,
+      "llm_calls": 5,
+      "gen_tokens": 105,
+      "prompt_tokens": 3743
+    },
+    {
+      "id": "odql_4457",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.436,
+      "llm_calls": 6,
+      "gen_tokens": 174,
+      "prompt_tokens": 5531
+    },
+    {
+      "id": "qw_8714",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 4.32,
+      "llm_calls": 9,
+      "gen_tokens": 156,
+      "prompt_tokens": 6545,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0153,
+          "supported": false
+        },
+        {
+          "claim": "Touchstone is a court fool or jester.",
+          "p_support": 0.6706,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone appears in \"As You Like It\".",
+          "p_support": 0.9536,
+          "supported": true
+        },
+        {
+          "claim": "The passage explicitly states that Touchstone is a court fool or jester in \"As You Like It\".",
+          "p_support": 0.7372,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "sfq_11784",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.013,
+      "llm_calls": 4,
+      "gen_tokens": 99,
+      "prompt_tokens": 2822
+    },
+    {
+      "id": "qz_5044",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.795,
+      "llm_calls": 4,
+      "gen_tokens": 60,
+      "prompt_tokens": 2809,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0712,
+          "supported": false
+        },
+        {
+          "claim": "John Denver had chart hits which included \"Annie's Song\" and \"Rocky Mountain High\".",
+          "p_support": 0.9667,
+          "supported": true
+        },
+        {
+          "claim": "John Denver wrote \"Annie's Song\".",
+          "p_support": 0.974,
+          "supported": true
+        },
+        {
+          "claim": "John Denver wrote \"Rocky Mountain High\".",
+          "p_support": 0.9713,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "jp_1626",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.846,
+      "llm_calls": 4,
+      "gen_tokens": 66,
+      "prompt_tokens": 2633,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0165,
+          "supported": false
+        },
+        {
+          "claim": "The magazine that Hugh Hefner started is Playboy.",
+          "p_support": 0.7186,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner is best known for being the founder and chief creative officer of Playboy Enterprises.",
+          "p_support": 0.9553,
+          "supported": true
+        },
+        {
+          "claim": "Playboy Enterprises includes the Playboy magazine.",
+          "p_support": 0.9367,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qb_9094",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.139,
+      "llm_calls": 13,
+      "gen_tokens": 250,
+      "prompt_tokens": 10910
+    }
+  ]
+}

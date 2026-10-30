@@ -1,0 +1,510 @@
+﻿>> code/run.py --dataset hotpotqa --split dev --method rag --tag full
+.\.venv\Scripts\python.exe : W1027 20:05:06.041000 26364 
+Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not 
+supported in Windows or MacOs.
+At line:1 char:395
++ ... ISABLE="1"; .\.venv\Scripts\python.exe code\run_grid.py devcheck --no ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (W1027 20:05:06....ndows or MacOs.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rag | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 15s
+>> code/run.py --dataset triviaqa --split dev --method rag --tag full
+W1027 20:05:21.884000 10200 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rag | triviaqa | dev_full: 0/100 to run
+   exit=0 in 17s
+>> code/run.py --dataset hotpotqa --split dev --method rag_abstain --tag full
+W1027 20:05:38.921000 6872 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rag_abstain | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 15s
+>> code/run.py --dataset triviaqa --split dev --method rag_abstain --tag full
+W1027 20:05:52.232000 9976 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rag_abstain | triviaqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify --tag full
+W1027 20:06:05.828000 5656 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+ragverify | hotpotqa | dev_full: 100/100 to run
+  10/100 last=4.3s
+  20/100 last=5.5s
+  30/100 last=5.5s
+  40/100 last=4.6s
+  50/100 last=3.9s
+  60/100 last=3.7s
+  70/100 last=3.7s
+  80/100 last=4.4s
+  90/100 last=4.1s
+  100/100 last=6.4s
+   exit=0 in 428s
+>> code/run.py --dataset triviaqa --split dev --method ragverify --tag full
+W1027 20:13:17.499000 12448 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+ragverify | triviaqa | dev_full: 100/100 to run
+  10/100 last=2.8s
+  20/100 last=7.3s
+  30/100 last=3.3s
+  40/100 last=3.1s
+  50/100 last=2.3s
+  60/100 last=8.4s
+  70/100 last=5.3s
+  80/100 last=4.4s
+  90/100 last=6.0s
+  100/100 last=5.1s
+   exit=0 in 459s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_verifier --tag full
+W1027 20:20:55.092000 21436 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_no_verifier | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 16s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_verifier --tag full
+W1027 20:21:08.558000 9472 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_no_verifier | triviaqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_decomp --tag full
+W1027 20:21:22.675000 10340 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_no_decomp | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 19s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_decomp --tag full
+W1027 20:21:43.933000 2744 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_no_decomp | triviaqa | dev_full: 0/100 to run
+   exit=0 in 22s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau03 --tag full
+W1027 20:22:06.381000 16200 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_tau03 | hotpotqa | dev_full: 100/100 to run
+  10/100 last=4.4s
+  20/100 last=5.6s
+  30/100 last=12.3s
+  40/100 last=9.7s
+  50/100 last=2.6s
+  60/100 last=2.8s
+  70/100 last=2.7s
+  80/100 last=3.4s
+  90/100 last=3.1s
+  100/100 last=4.9s
+   exit=0 in 494s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau03 --tag full
+W1027 20:30:17.358000 3700 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_tau03 | triviaqa | dev_full: 100/100 to run
+  10/100 last=2.1s
+  20/100 last=5.6s
+  30/100 last=2.5s
+  40/100 last=2.4s
+  50/100 last=1.8s
+  60/100 last=1.8s
+  70/100 last=4.1s
+  80/100 last=3.3s
+  90/100 last=4.6s
+  100/100 last=3.9s
+   exit=0 in 333s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau07 --tag full
+W1027 20:35:51.815000 7892 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_tau07 | hotpotqa | dev_full: 100/100 to run
+  10/100 last=3.2s
+  20/100 last=4.3s
+  30/100 last=4.3s
+  40/100 last=3.6s
+  50/100 last=2.8s
+  60/100 last=2.9s
+  70/100 last=2.9s
+  80/100 last=3.5s
+  90/100 last=3.2s
+  100/100 last=6.9s
+   exit=0 in 341s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau07 --tag full
+W1027 20:41:32.205000 23148 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_tau07 | triviaqa | dev_full: 100/100 to run
+  10/100 last=2.1s
+  20/100 last=5.6s
+  30/100 last=2.5s
+  40/100 last=4.7s
+  50/100 last=1.8s
+  60/100 last=6.5s
+  70/100 last=4.1s
+  80/100 last=3.4s
+  90/100 last=4.7s
+  100/100 last=3.9s
+   exit=0 in 359s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau09 --tag full
+W1027 20:47:30.303000 4220 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_tau09 | hotpotqa | dev_full: 100/100 to run
+  10/100 last=3.3s
+  20/100 last=4.4s
+  30/100 last=0.0s
+  40/100 last=0.0s
+  50/100 last=0.0s
+  60/100 last=0.0s
+  70/100 last=0.0s
+  80/100 last=0.0s
+  90/100 last=0.0s
+  100/100 last=0.0s
+   exit=0 in 93s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau09 --tag full
+W1027 20:49:04.473000 24880 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_tau09 | triviaqa | dev_full: 100/100 to run
+  10/100 last=1.7s
+  20/100 last=6.3s
+  30/100 last=2.5s
+  40/100 last=3.6s
+  50/100 last=1.8s
+  60/100 last=6.5s
+  70/100 last=4.2s
+  80/100 last=4.6s
+  90/100 last=4.6s
+  100/100 last=3.9s
+   exit=0 in 353s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid --tag full
+W1027 20:54:56.552000 6024 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+rv_hybrid | hotpotqa | dev_full: 100/100 to run
+  10/100 last=2.8s
+  20/100 last=4.7s
+  30/100 last=4.6s
+  40/100 last=3.9s
+  50/100 last=4.4s
+  60/100 last=3.4s
+  70/100 last=4.2s
+  80/100 last=5.0s
+  90/100 last=6.7s
+  100/100 last=9.6s
+   exit=0 in 491s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid --tag full
+W1027 21:03:09.141000 10592 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+rv_hybrid | triviaqa | dev_full: 100/100 to run
+  10/100 last=5.1s
+  20/100 last=4.6s
+  30/100 last=6.1s
+  40/100 last=3.7s
+  50/100 last=2.8s
+  60/100 last=3.1s
+  70/100 last=7.6s
+  80/100 last=7.0s
+  90/100 last=8.4s
+  100/100 last=5.7s
+   exit=0 in 542s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau03 --tag full
+W1027 21:12:11.753000 13596 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+>> code/run.py --dataset hotpotqa --split dev --method rag --tag full
+W1027 21:59:41.235000 16960 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rag | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 20s
+>> code/run.py --dataset triviaqa --split dev --method rag --tag full
+W1027 21:59:58.372000 19736 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rag | triviaqa | dev_full: 0/100 to run
+   exit=0 in 10s
+>> code/run.py --dataset hotpotqa --split dev --method rag_abstain --tag full
+W1027 22:00:08.639000 13436 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rag_abstain | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 10s
+>> code/run.py --dataset triviaqa --split dev --method rag_abstain --tag full
+W1027 22:00:18.032000 4432 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rag_abstain | triviaqa | dev_full: 0/100 to run
+   exit=0 in 10s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify --tag full
+W1027 22:00:28.192000 15344 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ragverify | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 14s
+>> code/run.py --dataset triviaqa --split dev --method ragverify --tag full
+W1027 22:00:41.669000 16856 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ragverify | triviaqa | dev_full: 0/100 to run
+   exit=0 in 14s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_verifier --tag full
+W1027 22:00:55.542000 3300 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_no_verifier | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 10s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_verifier --tag full
+W1027 22:01:05.476000 14260 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_no_verifier | triviaqa | dev_full: 0/100 to run
+   exit=0 in 10s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_decomp --tag full
+W1027 22:01:15.552000 17452 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_no_decomp | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_decomp --tag full
+W1027 22:01:28.819000 8528 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_no_decomp | triviaqa | dev_full: 0/100 to run
+   exit=0 in 14s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau03 --tag full
+W1027 22:01:42.535000 3600 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_tau03 | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau03 --tag full
+W1027 22:01:55.790000 13228 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_tau03 | triviaqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau07 --tag full
+W1027 22:02:09.470000 9960 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_tau07 | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau07 --tag full
+W1027 22:02:22.753000 2504 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rv_tau07 | triviaqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset hotpotqa --split dev --method rv_tau09 --tag full
+W1027 22:02:35.901000 15816 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rv_tau09 | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 14s
+>> code/run.py --dataset triviaqa --split dev --method rv_tau09 --tag full
+W1027 22:02:49.761000 12996 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_tau09 | triviaqa | dev_full: 0/100 to run
+   exit=0 in 15s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid --tag full
+W1027 22:03:04.741000 19112 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_hybrid | hotpotqa | dev_full: 0/100 to run
+   exit=0 in 13s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid --tag full
+W1027 22:03:17.620000 12548 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_hybrid | triviaqa | dev_full: 0/100 to run
+   exit=0 in 14s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau03 --tag full
+W1027 22:03:31.776000 19276 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_hybrid_tau03 | hotpotqa | dev_full: 63/100 to run
+  10/63 last=2.2s
+  20/63 last=3.2s
+  30/63 last=2.1s
+  40/63 last=6.5s
+  50/63 last=5.1s
+  60/63 last=3.1s
+  63/63 last=7.4s
+   exit=0 in 291s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid_tau03 --tag full
+W1027 22:08:24.651000 19556 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_hybrid_tau03 | triviaqa | dev_full: 100/100 to run
+  10/100 last=4.7s
+  20/100 last=3.6s
+  30/100 last=4.7s
+  40/100 last=2.8s
+  50/100 last=2.2s
+  60/100 last=2.3s
+  70/100 last=5.7s
+  80/100 last=5.2s
+  90/100 last=6.4s
+  100/100 last=4.5s
+   exit=0 in 407s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau07 --tag full
+W1027 22:15:11.713000 17952 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_hybrid_tau07 | hotpotqa | dev_full: 100/100 to run
+  10/100 last=2.8s
+  20/100 last=4.6s
+  30/100 last=4.7s
+  40/100 last=3.9s
+  50/100 last=4.3s
+  60/100 last=3.4s
+  70/100 last=3.3s
+  80/100 last=3.9s
+  90/100 last=5.1s
+  100/100 last=7.3s
+   exit=0 in 433s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid_tau07 --tag full
+W1027 22:22:24.261000 7116 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_hybrid_tau07 | triviaqa | dev_full: 100/100 to run
+  10/100 last=4.7s
+  20/100 last=3.6s
+  30/100 last=4.7s
+  40/100 last=2.8s
+  50/100 last=2.2s
+  60/100 last=2.4s
+  70/100 last=5.7s
+  80/100 last=5.3s
+  90/100 last=6.3s
+  100/100 last=4.5s
+   exit=0 in 412s
+>> code/run.py --dataset hotpotqa --split dev --method rv_hybrid_tau09 --tag full
+W1027 22:29:16.359000 11136 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_hybrid_tau09 | hotpotqa | dev_full: 100/100 to run
+  10/100 last=2.7s
+  20/100 last=4.6s
+  30/100 last=4.6s
+  40/100 last=4.0s
+  50/100 last=4.3s
+  60/100 last=3.4s
+  70/100 last=3.3s
+  80/100 last=3.9s
+  90/100 last=5.1s
+  100/100 last=7.3s
+   exit=0 in 432s
+>> code/run.py --dataset triviaqa --split dev --method rv_hybrid_tau09 --tag full
+W1027 22:36:28.889000 1820 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rv_hybrid_tau09 | triviaqa | dev_full: 100/100 to run
+  10/100 last=4.6s
+  20/100 last=3.6s
+  30/100 last=4.7s
+  40/100 last=2.7s
+  50/100 last=2.2s
+  60/100 last=2.3s
+  70/100 last=5.6s
+  80/100 last=5.2s
+  90/100 last=6.3s
+  100/100 last=4.5s
+   exit=0 in 412s
+>> code/run.py --dataset hotpotqa --split dev --method rv_llm_judge --tag full
+W1027 22:43:20.912000 9488 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_llm_judge | hotpotqa | dev_full: 100/100 to run
+  10/100 last=3.5s
+  20/100 last=4.3s
+  30/100 last=4.6s
+  40/100 last=3.8s
+  50/100 last=2.8s
+  60/100 last=3.2s
+  70/100 last=3.1s
+  80/100 last=3.5s
+  90/100 last=4.9s
+  100/100 last=6.9s
+   exit=0 in 381s
+>> code/run.py --dataset triviaqa --split dev --method rv_llm_judge --tag full
+W1027 22:49:40.424000 9532 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rv_llm_judge | triviaqa | dev_full: 100/100 to run
+  10/100 last=2.4s
+  20/100 last=5.7s
+  30/100 last=4.1s
+  40/100 last=2.5s
+  50/100 last=2.0s
+  60/100 last=2.0s
+  70/100 last=5.3s
+  80/100 last=3.3s
+  90/100 last=5.9s
+  100/100 last=6.4s
+   exit=0 in 361s
+>> code/evaluate.py --dataset hotpotqa --method rag --split dev --tag full --no-claims
+hotpotqa  rag                dev_full     n=100 acc=0.350 f1=0.478 abst=0.020 hall=0.630 claimP=- lat=1.17s calls=1.0 err=0
+   exit=0 in 4s
+>> code/evaluate.py --dataset triviaqa --method rag --split dev --tag full --no-claims
+triviaqa  rag                dev_full     n=100 acc=0.690 f1=0.680 abst=0.020 hall=0.290 claimP=- lat=1.26s calls=1.0 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rag_abstain --split dev --tag full --no-claims
+hotpotqa  rag_abstain        dev_full     n=100 acc=0.320 f1=0.425 abst=0.260 hall=0.420 claimP=- lat=1.30s calls=1.0 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rag_abstain --split dev --tag full --no-claims
+triviaqa  rag_abstain        dev_full     n=100 acc=0.570 f1=0.574 abst=0.270 hall=0.160 claimP=- lat=1.39s calls=1.0 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method ragverify --split dev --tag full --no-claims
+hotpotqa  ragverify          dev_full     n=100 acc=0.340 f1=0.444 abst=0.240 hall=0.420 claimP=- lat=4.08s calls=2.3 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method ragverify --split dev --tag full --no-claims
+triviaqa  ragverify          dev_full     n=100 acc=0.570 f1=0.560 abst=0.260 hall=0.170 claimP=- lat=4.31s calls=2.4 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_verifier --split dev --tag full --no-claims
+hotpotqa  rv_no_verifier     dev_full     n=100 acc=0.340 f1=0.432 abst=0.310 hall=0.350 claimP=- lat=2.68s calls=2.0 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_no_verifier --split dev --tag full --no-claims
+triviaqa  rv_no_verifier     dev_full     n=100 acc=0.580 f1=0.579 abst=0.300 hall=0.120 claimP=- lat=3.20s calls=2.0 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_decomp --split dev --tag full --no-claims
+hotpotqa  rv_no_decomp       dev_full     n=100 acc=0.350 f1=0.478 abst=0.020 hall=0.630 claimP=- lat=1.87s calls=1.0 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_no_decomp --split dev --tag full --no-claims
+triviaqa  rv_no_decomp       dev_full     n=100 acc=0.670 f1=0.667 abst=0.060 hall=0.270 claimP=- lat=1.98s calls=1.0 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau03 --split dev --tag full --no-claims
+hotpotqa  rv_tau03           dev_full     n=100 acc=0.340 f1=0.444 abst=0.230 hall=0.430 claimP=- lat=4.71s calls=2.3 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau03 --split dev --tag full --no-claims
+triviaqa  rv_tau03           dev_full     n=100 acc=0.610 f1=0.600 abst=0.160 hall=0.230 claimP=- lat=3.14s calls=2.3 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau07 --split dev --tag full --no-claims
+hotpotqa  rv_tau07           dev_full     n=100 acc=0.330 f1=0.421 abst=0.290 hall=0.380 claimP=- lat=3.19s calls=2.3 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau07 --split dev --tag full --no-claims
+triviaqa  rv_tau07           dev_full     n=100 acc=0.540 f1=0.530 abst=0.290 hall=0.170 claimP=- lat=3.36s calls=2.5 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau09 --split dev --tag full --no-claims
+hotpotqa  rv_tau09           dev_full     n=100 acc=0.060 f1=0.077 abst=0.860 hall=0.080 claimP=- lat=0.67s calls=0.6 err=77
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau09 --split dev --tag full --no-claims
+triviaqa  rv_tau09           dev_full     n=100 acc=0.490 f1=0.483 abst=0.350 hall=0.160 claimP=- lat=3.31s calls=2.5 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid --split dev --tag full --no-claims
+hotpotqa  rv_hybrid          dev_full     n=100 acc=0.220 f1=0.288 abst=0.490 hall=0.290 claimP=- lat=4.62s calls=3.8 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid --split dev --tag full --no-claims
+triviaqa  rv_hybrid          dev_full     n=100 acc=0.540 f1=0.523 abst=0.380 hall=0.080 claimP=- lat=5.16s calls=3.7 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid_tau03 --split dev --tag full --no-claims
+hotpotqa  rv_hybrid_tau03    dev_full     n=100 acc=0.220 f1=0.288 abst=0.490 hall=0.290 claimP=- lat=4.50s calls=3.8 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid_tau03 --split dev --tag full --no-claims
+triviaqa  rv_hybrid_tau03    dev_full     n=100 acc=0.560 f1=0.548 abst=0.350 hall=0.090 claimP=- lat=3.89s calls=3.6 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid_tau07 --split dev --tag full --no-claims
+hotpotqa  rv_hybrid_tau07    dev_full     n=100 acc=0.210 f1=0.272 abst=0.510 hall=0.280 claimP=- lat=4.16s calls=3.8 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid_tau07 --split dev --tag full --no-claims
+triviaqa  rv_hybrid_tau07    dev_full     n=100 acc=0.540 f1=0.523 abst=0.380 hall=0.080 claimP=- lat=3.94s calls=3.7 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_hybrid_tau09 --split dev --tag full --no-claims
+hotpotqa  rv_hybrid_tau09    dev_full     n=100 acc=0.210 f1=0.272 abst=0.510 hall=0.280 claimP=- lat=4.16s calls=3.8 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_hybrid_tau09 --split dev --tag full --no-claims
+triviaqa  rv_hybrid_tau09    dev_full     n=100 acc=0.520 f1=0.503 abst=0.400 hall=0.080 claimP=- lat=3.95s calls=3.7 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_llm_judge --split dev --tag full --no-claims
+hotpotqa  rv_llm_judge       dev_full     n=100 acc=0.270 f1=0.340 abst=0.440 hall=0.290 claimP=- lat=3.69s calls=5.8 err=0
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_llm_judge --split dev --tag full --no-claims
+triviaqa  rv_llm_judge       dev_full     n=100 acc=0.490 f1=0.477 abst=0.380 hall=0.130 claimP=- lat=3.50s calls=5.4 err=0
+   exit=0 in 3s
+FAILURES: none

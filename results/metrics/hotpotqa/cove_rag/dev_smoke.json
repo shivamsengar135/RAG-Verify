@@ -1,0 +1,769 @@
+{
+  "source": "hotpotqa/cove_rag/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.4,
+    "f1": 0.4749999999999999,
+    "accuracy": 0.4,
+    "coverage": 0.95,
+    "abstention_rate": 0.050000000000000044,
+    "selective_accuracy": 0.42105263157894735,
+    "hallucination_rate": 0.55,
+    "claim_precision": 0.5666666666666667,
+    "claims_per_answer": 4.315789473684211,
+    "latency_s": 7.3847,
+    "llm_calls": 7.65,
+    "gen_tokens": 270.7,
+    "prompt_tokens": 4678.75
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.043,
+      "llm_calls": 8,
+      "gen_tokens": 240,
+      "prompt_tokens": 5394,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0333,
+          "supported": false
+        },
+        {
+          "claim": "J. D. Martinez is an American professional baseball right fielder born in 1987.",
+          "p_support": 0.9522,
+          "supported": true
+        },
+        {
+          "claim": "J. D. Martinez played for the Nova Southeastern Sharks baseball program.",
+          "p_support": 0.923,
+          "supported": true
+        },
+        {
+          "claim": "J. D. Martinez graduated from Nova Southeastern University.",
+          "p_support": 0.7827,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.084,
+      "llm_calls": 8,
+      "gen_tokens": 286,
+      "prompt_tokens": 4269,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0193,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, served as Mistress of the Robes to Queen Victoria.",
+          "p_support": 0.9585,
+          "supported": true
+        },
+        {
+          "claim": "The original draft incorrectly stated Anne Innes-Ker's role as Mistress of the Robes.",
+          "p_support": 0.0515,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, was Duchess of Roxburghe before serving in a specific royal capacity.",
+          "p_support": 0.1968,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, was the daughter of the 7th Duke of Marlborough.",
+          "p_support": 0.9736,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 7.45,
+      "llm_calls": 8,
+      "gen_tokens": 267,
+      "prompt_tokens": 5329
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.055,
+      "llm_calls": 8,
+      "gen_tokens": 312,
+      "prompt_tokens": 5546,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is the musical fantasy film that is older.",
+          "p_support": 0.884,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks was released in 1971.",
+          "p_support": 0.9787,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol was released in 1992.",
+          "p_support": 0.9795,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks predates The Muppet Christmas Carol.",
+          "p_support": 0.9268,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.721,
+      "llm_calls": 8,
+      "gen_tokens": 282,
+      "prompt_tokens": 5057,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Donnie Yen starred in Wing Chun.",
+          "p_support": 0.7432,
+          "supported": true
+        },
+        {
+          "claim": "Michelle Yeoh starred in Wing Chun.",
+          "p_support": 0.9595,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is also known as Yen Chi-tan.",
+          "p_support": 0.9504,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a multiple-time world wushu tournament champion.",
+          "p_support": 0.9458,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.042,
+      "llm_calls": 7,
+      "gen_tokens": 224,
+      "prompt_tokens": 3982,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0235,
+          "supported": false
+        },
+        {
+          "claim": "Nick Hexum helped produce Decomposer by The Matches.",
+          "p_support": 0.9684,
+          "supported": true
+        },
+        {
+          "claim": "Nick Hexum is a member of the American rock band 311.",
+          "p_support": 0.9707,
+          "supported": true
+        },
+        {
+          "claim": "The American rock band 311 enlisted nine producers to work on Decomposer by The Matches.",
+          "p_support": 0.9752,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 9.204,
+      "llm_calls": 8,
+      "gen_tokens": 339,
+      "prompt_tokens": 5337,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "The empire that succeeded the Parthian Empire was the empire that Farrukhzad Khosrau V was the king of.",
+          "p_support": 0.9263,
+          "supported": true
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was the king of an empire from March 631 to April 631.",
+          "p_support": 0.9557,
+          "supported": true
+        },
+        {
+          "claim": "The Sasanian Empire succeeded the Parthian Empire.",
+          "p_support": 0.9871,
+          "supported": true
+        },
+        {
+          "claim": "The Parthian Empire was the empire that the Sasanian Empire succeeded.",
+          "p_support": 0.977,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 9.916,
+      "llm_calls": 8,
+      "gen_tokens": 389,
+      "prompt_tokens": 4924,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Minden has a greater population as of the 2010 census than Gardnerville, Nevada.",
+          "p_support": 0.0928,
+          "supported": false
+        },
+        {
+          "claim": "Minden had a population of 3,001 as of the 2010 census.",
+          "p_support": 0.4073,
+          "supported": false
+        },
+        {
+          "claim": "Gardnerville had a population of 5,656 as of the 2010 census.",
+          "p_support": 0.8791,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.384,
+      "llm_calls": 8,
+      "gen_tokens": 243,
+      "prompt_tokens": 3718,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0129,
+          "supported": false
+        },
+        {
+          "claim": "Minette Walters wrote the 2005 psychological thriller \"The Devil's Feather\".",
+          "p_support": 0.2659,
+          "supported": false
+        },
+        {
+          "claim": "The Devil's Feather is a 2005 psychological thriller.",
+          "p_support": 0.0955,
+          "supported": false
+        },
+        {
+          "claim": "Minette Walters is the author of \"The Devil's Feather\".",
+          "p_support": 0.2886,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.949,
+      "llm_calls": 7,
+      "gen_tokens": 248,
+      "prompt_tokens": 4162,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.018,
+          "supported": false
+        },
+        {
+          "claim": "Tania Miller will conduct the firing cannons in Victoria as part of a musical piece written to celebrate the defeat of Napoleon in Russia.",
+          "p_support": 0.9105,
+          "supported": true
+        },
+        {
+          "claim": "Tania Miller is the Victoria Symphony Music Director.",
+          "p_support": 0.9508,
+          "supported": true
+        },
+        {
+          "claim": "The musical piece written to celebrate the defeat of Napoleon in Russia is the 1812 Overture.",
+          "p_support": 0.9417,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.765,
+      "llm_calls": 7,
+      "gen_tokens": 296,
+      "prompt_tokens": 4311,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0282,
+          "supported": false
+        },
+        {
+          "claim": "Bob Johnson played for a club founded in 1928.",
+          "p_support": 0.9722,
+          "supported": true
+        },
+        {
+          "claim": "There is no mention of a club founded in 1928 that Bob Johnson played for.",
+          "p_support": 0.0601,
+          "supported": false
+        },
+        {
+          "claim": "The passages provided do not mention a club founded in 1928 that Bob Johnson played for.",
+          "p_support": 0.0972,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 6.338,
+      "llm_calls": 8,
+      "gen_tokens": 228,
+      "prompt_tokens": 3998,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "The city situated where Kellyville Ridge is located is the City of Blacktown.",
+          "p_support": 0.8625,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located in the local government area of City of Blacktown.",
+          "p_support": 0.98,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 6.318,
+      "llm_calls": 7,
+      "gen_tokens": 231,
+      "prompt_tokens": 4090,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0177,
+          "supported": false
+        },
+        {
+          "claim": "Maurice Tourneur and Greg Mottola are both American film directors.",
+          "p_support": 0.0316,
+          "supported": false
+        },
+        {
+          "claim": "Maurice Tourneur was actually French.",
+          "p_support": 0.9474,
+          "supported": true
+        },
+        {
+          "claim": "Greg Mottola is correctly identified as American.",
+          "p_support": 0.9458,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.574,
+      "llm_calls": 8,
+      "gen_tokens": 313,
+      "prompt_tokens": 4794,
+      "claims": [
+        {
+          "claim": "Here is the list of atomic claims:",
+          "p_support": 0.02,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr and Mate Pavić have both won a doubles title.",
+          "p_support": 0.2024,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr has won over 60 doubles titles.",
+          "p_support": 0.9519,
+          "supported": true
+        },
+        {
+          "claim": "Mate Pavić won the 2016 US Open mixed doubles title.",
+          "p_support": 0.9553,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.275,
+      "llm_calls": 6,
+      "gen_tokens": 182,
+      "prompt_tokens": 3626,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0218,
+          "supported": false
+        },
+        {
+          "claim": "The label on which the streaming version of the album released in 2017 included \"Used to This\" is Epic Records.",
+          "p_support": 0.9774,
+          "supported": true
+        },
+        {
+          "claim": "\"Used to This\" was included on the streaming version of the album released in 2017.",
+          "p_support": 0.9674,
+          "supported": true
+        },
+        {
+          "claim": "The album released in 2017 is Future.",
+          "p_support": 0.97,
+          "supported": true
+        },
+        {
+          "claim": "Future was released on Epic Records.",
+          "p_support": 0.9667,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 9.059,
+      "llm_calls": 8,
+      "gen_tokens": 323,
+      "prompt_tokens": 6501,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0188,
+          "supported": false
+        },
+        {
+          "claim": "The mother and daughter duo Indian actresses appear in a type of films that is not applicable.",
+          "p_support": 0.0388,
+          "supported": false
+        },
+        {
+          "claim": "The passages do not provide information about any mother and daughter duo Indian actresses.",
+          "p_support": 0.0671,
+          "supported": false
+        },
+        {
+          "claim": "The passages do not provide information about the type of films that the mother and daughter duo Indian actresses appear in.",
+          "p_support": 0.2744,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.946,
+      "llm_calls": 8,
+      "gen_tokens": 172,
+      "prompt_tokens": 5299,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0173,
+          "supported": false
+        },
+        {
+          "claim": "Kodaline was formed in a country closer to England.",
+          "p_support": 0.1055,
+          "supported": false
+        },
+        {
+          "claim": "Kodaline was formed in Ireland.",
+          "p_support": 0.977,
+          "supported": true
+        },
+        {
+          "claim": "Ireland is closer to England than the Philippines.",
+          "p_support": 0.1076,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya is from the Philippines.",
+          "p_support": 0.9511,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.744,
+      "llm_calls": 8,
+      "gen_tokens": 246,
+      "prompt_tokens": 4314,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The player who scored both goals in the 2006 KNVB Cup Final was Dutch.",
+          "p_support": 0.9515,
+          "supported": true
+        },
+        {
+          "claim": "Klaas-Jan Huntelaar scored both goals for Ajax in the 2006 KNVB Cup Final.",
+          "p_support": 0.9806,
+          "supported": true
+        },
+        {
+          "claim": "Klaas-Jan Huntelaar is Dutch.",
+          "p_support": 0.9372,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.534,
+      "llm_calls": 7,
+      "gen_tokens": 328,
+      "prompt_tokens": 3871,
+      "claims": [
+        {
+          "claim": "Here is the list of atomic claims:",
+          "p_support": 0.0168,
+          "supported": false
+        },
+        {
+          "claim": "The organization that hosted an event at the Los Angeles Historic-Cultural Monument (No. 139) on October 12, 1991, is the IFBB.",
+          "p_support": 0.2085,
+          "supported": false
+        },
+        {
+          "claim": "The Shrine Auditorium is designated as Los Angeles Historic-Cultural Monument (No. 139).",
+          "p_support": 0.9709,
+          "supported": true
+        },
+        {
+          "claim": "The 1991 Ms. Olympia contest was an event organized by the International Federation of Bodybuilders and Fitness (IFBB).",
+          "p_support": 0.951,
+          "supported": true
+        },
+        {
+          "claim": "The 1991 Ms. Olympia contest was hosted at the Shrine Auditorium.",
+          "p_support": 0.9843,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.293,
+      "llm_calls": 8,
+      "gen_tokens": 265,
+      "prompt_tokens": 5053,
+      "claims": [
+        {
+          "claim": "The town linked by rail to Kendal and named after a lake of the same name is Windermere.",
+          "p_support": 0.9654,
+          "supported": true
+        },
+        {
+          "claim": "Windermere is a town.",
+          "p_support": 0.9646,
+          "supported": true
+        },
+        {
+          "claim": "Windermere is located in the Lake District.",
+          "p_support": 0.9627,
+          "supported": true
+        },
+        {
+          "claim": "Windermere is connected by rail to Kendal.",
+          "p_support": 0.9709,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    }
+  ]
+}

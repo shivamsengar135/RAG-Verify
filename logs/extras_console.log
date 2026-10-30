@@ -1,0 +1,300 @@
+ablation grid finished: FAILURES: none
+>> code/halueval_detect.py
+halueval: 2000 items, 2000 to score
+W1030 02:37:51.163000 7244 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  30%|██▉       | 117/394 [00:00<00:00, 1091.65it/s]Loading weights:  58%|█████▊    | 227/394 [00:00<00:00, 985.27it/s] Loading weights:  83%|████████▎ | 326/394 [00:00<00:00, 624.48it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 716.99it/s]
+  100/2000
+  200/2000
+  300/2000
+  400/2000
+  500/2000
+  600/2000
+  700/2000
+  800/2000
+  900/2000
+  1000/2000
+  1100/2000
+  1200/2000
+  1300/2000
+  1400/2000
+  1500/2000
+  1600/2000
+  1700/2000
+  1800/2000
+  1900/2000
+  2000/2000
+nli       AUROC=0.876 [0.860, 0.890] acc=0.783 P=0.938 R=0.607 F1=0.737
+llm_judge AUROC=0.810 [0.794, 0.826] acc=0.810 P=0.827 R=0.784 F1=0.805
+{"n_items": 2000, "n_hallucinated": 1000, "tau": 0.3, "nli": {"auroc": 0.8762405, "accuracy": 0.7835, "precision": 0.9381761978361669, "recall": 0.607, "f1": 0.737097753491196, "auroc_ci": [0.86036705, 0.8898419375], "f1_ci": [0.7120051253259924, 0.7596982728626501]}, "llm_judge": {"auroc": 0.81, "a
+   exit=0 in 378s
+>> code/run.py --dataset hotpotqa --split dev --method rag --n 50 --tag latency
+W1030 02:44:12.203000 22196 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rag | hotpotqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3018.69it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=1.0s
+  20/50 last=1.5s
+  30/50 last=1.2s
+  40/50 last=1.0s
+  50/50 last=1.1s
+   exit=0 in 81s
+>> code/evaluate.py --dataset hotpotqa --split dev --method rag --tag latency --no-claims
+hotpotqa  rag                dev_latency  n= 50 acc=0.340 f1=0.481 abst=0.060 hall=0.600 claimP=- lat=1.17s calls=1.0 err=0
+   exit=0 in 4s
+>> code/run.py --dataset hotpotqa --split dev --method rag_abstain --n 50 --tag latency
+W1030 02:45:33.131000 24532 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rag_abstain | hotpotqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3409.46it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=0.9s
+  20/50 last=0.7s
+  30/50 last=0.6s
+  40/50 last=0.8s
+  50/50 last=0.9s
+   exit=0 in 54s
+>> code/evaluate.py --dataset hotpotqa --split dev --method rag_abstain --tag latency --no-claims
+hotpotqa  rag_abstain        dev_latency  n= 50 acc=0.300 f1=0.393 abst=0.320 hall=0.380 claimP=- lat=0.83s calls=1.0 err=0
+   exit=0 in 3s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_verifier --n 50 --tag latency
+W1030 02:46:29.076000 15720 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rv_no_verifier | hotpotqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3474.71it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=1.8s
+  20/50 last=2.1s
+  30/50 last=2.1s
+  40/50 last=1.5s
+  50/50 last=1.9s
+   exit=0 in 132s
+>> code/evaluate.py --dataset hotpotqa --split dev --method rv_no_verifier --tag latency --no-claims
+hotpotqa  rv_no_verifier     dev_latency  n= 50 acc=0.300 f1=0.403 abst=0.340 hall=0.360 claimP=- lat=2.09s calls=2.0 err=0
+   exit=0 in 4s
+>> code/run.py --dataset hotpotqa --split dev --method cove_rag --n 50 --tag latency
+W1030 02:48:45.066000 8764 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+cove_rag | hotpotqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3564.74it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=7.4s
+  20/50 last=7.9s
+  30/50 last=8.9s
+  40/50 last=3.6s
+  50/50 last=5.6s
+   exit=0 in 434s
+>> code/evaluate.py --dataset hotpotqa --split dev --method cove_rag --tag latency --no-claims
+hotpotqa  cove_rag           dev_latency  n= 50 acc=0.360 f1=0.496 abst=0.020 hall=0.620 claimP=- lat=6.89s calls=7.6 err=0
+   exit=0 in 4s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify --n 50 --tag latency
+W1030 02:56:02.380000 7456 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+ragverify | hotpotqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3266.89it/s]
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 63/394 [00:00<00:00, 597.72it/s]Loading weights:  31%|███       | 123/394 [00:00<00:00, 576.56it/s]Loading weights:  47%|████▋     | 187/394 [00:00<00:00, 600.79it/s]Loading weights:  64%|██████▍   | 252/394 [00:00<00:00, 598.49it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 768.82it/s]
+  10/50 last=2.6s
+  20/50 last=3.3s
+  30/50 last=4.1s
+  40/50 last=6.2s
+  50/50 last=6.3s
+   exit=0 in 256s
+>> code/evaluate.py --dataset hotpotqa --split dev --method ragverify --tag latency --no-claims
+hotpotqa  ragverify          dev_latency  n= 50 acc=0.260 f1=0.337 abst=0.420 hall=0.320 claimP=- lat=4.15s calls=3.6 err=0
+   exit=0 in 4s
+>> code/run.py --dataset triviaqa --split dev --method rag --n 50 --tag latency
+W1030 03:00:22.891000 9544 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rag | triviaqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2533.11it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=1.3s
+  20/50 last=1.2s
+  30/50 last=0.7s
+  40/50 last=1.1s
+  50/50 last=0.8s
+   exit=0 in 72s
+>> code/evaluate.py --dataset triviaqa --split dev --method rag --tag latency --no-claims
+triviaqa  rag                dev_latency  n= 50 acc=0.800 f1=0.790 abst=0.020 hall=0.180 claimP=- lat=1.14s calls=1.0 err=0
+   exit=0 in 4s
+>> code/run.py --dataset triviaqa --split dev --method rag_abstain --n 50 --tag latency
+W1030 03:01:37.951000 10824 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rag_abstain | triviaqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3209.06it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=0.6s
+  20/50 last=0.7s
+  30/50 last=0.7s
+  40/50 last=0.5s
+  50/50 last=0.7s
+   exit=0 in 53s
+>> code/evaluate.py --dataset triviaqa --split dev --method rag_abstain --tag latency --no-claims
+triviaqa  rag_abstain        dev_latency  n= 50 acc=0.640 f1=0.647 abst=0.240 hall=0.120 claimP=- lat=0.80s calls=1.0 err=0
+   exit=0 in 3s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_verifier --n 50 --tag latency
+W1030 03:02:33.275000 22584 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+rv_no_verifier | triviaqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3746.09it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=2.6s
+  20/50 last=2.2s
+  30/50 last=1.6s
+  40/50 last=1.9s
+  50/50 last=1.4s
+   exit=0 in 130s
+>> code/evaluate.py --dataset triviaqa --split dev --method rv_no_verifier --tag latency --no-claims
+triviaqa  rv_no_verifier     dev_latency  n= 50 acc=0.640 f1=0.647 abst=0.280 hall=0.080 claimP=- lat=2.05s calls=2.0 err=0
+   exit=0 in 4s
+>> code/run.py --dataset triviaqa --split dev --method cove_rag --n 50 --tag latency
+W1030 03:04:47.157000 20808 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+cove_rag | triviaqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2776.33it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  10/50 last=7.6s
+  20/50 last=7.9s
+  30/50 last=4.9s
+  40/50 last=7.8s
+  50/50 last=9.0s
+   exit=0 in 462s
+>> code/evaluate.py --dataset triviaqa --split dev --method cove_rag --tag latency --no-claims
+triviaqa  cove_rag           dev_latency  n= 50 acc=0.780 f1=0.770 abst=0.020 hall=0.200 claimP=- lat=7.45s calls=7.8 err=0
+   exit=0 in 4s
+>> code/run.py --dataset triviaqa --split dev --method ragverify --n 50 --tag latency
+W1030 03:12:32.500000 15844 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+ragverify | triviaqa | dev_latency: 50/50 to run
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2901.84it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  25%|██▍       | 98/394 [00:00<00:00, 959.66it/s]Loading weights:  49%|████▉     | 194/394 [00:00<00:00, 930.37it/s]Loading weights:  73%|███████▎  | 288/394 [00:00<00:00, 874.34it/s]Loading weights:  95%|█████████▌| 376/394 [00:00<00:00, 651.94it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 764.87it/s]
+  10/50 last=6.7s
+  20/50 last=6.0s
+  30/50 last=8.6s
+  40/50 last=4.3s
+  50/50 last=4.2s
+   exit=0 in 304s
+>> code/evaluate.py --dataset triviaqa --split dev --method ragverify --tag latency --no-claims
+triviaqa  ragverify          dev_latency  n= 50 acc=0.580 f1=0.600 abst=0.320 hall=0.100 claimP=- lat=5.52s calls=3.6 err=0
+   exit=0 in 4s
+>> code/evaluate.py --dataset hotpotqa --split seed0 --method closed_book
+W1030 03:17:40.898000 8964 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  16%|█▋        | 91/560 [00:00<00:00, 907.58it/s]Loading weights:  32%|███▎      | 182/560 [00:00<00:00, 828.35it/s]Loading weights:  48%|████▊     | 266/560 [00:00<00:00, 492.51it/s]Loading weights:  59%|█████▉    | 329/560 [00:00<00:00, 528.76it/s]Loading weights:  70%|██████▉   | 391/560 [00:00<00:00, 466.00it/s]Loading weights:  79%|███████▉  | 444/560 [00:01<00:00, 254.31it/s]Loading weights:  86%|████████▋ | 483/560 [00:01<00:00, 174.87it/s]Loading weights:  97%|█████████▋| 542/560 [00:01<00:00, 226.87it/s]Loading weights: 100%|██████████| 560/560 [00:01<00:00, 293.65it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  closed_book        seed0        n=300 acc=0.220 f1=0.290 abst=0.033 hall=0.747 claimP=0.272 lat=0.80s calls=1.0 err=0
+   exit=0 in 488s
+>> code/evaluate.py --dataset hotpotqa --split seed0 --method rag
+W1030 03:25:50.088000 23664 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 98/560 [00:00<00:00, 958.31it/s]Loading weights:  35%|███▍      | 194/560 [00:00<00:00, 926.52it/s]Loading weights:  51%|█████▏    | 287/560 [00:00<00:00, 852.27it/s]Loading weights:  67%|██████▋   | 373/560 [00:00<00:00, 667.20it/s]Loading weights:  83%|████████▎ | 465/560 [00:00<00:00, 740.62it/s]Loading weights:  97%|█████████▋| 544/560 [00:00<00:00, 704.46it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 675.84it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rag                seed0        n=300 acc=0.500 f1=0.555 abst=0.027 hall=0.473 claimP=0.620 lat=1.28s calls=1.0 err=0
+   exit=0 in 479s
+>> code/evaluate.py --dataset hotpotqa --split seed0 --method rag_abstain
+W1030 03:33:47.979000 23780 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  55%|█████▍    | 307/560 [00:00<00:00, 3010.75it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 2457.38it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+hotpotqa  rag_abstain        seed0        n=300 acc=0.427 f1=0.479 abst=0.327 hall=0.247 claimP=0.697 lat=1.22s calls=1.0 err=0
+   exit=0 in 248s
+>> code/evaluate.py --dataset hotpotqa --split seed0 --method rv_no_verifier
+W1030 03:37:56.732000 11960 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  55%|█████▌    | 310/560 [00:00<00:00, 3069.58it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 2564.70it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  rv_no_verifier     seed0        n=300 acc=0.460 f1=0.502 abst=0.340 hall=0.200 claimP=0.685 lat=2.43s calls=2.0 err=0
+   exit=0 in 235s
+>> code/evaluate.py --dataset hotpotqa --split seed0 --method cove_rag
+W1030 03:41:50.880000 19104 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  52%|█████▏    | 289/560 [00:00<00:00, 2878.87it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 2403.56it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  cove_rag           seed0        n=300 acc=0.503 f1=0.562 abst=0.017 hall=0.480 claimP=0.584 lat=7.46s calls=7.6 err=0
+   exit=0 in 445s
+>> code/evaluate.py --dataset hotpotqa --split seed0 --method ragverify
+W1030 03:49:17.474000 17452 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 102/560 [00:00<00:00, 986.72it/s]Loading weights:  39%|███▉      | 217/560 [00:00<00:00, 1068.62it/s]Loading weights:  60%|██████    | 336/560 [00:00<00:00, 1112.85it/s]Loading weights:  85%|████████▌ | 478/560 [00:00<00:00, 1224.14it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 1099.12it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+hotpotqa  ragverify          seed0        n=300 acc=0.343 f1=0.380 abst=0.470 hall=0.187 claimP=0.725 lat=3.87s calls=3.7 err=0
+   exit=0 in 83s
+>> code/evaluate.py --dataset triviaqa --split seed0 --method closed_book
+W1030 03:50:40.745000 4116 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  32%|███▎      | 182/560 [00:00<00:00, 1804.32it/s]Loading weights:  66%|██████▋   | 371/560 [00:00<00:00, 1840.32it/s]Loading weights: 100%|█████████▉| 559/560 [00:00<00:00, 1850.98it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 1835.64it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  50%|█████     | 100/199 [00:00<00:00, 962.47it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1820.35it/s]
+triviaqa  closed_book        seed0        n=300 acc=0.620 f1=0.626 abst=0.000 hall=0.380 claimP=0.452 lat=0.71s calls=1.0 err=0
+   exit=0 in 1509s
+>> code/evaluate.py --dataset triviaqa --split seed0 --method rag
+W1030 04:15:51.553000 19252 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 220/560 [00:00<00:00, 2166.52it/s]Loading weights:  78%|███████▊  | 437/560 [00:00<00:00, 1768.41it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 1457.75it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3529.25it/s]
+triviaqa  rag                seed0        n=300 acc=0.740 f1=0.734 abst=0.003 hall=0.257 claimP=0.615 lat=1.59s calls=1.0 err=0
+   exit=0 in 1700s
+>> code/evaluate.py --dataset triviaqa --split seed0 --method rag_abstain
+W1030 04:44:09.240000 22768 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  17%|█▋        | 96/560 [00:00<00:00, 958.08it/s]Loading weights:  34%|███▍      | 192/560 [00:00<00:00, 937.96it/s]Loading weights:  51%|█████     | 286/560 [00:00<00:00, 901.54it/s]Loading weights:  67%|██████▋   | 377/560 [00:00<00:00, 726.66it/s]Loading weights:  86%|████████▌ | 479/560 [00:00<00:00, 810.22it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 671.86it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3068.41it/s]
+triviaqa  rag_abstain        seed0        n=300 acc=0.643 f1=0.630 abst=0.237 hall=0.120 claimP=0.694 lat=1.21s calls=1.0 err=0
+   exit=0 in 721s
+>> code/evaluate.py --dataset triviaqa --split seed0 --method rv_no_verifier
+W1030 04:56:09.626000 8964 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  17%|█▋        | 96/560 [00:00<00:00, 897.12it/s]Loading weights:  33%|███▎      | 186/560 [00:00<00:00, 860.90it/s]Loading weights:  50%|████▉     | 278/560 [00:00<00:00, 864.11it/s]Loading weights:  65%|██████▌   | 365/560 [00:00<00:00, 683.92it/s]Loading weights:  81%|████████▏ | 456/560 [00:00<00:00, 751.22it/s]Loading weights:  96%|█████████▌| 536/560 [00:00<00:00, 688.15it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 649.85it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3152.92it/s]
+triviaqa  rv_no_verifier     seed0        n=300 acc=0.673 f1=0.659 abst=0.233 hall=0.093 claimP=0.677 lat=2.40s calls=2.0 err=0
+   exit=0 in 686s
+>> code/evaluate.py --dataset triviaqa --split seed0 --method cove_rag
+W1030 05:07:34.852000 11716 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  56%|█████▌    | 312/560 [00:00<00:00, 3071.15it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 1561.71it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4266.23it/s]
+triviaqa  cove_rag           seed0        n=300 acc=0.770 f1=0.758 abst=0.010 hall=0.220 claimP=0.595 lat=7.84s calls=7.8 err=0
+   exit=0 in 999s
+>> code/evaluate.py --dataset triviaqa --split seed0 --method ragverify
+W1030 05:24:14.223000 18872 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  55%|█████▍    | 307/560 [00:00<00:00, 3062.42it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 1445.25it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2727.60it/s]
+triviaqa  ragverify          seed0        n=300 acc=0.637 f1=0.624 abst=0.283 hall=0.080 claimP=0.712 lat=6.92s calls=3.5 err=0
+   exit=0 in 308s
+>> code/aggregate_ablations.py
+36 of 36 (variant, dataset) cells done
+hotpotqa  ragverify        abst=0.470 hall=0.187 phi1=+0.157
+triviaqa  ragverify        abst=0.283 hall=0.080 phi1=+0.557
+hotpotqa  rv_no_retrieval  abst=0.597 hall=0.250 phi1=-0.097 dPhi1=-0.253 [-0.350, -0.157]
+triviaqa  rv_no_retrieval  abst=0.320 hall=0.160 phi1=+0.360 dPhi1=-0.197 [-0.287, -0.103]
+hotpotqa  rv_no_decomp     abst=0.447 hall=0.200 phi1=+0.153 dPhi1=-0.003 [-0.040, +0.033]
+triviaqa  rv_no_decomp     abst=0.273 hall=0.090 phi1=+0.547 dPhi1=-0.010 [-0.040, +0.017]
+hotpotqa  rv_no_verifier   abst=0.340 hall=0.200 phi1=+0.260 dPhi1=+0.103 [+0.040, +0.167]
+triviaqa  rv_no_verifier   abst=0.233 hall=0.093 phi1=+0.580 dPhi1=+0.023 [-0.013, +0.060]
+hotpotqa  rv_no_revision   abst=0.453 hall=0.197 phi1=+0.153 dPhi1=-0.003 [-0.037, +0.033]
+triviaqa  rv_no_revision   abst=0.277 hall=0.087 phi1=+0.550 dPhi1=-0.007 [-0.037, +0.020]
+hotpotqa  rv_no_abstain    abst=0.037 hall=0.500 phi1=-0.037 dPhi1=-0.193 [-0.270, -0.117]
+triviaqa  rv_no_abstain    abst=0.023 hall=0.257 phi1=+0.463 dPhi1=-0.093 [-0.153, -0.033]
+hotpotqa  rv_nli_only      abst=0.210 hall=0.347 phi1=+0.097 dPhi1=-0.060 [-0.127, +0.007]
+triviaqa  rv_nli_only      abst=0.193 hall=0.147 phi1=+0.513 dPhi1=-0.043 [-0.087, +0.000]
+hotpotqa  rv_llm_judge     abst=0.437 hall=0.217 phi1=+0.130 dPhi1=-0.027 [-0.087, +0.033]
+triviaqa  rv_llm_judge     abst=0.307 hall=0.087 phi1=+0.520 dPhi1=-0.037 [-0.077, +0.000]
+hotpotqa  rv_tau05         abst=0.477 hall=0.183 phi1=+0.157 dPhi1=+0.000 [-0.023, +0.023]
+triviaqa  rv_tau05         abst=0.300 hall=0.083 phi1=+0.533 dPhi1=-0.023 [-0.053, +0.007]
+hotpotqa  rv_tau07         abst=0.480 hall=0.180 phi1=+0.160 dPhi1=+0.003 [-0.023, +0.030]
+triviaqa  rv_tau07         abst=0.303 hall=0.083 phi1=+0.530 dPhi1=-0.027 [-0.060, +0.003]
+hotpotqa  rv_tau09         abst=0.477 hall=0.183 phi1=+0.157 dPhi1=+0.000 [-0.023, +0.023]
+triviaqa  rv_tau09         abst=0.317 hall=0.083 phi1=+0.517 dPhi1=-0.040 [-0.073, -0.010]
+hotpotqa  rv_k1            abst=0.620 hall=0.187 phi1=+0.007 dPhi1=-0.150 [-0.223, -0.077]
+triviaqa  rv_k1            abst=0.447 hall=0.070 phi1=+0.413 dPhi1=-0.143 [-0.203, -0.087]
+hotpotqa  rv_k3            abst=0.470 hall=0.200 phi1=+0.130 dPhi1=-0.027 [-0.083, +0.033]
+triviaqa  rv_k3            abst=0.313 hall=0.080 phi1=+0.527 dPhi1=-0.030 [-0.073, +0.013]
+hotpotqa  rv_k10           abst=0.447 hall=0.187 phi1=+0.180 dPhi1=+0.023 [-0.033, +0.080]
+triviaqa  rv_k10           abst=0.223 hall=0.107 phi1=+0.563 dPhi1=+0.007 [-0.040, +0.053]
+hotpotqa  rag              abst=0.027 hall=0.473 phi1=+0.027
+triviaqa  rag              abst=0.003 hall=0.257 phi1=+0.483
+hotpotqa  rag_k1           abst=0.057 hall=0.597 phi1=-0.250 dPhi1=-0.277 [-0.380, -0.177]
+triviaqa  rag_k1           abst=0.037 hall=0.310 phi1=+0.343 dPhi1=-0.140 [-0.220, -0.063]
+hotpotqa  rag_k3           abst=0.027 hall=0.513 phi1=-0.053 dPhi1=-0.080 [-0.153, -0.010]
+triviaqa  rag_k3           abst=0.017 hall=0.247 phi1=+0.490 dPhi1=+0.007 [-0.053, +0.067]
+hotpotqa  rag_k10          abst=0.027 hall=0.473 phi1=+0.027 dPhi1=+0.000 [-0.073, +0.070]
+triviaqa  rag_k10          abst=0.010 hall=0.230 phi1=+0.530 dPhi1=+0.047 [-0.013, +0.107]
+   exit=0 in 1s
+EXTRAS FAILURES: none

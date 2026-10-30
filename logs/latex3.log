@@ -1,0 +1,198 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Program Files\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+-- This is a 10 point document.
+)
+** ATTENTION: Overriding command lockouts (line 5).
+(C:\Program Files\MiKTeX\tex/latex/cite\cite.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+(C:\Program Files\MiKTeX\tex/latex/algorithms\algorithm.sty
+(C:\Program Files\MiKTeX\tex/latex/float\float.sty)
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty))
+(C:\Program Files\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
+(C:\Program Files\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def)))
+(C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def) (main.aux)
+-- Lines per column: 56 (exact).
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg))
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd) [1{C:/Users/shiva/AppData/
+Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvi
+ps/base/8r.enc}]
+Underfull \hbox (badness 3118) in paragraph at lines 60--61
+\OT1/ptm/m/n/10 ed-its un-sup-ported spans. Claim-level pipelines such as
+[2]
+Underfull \hbox (badness 1484) in paragraph at lines 110--111
+[]\OT1/ptm/b/n/10 Models. \OT1/ptm/m/n/10 Gen-er-a-tors are Qwen2.5-7B-Instruct
+ [32] and
+(tables/main_rows.tex
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.2 ...column{9}{l}{\textit{Backbone: Qwen2.5-7B}}
+                                                  \\
+)
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.134 \bottomrule
+                 
+! Missing } inserted.
+<inserted text> 
+                }
+l.135 \end
+          {tabular}
+! Missing } inserted.
+<inserted text> 
+                }
+l.135 \end
+          {tabular}
+! Missing } inserted.
+<inserted text> 
+                }
+l.135 \end
+          {tabular}
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.135 \end
+          {tabular}
+! Missing { inserted.
+<inserted text> 
+                {
+l.135 \end
+          {tabular}
+! Undefined control sequence.
+\@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
+                                                  
+l.135 \end
+          {tabular}
+! Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.135 \end{tabular}
+                   
+! Extra }, or forgotten $.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.135 \end{tabular}
+                   
+(tables/tests_rows.tex)
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.150 \end{tabular}}
+                    
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 \end{tabular}}
+                    
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 \end{tabular}}
+                    
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 \end{tabular}}
+                    
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.150 \end{tabular}}
+                    
+! Missing { inserted.
+<inserted text> 
+                {
+l.150 \end{tabular}}
+                    
+! Undefined control sequence.
+\@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
+                                                  
+l.150 \end{tabular}}
+                    
+! Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.150 \end{tabular}}
+                    
+! Extra }, or forgotten $.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.150 \end{tabular}}
+                    
+
+Overfull \hbox (9.88623pt too wide) in paragraph at lines 169--183
+ [][] 
+[3] (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pcr.fd) (main.bbl [4]
+Underfull \hbox (badness 3098) in paragraph at lines 112--115
+[]\OT1/ptm/m/n/8 D. Dixit and P. Pandey, ``R2VC: Mod-u-lar Fact-Checking with
+[5]
+Underfull \hbox (badness 2547) in paragraph at lines 291--294
+\OT1/ptm/m/n/8 Ques-tions for Ma-chine Com-pre-hen-sion of Text,'' \OT1/ptm/m/i
+t/8 arXiv preprint
+)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[6] (main.aux) )
+(see the transcript file for additional information)<C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/M
+iKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/u
+rw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiK
+TeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 223151 bytes).
+Transcript written on main.log.

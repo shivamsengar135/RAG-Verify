@@ -1,0 +1,797 @@
+{
+  "source": "triviaqa/cove_rag/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.55,
+    "f1": 0.65,
+    "accuracy": 0.6,
+    "coverage": 1.0,
+    "abstention_rate": 0.0,
+    "selective_accuracy": 0.6,
+    "hallucination_rate": 0.4,
+    "claim_precision": 0.5733333333333335,
+    "claims_per_answer": 4.35,
+    "latency_s": 7.882799999999999,
+    "llm_calls": 7.6,
+    "gen_tokens": 278.2,
+    "prompt_tokens": 4962.7
+  },
+  "per_example": [
+    {
+      "id": "sfq_7732",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.236,
+      "llm_calls": 8,
+      "gen_tokens": 305,
+      "prompt_tokens": 5877,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0148,
+          "supported": false
+        },
+        {
+          "claim": "Bithynia was an ancient province on the Black Sea.",
+          "p_support": 0.9358,
+          "supported": true
+        },
+        {
+          "claim": "The Euxine Sea is another name for the Black Sea.",
+          "p_support": 0.0564,
+          "supported": false
+        },
+        {
+          "claim": "Bithynia bordered the Euxine Sea to the north-east along the Pontic coast.",
+          "p_support": 0.4187,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "jp_758",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.534,
+      "llm_calls": 8,
+      "gen_tokens": 311,
+      "prompt_tokens": 5149,
+      "claims": [
+        {
+          "claim": "A hafiz is a person who has memorized the Quran.",
+          "p_support": 0.9754,
+          "supported": true
+        },
+        {
+          "claim": "The Quran is the primary religious text of Islam.",
+          "p_support": 0.1371,
+          "supported": false
+        },
+        {
+          "claim": "The Quran holds great significance within the Islamic community.",
+          "p_support": 0.9727,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "odql_10060",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.81,
+      "llm_calls": 8,
+      "gen_tokens": 316,
+      "prompt_tokens": 5511,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0223,
+          "supported": false
+        },
+        {
+          "claim": "\"Poor old Johnny Ray\" is the opening line of \"You're Beginning to See the Light\".",
+          "p_support": 0.0333,
+          "supported": false
+        },
+        {
+          "claim": "\"You're Beginning to See the Light\" reached number one on the charts.",
+          "p_support": 0.0242,
+          "supported": false
+        },
+        {
+          "claim": "Chuck Berry wrote \"You're Beginning to See the Light\".",
+          "p_support": 0.0154,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "qb_9577",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.69,
+      "llm_calls": 4,
+      "gen_tokens": 93,
+      "prompt_tokens": 1897,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0232,
+          "supported": false
+        },
+        {
+          "claim": "The first name of Blackadder in the UK television series 'Blackadder' is Edmund.",
+          "p_support": 0.9315,
+          "supported": true
+        },
+        {
+          "claim": "The character played by Rowan Atkinson is Edmund Blackadder.",
+          "p_support": 0.9646,
+          "supported": true
+        },
+        {
+          "claim": "Edmund Blackadder is a character in the UK television series 'Blackadder'.",
+          "p_support": 0.9789,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "sfq_4811",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.375,
+      "llm_calls": 8,
+      "gen_tokens": 264,
+      "prompt_tokens": 4938,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.025,
+          "supported": false
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' was called Stan.",
+          "p_support": 0.9067,
+          "supported": true
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' is named Stan Butler.",
+          "p_support": 0.9425,
+          "supported": true
+        },
+        {
+          "claim": "Stan Butler is a bus driver.",
+          "p_support": 0.849,
+          "supported": true
+        },
+        {
+          "claim": "Stan Butler works for the Luxton and District Bus Company.",
+          "p_support": 0.9236,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "qb_547",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.662,
+      "llm_calls": 8,
+      "gen_tokens": 219,
+      "prompt_tokens": 4940,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0153,
+          "supported": false
+        },
+        {
+          "claim": "The artist who created \"The Weeping Woman\" is Pablo Picasso.",
+          "p_support": 0.9709,
+          "supported": true
+        },
+        {
+          "claim": "Pablo Picasso created \"The Weeping Woman\".",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "Pablo Picasso created \"The Weeping Woman\" in France.",
+          "p_support": 0.9582,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was created using oil on canvas.",
+          "p_support": 0.9841,
+          "supported": true
+        },
+        {
+          "claim": "Pablo Picasso created \"The Weeping Woman\" in 1937.",
+          "p_support": 0.9667,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8333333333333334
+    },
+    {
+      "id": "qb_6271",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 9.06,
+      "llm_calls": 8,
+      "gen_tokens": 306,
+      "prompt_tokens": 5724,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0221,
+          "supported": false
+        },
+        {
+          "claim": "The sidekick of cartoon superhero DangerMouse is Penfold.",
+          "p_support": 0.5832,
+          "supported": true
+        },
+        {
+          "claim": "Penfold is the sidekick that accompanies Danger Mouse.",
+          "p_support": 0.9482,
+          "supported": true
+        },
+        {
+          "claim": "The 1981 TV series features Danger Mouse and Penfold.",
+          "p_support": 0.9474,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qz_952",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.953,
+      "llm_calls": 8,
+      "gen_tokens": 344,
+      "prompt_tokens": 4653,
+      "claims": [
+        {
+          "claim": "A point in tennis that has to be replayed is called a let.",
+          "p_support": 0.6261,
+          "supported": true
+        },
+        {
+          "claim": "In tennis, a point needs to be replayed due to external factors.",
+          "p_support": 0.8749,
+          "supported": true
+        },
+        {
+          "claim": "A \"let\" is given in tennis.",
+          "p_support": 0.0959,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "wh_51",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.138,
+      "llm_calls": 8,
+      "gen_tokens": 276,
+      "prompt_tokens": 5148,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.2516,
+          "supported": false
+        },
+        {
+          "claim": "The manufacturer of the British World War II bomber the Lancaster is Avro.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "The primary manufacturer of the British World War II bomber Lancaster was Avro.",
+          "p_support": 0.9792,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "odql_9626",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 9.465,
+      "llm_calls": 8,
+      "gen_tokens": 333,
+      "prompt_tokens": 6238,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0219,
+          "supported": false
+        },
+        {
+          "claim": "The song of a Venetian Gondolier is called \"List and learn\".",
+          "p_support": 0.0405,
+          "supported": false
+        },
+        {
+          "claim": "This song is number 1 in the list of musical numbers.",
+          "p_support": 0.0706,
+          "supported": false
+        },
+        {
+          "claim": "The list of musical numbers is performed by the Gondoliers.",
+          "p_support": 0.897,
+          "supported": true
+        },
+        {
+          "claim": "The Gondoliers are Antonio, Marco, Giuseppe, and the Chorus of Contadine.",
+          "p_support": 0.4941,
+          "supported": false
+        },
+        {
+          "claim": "The song is performed in Act I.",
+          "p_support": 0.8848,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.3333333333333333
+    },
+    {
+      "id": "tb_361",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 9.886,
+      "llm_calls": 8,
+      "gen_tokens": 378,
+      "prompt_tokens": 5448,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.052,
+          "supported": false
+        },
+        {
+          "claim": "The character in the 2014 zombie comedy Life After Beth is from Jamaica.",
+          "p_support": 0.0169,
+          "supported": false
+        },
+        {
+          "claim": "The character in the 2014 zombie comedy Life After Beth takes offense when asked about zombies.",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "The 2014 zombie comedy Life After Beth is a movie.",
+          "p_support": 0.9772,
+          "supported": true
+        },
+        {
+          "claim": "Zombies are a part of Jamaican folklore.",
+          "p_support": 0.0159,
+          "supported": false
+        },
+        {
+          "claim": "The concept of \"zombi\" or \"zonga\" is a significant part of Jamaican cultural narrative.",
+          "p_support": 0.0191,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.16666666666666666
+    },
+    {
+      "id": "bt_1060",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.562,
+      "llm_calls": 7,
+      "gen_tokens": 179,
+      "prompt_tokens": 3586,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0248,
+          "supported": false
+        },
+        {
+          "claim": "Hans Christian Andersen wrote \"The Ugly Duckling\".",
+          "p_support": 0.9677,
+          "supported": true
+        },
+        {
+          "claim": "\"The Ugly Duckling\" is a literary fairy tale.",
+          "p_support": 0.9838,
+          "supported": true
+        },
+        {
+          "claim": "Hans Christian Andersen is a Danish author.",
+          "p_support": 0.9641,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "bb_3448",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.952,
+      "llm_calls": 8,
+      "gen_tokens": 331,
+      "prompt_tokens": 5119,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0854,
+          "supported": false
+        },
+        {
+          "claim": "The final stage of a hair perming process is applying the waving lotion or 'reagent'.",
+          "p_support": 0.0522,
+          "supported": false
+        },
+        {
+          "claim": "The final stage in a hair perming process involves applying a waving lotion or 'reagent'.",
+          "p_support": 0.0759,
+          "supported": false
+        },
+        {
+          "claim": "The final stage in a hair perming process involves chemically breaking and reforming the hair's cross-linking bonds.",
+          "p_support": 0.847,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "qb_6356",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 7.662,
+      "llm_calls": 8,
+      "gen_tokens": 249,
+      "prompt_tokens": 5332,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.1827,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king of England for 2 years.",
+          "p_support": 0.0552,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king from 1483.",
+          "p_support": 0.9489,
+          "supported": true
+        },
+        {
+          "claim": "Richard III died in 1485.",
+          "p_support": 0.9715,
+          "supported": true
+        },
+        {
+          "claim": "1485 is 2 years after 1483.",
+          "p_support": 0.4863,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "odql_4457",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 10.121,
+      "llm_calls": 8,
+      "gen_tokens": 351,
+      "prompt_tokens": 5906,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0242,
+          "supported": false
+        },
+        {
+          "claim": "Alan Freed coined the term \"Rock and Roll\".",
+          "p_support": 0.9515,
+          "supported": true
+        },
+        {
+          "claim": "Alan Freed is credited with coining the term \"rock and roll\".",
+          "p_support": 0.9508,
+          "supported": true
+        },
+        {
+          "claim": "Alan Freed played the music on his radio show.",
+          "p_support": 0.9543,
+          "supported": true
+        },
+        {
+          "claim": "The music played on Alan Freed's radio show was described by the term \"rock and roll\".",
+          "p_support": 0.9478,
+          "supported": true
+        },
+        {
+          "claim": "Marshall Lytle claimed that Jimmy Preston's song was \"Rock the Joint\".",
+          "p_support": 0.9263,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8333333333333334
+    },
+    {
+      "id": "qw_8714",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 6.903,
+      "llm_calls": 7,
+      "gen_tokens": 236,
+      "prompt_tokens": 4285,
+      "claims": [
+        {
+          "claim": "Touchstone is a court fool or jester.",
+          "p_support": 0.6706,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone is described as a court fool or jester in the passage.",
+          "p_support": 0.691,
+          "supported": true
+        },
+        {
+          "claim": "The passage is about the play \"As You Like It\".",
+          "p_support": 0.9771,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "sfq_11784",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.759,
+      "llm_calls": 8,
+      "gen_tokens": 331,
+      "prompt_tokens": 4889,
+      "claims": [
+        {
+          "claim": "George Foreman was the first Olympic heavyweight boxing gold medallist to become world professional heavyweight boxing champion.",
+          "p_support": 0.0268,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman won the Olympic Games Heavyweight Gold Medal in 1968.",
+          "p_support": 0.027,
+          "supported": false
+        },
+        {
+          "claim": "George Foreman became a world professional heavyweight boxing champion in 1973.",
+          "p_support": 0.0272,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "qz_5044",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.534,
+      "llm_calls": 8,
+      "gen_tokens": 305,
+      "prompt_tokens": 5257,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0712,
+          "supported": false
+        },
+        {
+          "claim": "John Denver had chart hits which included \"Annie's Song\" and \"Rocky Mountain High\".",
+          "p_support": 0.9667,
+          "supported": true
+        },
+        {
+          "claim": "John Denver wrote \"Annie's Song\".",
+          "p_support": 0.974,
+          "supported": true
+        },
+        {
+          "claim": "John Denver wrote \"Rocky Mountain High\".",
+          "p_support": 0.9713,
+          "supported": true
+        },
+        {
+          "claim": "The provided answers verified that John Denver had major hits with \"Annie's Song\" and \"Rocky Mountain High\".",
+          "p_support": 0.9662,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "jp_1626",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.383,
+      "llm_calls": 7,
+      "gen_tokens": 159,
+      "prompt_tokens": 4538,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0165,
+          "supported": false
+        },
+        {
+          "claim": "The magazine that Hugh Hefner started is Playboy.",
+          "p_support": 0.7186,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner founded Playboy Enterprises.",
+          "p_support": 0.9404,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner started the Playboy magazine.",
+          "p_support": 0.931,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qb_9094",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 7.971,
+      "llm_calls": 7,
+      "gen_tokens": 278,
+      "prompt_tokens": 4819,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0213,
+          "supported": false
+        },
+        {
+          "claim": "The conflict known as 'The Troubles' began in Northern Ireland in 1968.",
+          "p_support": 0.9219,
+          "supported": true
+        },
+        {
+          "claim": "The conflict known as 'The Troubles' began between nationalist and unionist communities.",
+          "p_support": 0.8872,
+          "supported": true
+        },
+        {
+          "claim": "Northern Ireland is a European country.",
+          "p_support": 0.9466,
+          "supported": true
+        },
+        {
+          "claim": "The conflict known as 'The Troubles' began in 1968.",
+          "p_support": 0.9263,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    }
+  ]
+}

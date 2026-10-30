@@ -1,0 +1,626 @@
+{
+  "source": "triviaqa/rv_no_verifier/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.45,
+    "f1": 0.55,
+    "accuracy": 0.5,
+    "coverage": 0.65,
+    "abstention_rate": 0.35,
+    "selective_accuracy": 0.7692307692307693,
+    "hallucination_rate": 0.15,
+    "claim_precision": 0.7955128205128206,
+    "claims_per_answer": 4.384615384615385,
+    "latency_s": 2.0927999999999995,
+    "llm_calls": 2.0,
+    "gen_tokens": 78.55,
+    "prompt_tokens": 1742.7
+  },
+  "per_example": [
+    {
+      "id": "sfq_7732",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.282,
+      "llm_calls": 2,
+      "gen_tokens": 76,
+      "prompt_tokens": 1987,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0148,
+          "supported": false
+        },
+        {
+          "claim": "Bithynia was an ancient province on the Euxine Sea.",
+          "p_support": 0.9672,
+          "supported": true
+        },
+        {
+          "claim": "Bithynia bordered on the Euxine Sea to the north-east.",
+          "p_support": 0.7957,
+          "supported": true
+        },
+        {
+          "claim": "The Euxine Sea is located along the Pontic coast.",
+          "p_support": 0.8948,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "jp_758",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.004,
+      "llm_calls": 2,
+      "gen_tokens": 74,
+      "prompt_tokens": 1775,
+      "claims": [
+        {
+          "claim": "A hafiz is a person who has memorized the Quran.",
+          "p_support": 0.9754,
+          "supported": true
+        },
+        {
+          "claim": "It is directly stated in passages [1] and [4] that a hafiz is someone who has completely memorized the Quran.",
+          "p_support": 0.8311,
+          "supported": true
+        },
+        {
+          "claim": "Passages [1] and [4] mention that a hafiz is someone who has completely memorized the Quran.",
+          "p_support": 0.85,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "odql_10060",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.335,
+      "llm_calls": 2,
+      "gen_tokens": 88,
+      "prompt_tokens": 2028
+    },
+    {
+      "id": "qb_9577",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.719,
+      "llm_calls": 2,
+      "gen_tokens": 62,
+      "prompt_tokens": 1686,
+      "claims": [
+        {
+          "claim": "The first name of Blackadder in the UK television series 'Blackadder' is Edmund.",
+          "p_support": 0.9315,
+          "supported": true
+        },
+        {
+          "claim": "Rowan Atkinson stars as \"Edmund Blackadder\".",
+          "p_support": 0.9746,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "sfq_4811",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.24,
+      "llm_calls": 2,
+      "gen_tokens": 90,
+      "prompt_tokens": 1657,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.025,
+          "supported": false
+        },
+        {
+          "claim": "Reg Varney's character in 'On the Buses' was called Stan.",
+          "p_support": 0.9067,
+          "supported": true
+        },
+        {
+          "claim": "Stan is a bus driver.",
+          "p_support": 0.848,
+          "supported": true
+        },
+        {
+          "claim": "Stan works for the Luxton and District Bus Company.",
+          "p_support": 0.9236,
+          "supported": true
+        },
+        {
+          "claim": "Reg Varney played the character Stan in 'On the Buses'.",
+          "p_support": 0.9664,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "qb_547",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.906,
+      "llm_calls": 2,
+      "gen_tokens": 73,
+      "prompt_tokens": 1597,
+      "claims": [
+        {
+          "claim": "The artist who painted \"The Weeping Woman\" is Pablo Picasso.",
+          "p_support": 0.9713,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" is an oil on canvas.",
+          "p_support": 0.9793,
+          "supported": true
+        },
+        {
+          "claim": "Pablo Picasso painted \"The Weeping Woman\".",
+          "p_support": 0.9615,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in France.",
+          "p_support": 0.978,
+          "supported": true
+        },
+        {
+          "claim": "\"The Weeping Woman\" was painted in 1937.",
+          "p_support": 0.977,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "qb_6271",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.918,
+      "llm_calls": 2,
+      "gen_tokens": 70,
+      "prompt_tokens": 1874,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0221,
+          "supported": false
+        },
+        {
+          "claim": "The sidekick of cartoon superhero DangerMouse is Penfold.",
+          "p_support": 0.5832,
+          "supported": true
+        },
+        {
+          "claim": "In the 1981 TV series, Penfold is mentioned as Danger Mouse's sidekick.",
+          "p_support": 0.9774,
+          "supported": true
+        },
+        {
+          "claim": "Penfold assists Danger Mouse in various adventures.",
+          "p_support": 0.8948,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qz_952",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.65,
+      "llm_calls": 2,
+      "gen_tokens": 62,
+      "prompt_tokens": 1462
+    },
+    {
+      "id": "wh_51",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.733,
+      "llm_calls": 2,
+      "gen_tokens": 62,
+      "prompt_tokens": 1734,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.2516,
+          "supported": false
+        },
+        {
+          "claim": "The manufacturer of the British World War II bomber the Lancaster is Avro.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "The majority of Lancasters were manufactured by Avro.",
+          "p_support": 0.9573,
+          "supported": true
+        },
+        {
+          "claim": "Avro has a factory in Chadderton, Greater Manchester.",
+          "p_support": 0.9656,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "odql_9626",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.368,
+      "llm_calls": 2,
+      "gen_tokens": 90,
+      "prompt_tokens": 2073
+    },
+    {
+      "id": "tb_361",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.44,
+      "llm_calls": 2,
+      "gen_tokens": 95,
+      "prompt_tokens": 1747
+    },
+    {
+      "id": "bt_1060",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.799,
+      "llm_calls": 2,
+      "gen_tokens": 69,
+      "prompt_tokens": 1311,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0248,
+          "supported": false
+        },
+        {
+          "claim": "Hans Christian Andersen wrote \"The Ugly Duckling\".",
+          "p_support": 0.9677,
+          "supported": true
+        },
+        {
+          "claim": "\"The Ugly Duckling\" is a literary fairy tale.",
+          "p_support": 0.9838,
+          "supported": true
+        },
+        {
+          "claim": "Hans Christian Andersen is a Danish poet and author.",
+          "p_support": 0.7663,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "bb_3448",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.437,
+      "llm_calls": 2,
+      "gen_tokens": 98,
+      "prompt_tokens": 1585
+    },
+    {
+      "id": "qb_6356",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.104,
+      "llm_calls": 2,
+      "gen_tokens": 80,
+      "prompt_tokens": 1699,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.1827,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king of England for 2 years.",
+          "p_support": 0.0552,
+          "supported": false
+        },
+        {
+          "claim": "Richard III was king of England from 1483.",
+          "p_support": 0.9438,
+          "supported": true
+        },
+        {
+          "claim": "Richard III died in 1485.",
+          "p_support": 0.9715,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "odql_4457",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.01,
+      "llm_calls": 2,
+      "gen_tokens": 119,
+      "prompt_tokens": 2087
+    },
+    {
+      "id": "qw_8714",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.964,
+      "llm_calls": 2,
+      "gen_tokens": 72,
+      "prompt_tokens": 1712,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0153,
+          "supported": false
+        },
+        {
+          "claim": "Touchstone is a court fool or jester.",
+          "p_support": 0.6706,
+          "supported": true
+        },
+        {
+          "claim": "Touchstone appears in \"As You Like It\".",
+          "p_support": 0.9536,
+          "supported": true
+        },
+        {
+          "claim": "The passage directly states that Touchstone is a court fool or jester in \"As You Like It\".",
+          "p_support": 0.6758,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "sfq_11784",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.739,
+      "llm_calls": 2,
+      "gen_tokens": 62,
+      "prompt_tokens": 1619
+    },
+    {
+      "id": "qz_5044",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.054,
+      "llm_calls": 2,
+      "gen_tokens": 78,
+      "prompt_tokens": 1708,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0712,
+          "supported": false
+        },
+        {
+          "claim": "John Denver had chart hits which included \"Annie's Song\" and \"Rocky Mountain High\".",
+          "p_support": 0.9667,
+          "supported": true
+        },
+        {
+          "claim": "John Denver wrote \"Annie's Song\".",
+          "p_support": 0.974,
+          "supported": true
+        },
+        {
+          "claim": "John Denver had major hits with \"Annie's Song\" in the United States and the UK.",
+          "p_support": 0.1043,
+          "supported": false
+        },
+        {
+          "claim": "John Denver wrote \"Rocky Mountain High\".",
+          "p_support": 0.9713,
+          "supported": true
+        },
+        {
+          "claim": "John Denver had a hit with \"Rocky Mountain High\" in the US.",
+          "p_support": 0.9784,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "jp_1626",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.794,
+      "llm_calls": 2,
+      "gen_tokens": 61,
+      "prompt_tokens": 1587,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0165,
+          "supported": false
+        },
+        {
+          "claim": "Hugh Hefner is best known for founding Playboy magazine.",
+          "p_support": 0.9601,
+          "supported": true
+        },
+        {
+          "claim": "Hugh Hefner is best known for founding Playboy magazine as part of Playboy Enterprises.",
+          "p_support": 0.97,
+          "supported": true
+        },
+        {
+          "claim": "Playboy magazine is part of Playboy Enterprises.",
+          "p_support": 0.5215,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "qb_9094",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.36,
+      "llm_calls": 2,
+      "gen_tokens": 90,
+      "prompt_tokens": 1926,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0213,
+          "supported": false
+        },
+        {
+          "claim": "The Troubles began in 1968 in Northern Ireland.",
+          "p_support": 0.9137,
+          "supported": true
+        },
+        {
+          "claim": "The Troubles began in Northern Ireland.",
+          "p_support": 0.9679,
+          "supported": true
+        },
+        {
+          "claim": "The Troubles began in 1968.",
+          "p_support": 0.9372,
+          "supported": true
+        },
+        {
+          "claim": "The Troubles began in Northern Ireland involving the nationalist community.",
+          "p_support": 0.9533,
+          "supported": true
+        },
+        {
+          "claim": "The Troubles began in Northern Ireland involving the unionist community.",
+          "p_support": 0.963,
+          "supported": true
+        },
+        {
+          "claim": "The Troubles began in Northern Ireland involving civil rights activists.",
+          "p_support": 0.9557,
+          "supported": true
+        },
+        {
+          "claim": "The Troubles began in Northern Ireland involving unionists.",
+          "p_support": 0.9522,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.875
+    }
+  ]
+}

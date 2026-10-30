@@ -1,0 +1,608 @@
+{
+  "source": "hotpotqa/ragverify_llama/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.15,
+    "f1": 0.22000000000000003,
+    "accuracy": 0.25,
+    "coverage": 0.6,
+    "abstention_rate": 0.4,
+    "selective_accuracy": 0.4166666666666667,
+    "hallucination_rate": 0.35,
+    "claim_precision": 0.6200396825396826,
+    "claims_per_answer": 4.5,
+    "latency_s": 7.615700000000001,
+    "llm_calls": 3.75,
+    "gen_tokens": 206.25,
+    "prompt_tokens": 2103.7
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 19.847,
+      "llm_calls": 4,
+      "gen_tokens": 258,
+      "prompt_tokens": 2516
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 13.512,
+      "llm_calls": 4,
+      "gen_tokens": 266,
+      "prompt_tokens": 2217,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0193,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, served as Mistress of the Robes to Queen Victoria.",
+          "p_support": 0.9585,
+          "supported": true
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, is the daughter of the 7th Duke of Marlborough.",
+          "p_support": 0.9522,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.872,
+      "llm_calls": 3,
+      "gen_tokens": 157,
+      "prompt_tokens": 1874
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.948,
+      "llm_calls": 4,
+      "gen_tokens": 221,
+      "prompt_tokens": 2517,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is the older musical fantasy film.",
+          "p_support": 0.8164,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks was released in 1971.",
+          "p_support": 0.9787,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol was released in 1992.",
+          "p_support": 0.9795,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.029,
+      "llm_calls": 4,
+      "gen_tokens": 281,
+      "prompt_tokens": 2096,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "The film Wing Chun starred Michelle Yeoh and Yen Chi Tan.",
+          "p_support": 0.9753,
+          "supported": true
+        },
+        {
+          "claim": "Yen Chi Tan is also known as Donnie Yen.",
+          "p_support": 0.9367,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a Hong Kong actor.",
+          "p_support": 0.9579,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a martial artist.",
+          "p_support": 0.923,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a film director.",
+          "p_support": 0.9399,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen won the world wushu tournament multiple times.",
+          "p_support": 0.9595,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8571428571428571
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 0.0,
+      "f1": 0.4,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.481,
+      "llm_calls": 4,
+      "gen_tokens": 210,
+      "prompt_tokens": 2303,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0235,
+          "supported": false
+        },
+        {
+          "claim": "Nick Hexum of 311 helped produce Decomposer by The Matches.",
+          "p_support": 0.9656,
+          "supported": true
+        },
+        {
+          "claim": "Nick Hexum is a member of 311.",
+          "p_support": 0.9674,
+          "supported": true
+        },
+        {
+          "claim": "There were nine producers who helped produce Decomposer by The Matches.",
+          "p_support": 0.9724,
+          "supported": true
+        },
+        {
+          "claim": "Nick Hexum was one of the nine producers who helped produce Decomposer by The Matches.",
+          "p_support": 0.9804,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 7.78,
+      "llm_calls": 4,
+      "gen_tokens": 282,
+      "prompt_tokens": 2098
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.369,
+      "llm_calls": 4,
+      "gen_tokens": 217,
+      "prompt_tokens": 2139
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.762,
+      "llm_calls": 4,
+      "gen_tokens": 232,
+      "prompt_tokens": 1877,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0129,
+          "supported": false
+        },
+        {
+          "claim": "Minette Walters is the author of the 2005 psychological thriller \"The Devil's Feather\".",
+          "p_support": 0.1848,
+          "supported": false
+        },
+        {
+          "claim": "Minette Walters is the author of the 2005 psychological thriller \"The Devil's Feather\", as stated in passage [1].",
+          "p_support": 0.1241,
+          "supported": false
+        },
+        {
+          "claim": "The 2005 psychological thriller \"The Devil's Feather\" was written by Minette Walters.",
+          "p_support": 0.709,
+          "supported": true
+        },
+        {
+          "claim": "Note: I removed the second claim as it is redundant and only kept the first claim as the answer to the question.",
+          "p_support": 0.0548,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.2
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.189,
+      "llm_calls": 3,
+      "gen_tokens": 171,
+      "prompt_tokens": 1935
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.573,
+      "llm_calls": 3,
+      "gen_tokens": 97,
+      "prompt_tokens": 1772
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.136,
+      "llm_calls": 4,
+      "gen_tokens": 158,
+      "prompt_tokens": 1963,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "The city situated where Kellyville Ridge is located is Sydney.",
+          "p_support": 0.8376,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is a suburb of Sydney.",
+          "p_support": 0.977,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located 41 kilometres north-west of the Sydney central business district.",
+          "p_support": 0.9607,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.169,
+      "llm_calls": 4,
+      "gen_tokens": 169,
+      "prompt_tokens": 1942,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0177,
+          "supported": false
+        },
+        {
+          "claim": "Maurice Tourneur was not American.",
+          "p_support": 0.9511,
+          "supported": true
+        },
+        {
+          "claim": "Greg Mottola is American.",
+          "p_support": 0.9462,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur was French.",
+          "p_support": 0.9638,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.85,
+      "llm_calls": 4,
+      "gen_tokens": 207,
+      "prompt_tokens": 1905,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0133,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr and Mate Pavić have both won a doubles title.",
+          "p_support": 0.2024,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr won over 60 doubles titles.",
+          "p_support": 0.9504,
+          "supported": true
+        },
+        {
+          "claim": "Mate Pavić won the 2016 US Open mixed doubles title.",
+          "p_support": 0.9553,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.437,
+      "llm_calls": 4,
+      "gen_tokens": 239,
+      "prompt_tokens": 2290,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0218,
+          "supported": false
+        },
+        {
+          "claim": "The streaming version of the album \"Future\" released in 2017 included \"Used to This\".",
+          "p_support": 0.9878,
+          "supported": true
+        },
+        {
+          "claim": "The album \"Future\" released in 2017 was released by Epic Records.",
+          "p_support": 0.972,
+          "supported": true
+        },
+        {
+          "claim": "\"Used to This\" was included on the streaming version of the album \"Future\" released in 2017.",
+          "p_support": 0.9707,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.408,
+      "llm_calls": 4,
+      "gen_tokens": 180,
+      "prompt_tokens": 2939,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0188,
+          "supported": false
+        },
+        {
+          "claim": "Kareena Kapoor appears in Hindi films.",
+          "p_support": 0.0287,
+          "supported": false
+        },
+        {
+          "claim": "Babita appears in Hindi films.",
+          "p_support": 0.02,
+          "supported": false
+        },
+        {
+          "claim": "Kareena Kapoor is the mother of Babita.",
+          "p_support": 0.013,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.85,
+      "llm_calls": 3,
+      "gen_tokens": 111,
+      "prompt_tokens": 1680
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 9.187,
+      "llm_calls": 4,
+      "gen_tokens": 192,
+      "prompt_tokens": 2273,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The player of the nationality that scored two goals in the 2006 KNVB Cup Final was Klaas-Jan Huntelaar.",
+          "p_support": 0.9579,
+          "supported": true
+        },
+        {
+          "claim": "The 2006 KNVB Cup Final was between Ajax and PSV.",
+          "p_support": 0.9782,
+          "supported": true
+        },
+        {
+          "claim": "Klaas-Jan Huntelaar scored both of Ajax's goals.",
+          "p_support": 0.98,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 11.68,
+      "llm_calls": 4,
+      "gen_tokens": 346,
+      "prompt_tokens": 2028,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The organization that hosted an event at the Los Angeles Historic-Cultural Monument (No. 139) on October 12, 1991, was the IFBB.",
+          "p_support": 0.4017,
+          "supported": false
+        },
+        {
+          "claim": "The 1991 Ms. Olympia contest was an IFBB professional bodybuilding competition.",
+          "p_support": 0.9804,
+          "supported": true
+        },
+        {
+          "claim": "The 1991 Ms. Olympia contest was held on October 12, 1991.",
+          "p_support": 0.9247,
+          "supported": true
+        },
+        {
+          "claim": "The 1991 Ms. Olympia contest was held at the Shrine Auditorium.",
+          "p_support": 0.9838,
+          "supported": true
+        },
+        {
+          "claim": "The Shrine Auditorium is a Los Angeles Historic-Cultural Monument (No. 139).",
+          "p_support": 0.9759,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.235,
+      "llm_calls": 3,
+      "gen_tokens": 131,
+      "prompt_tokens": 1710
+    }
+  ]
+}

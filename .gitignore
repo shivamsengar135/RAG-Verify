@@ -1,0 +1,12 @@
+# environment and large downloads (rebuilt by code/data_prep.py and code/fetch_selfrag.py)
+.venv/
+data/
+__pycache__/
+*.pyc
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.out
+paper/submission/*.zip

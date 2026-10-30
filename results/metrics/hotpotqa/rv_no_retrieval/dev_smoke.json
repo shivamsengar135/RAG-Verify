@@ -1,0 +1,442 @@
+{
+  "source": "hotpotqa/rv_no_retrieval/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.05,
+    "f1": 0.05,
+    "accuracy": 0.05,
+    "coverage": 0.25,
+    "abstention_rate": 0.75,
+    "selective_accuracy": 0.2,
+    "hallucination_rate": 0.2,
+    "claim_precision": 0.44000000000000006,
+    "claims_per_answer": 5.0,
+    "latency_s": 6.36415,
+    "llm_calls": 7.9,
+    "gen_tokens": 304.25,
+    "prompt_tokens": 1108.7
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.507,
+      "llm_calls": 8,
+      "gen_tokens": 303,
+      "prompt_tokens": 1138
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.883,
+      "llm_calls": 8,
+      "gen_tokens": 331,
+      "prompt_tokens": 1187
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.024,
+      "llm_calls": 8,
+      "gen_tokens": 389,
+      "prompt_tokens": 1132
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 9.101,
+      "llm_calls": 9,
+      "gen_tokens": 424,
+      "prompt_tokens": 1490,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is the musical fantasy film that is older.",
+          "p_support": 0.884,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks was released in 1971.",
+          "p_support": 0.9787,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol was released in 1992.",
+          "p_support": 0.9795,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks predates The Muppet Christmas Carol.",
+          "p_support": 0.9268,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.38,
+      "llm_calls": 8,
+      "gen_tokens": 308,
+      "prompt_tokens": 1142
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.524,
+      "llm_calls": 8,
+      "gen_tokens": 263,
+      "prompt_tokens": 1066
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 8.073,
+      "llm_calls": 8,
+      "gen_tokens": 384,
+      "prompt_tokens": 1275
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 4.724,
+      "llm_calls": 7,
+      "gen_tokens": 228,
+      "prompt_tokens": 927,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Minden has a greater population than Gardnerville as of the 2010 census.",
+          "p_support": 0.1151,
+          "supported": false
+        },
+        {
+          "claim": "Minden had a greater population than Gardnerville as of the 2010 census.",
+          "p_support": 0.1049,
+          "supported": false
+        },
+        {
+          "claim": "Gardnerville is a town in Nevada.",
+          "p_support": 0.9372,
+          "supported": true
+        },
+        {
+          "claim": "Minden is a town in Nevada.",
+          "p_support": 0.9279,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.46,
+      "llm_calls": 8,
+      "gen_tokens": 308,
+      "prompt_tokens": 1133
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.086,
+      "llm_calls": 8,
+      "gen_tokens": 288,
+      "prompt_tokens": 1101
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 7.692,
+      "llm_calls": 8,
+      "gen_tokens": 373,
+      "prompt_tokens": 1090
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.743,
+      "llm_calls": 7,
+      "gen_tokens": 179,
+      "prompt_tokens": 820,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "The city situated where Kellyville Ridge is located is Sydney, Australia.",
+          "p_support": 0.8758,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is a suburb.",
+          "p_support": 0.976,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located in the Greater Sydney region.",
+          "p_support": 0.9649,
+          "supported": true
+        },
+        {
+          "claim": "The Greater Sydney region is located in New South Wales, Australia.",
+          "p_support": 0.9137,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.225,
+      "llm_calls": 9,
+      "gen_tokens": 295,
+      "prompt_tokens": 1388
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.344,
+      "llm_calls": 8,
+      "gen_tokens": 306,
+      "prompt_tokens": 1062
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.689,
+      "llm_calls": 8,
+      "gen_tokens": 319,
+      "prompt_tokens": 1139
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.029,
+      "llm_calls": 7,
+      "gen_tokens": 245,
+      "prompt_tokens": 839,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0188,
+          "supported": false
+        },
+        {
+          "claim": "The type of films that the mother and daughter duo Indian actresses appear in is Bollywood films.",
+          "p_support": 0.0145,
+          "supported": false
+        },
+        {
+          "claim": "Mother and daughter actresses in India typically appear in Bollywood films.",
+          "p_support": 0.0117,
+          "supported": false
+        },
+        {
+          "claim": "Bollywood films are produced in Mumbai.",
+          "p_support": 0.0138,
+          "supported": false
+        },
+        {
+          "claim": "Bollywood films are the largest segment of the Indian film industry.",
+          "p_support": 0.0096,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.015,
+      "llm_calls": 7,
+      "gen_tokens": 240,
+      "prompt_tokens": 874,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0173,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya was formed in a country closer to England than Kodaline.",
+          "p_support": 0.2111,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya was formed in Sri Lanka.",
+          "p_support": 0.011,
+          "supported": false
+        },
+        {
+          "claim": "Sri Lanka is closer to England than Ireland.",
+          "p_support": 0.0815,
+          "supported": false
+        },
+        {
+          "claim": "Kodaline is from Ireland.",
+          "p_support": 0.9741,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.2
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.9,
+      "llm_calls": 8,
+      "gen_tokens": 283,
+      "prompt_tokens": 1070
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.782,
+      "llm_calls": 8,
+      "gen_tokens": 327,
+      "prompt_tokens": 1179
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 6.102,
+      "llm_calls": 8,
+      "gen_tokens": 292,
+      "prompt_tokens": 1122
+    }
+  ]
+}

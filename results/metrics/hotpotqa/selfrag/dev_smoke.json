@@ -1,0 +1,744 @@
+{
+  "source": "hotpotqa/selfrag/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.1,
+    "f1": 0.2457939045183291,
+    "accuracy": 0.45,
+    "coverage": 0.95,
+    "abstention_rate": 0.050000000000000044,
+    "selective_accuracy": 0.47368421052631576,
+    "hallucination_rate": 0.5,
+    "claim_precision": 0.5140350877192981,
+    "claims_per_answer": 4.052631578947368,
+    "latency_s": 3.3756,
+    "llm_calls": 2.0,
+    "gen_tokens": 111.95,
+    "prompt_tokens": 890.85
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.111,
+      "llm_calls": 2,
+      "gen_tokens": 64,
+      "prompt_tokens": 1123,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0333,
+          "supported": false
+        },
+        {
+          "claim": "Jason Heyward is an American professional baseball right fielder born in 1987.",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "Jason Heyward graduated from Nova Southeastern University.",
+          "p_support": 0.0174,
+          "supported": false
+        },
+        {
+          "claim": "Jason Heyward plays a certain ethnicity of baseball.",
+          "p_support": 0.0965,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 0.0,
+      "f1": 0.125,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 8.72,
+      "llm_calls": 2,
+      "gen_tokens": 283,
+      "prompt_tokens": 883,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0193,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, served a role to Queen Victoria.",
+          "p_support": 0.9624,
+          "supported": true
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, was born in 1839.",
+          "p_support": 0.0402,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, was born before 1892.",
+          "p_support": 0.9305,
+          "supported": true
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, was the daughter of the 7th Duke of Marlborough.",
+          "p_support": 0.9736,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.567,
+      "llm_calls": 2,
+      "gen_tokens": 202,
+      "prompt_tokens": 923
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 0.0,
+      "f1": 0.35294117647058826,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.286,
+      "llm_calls": 2,
+      "gen_tokens": 130,
+      "prompt_tokens": 1026,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is older than The Muppet Christmas Carol.",
+          "p_support": 0.8808,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol was released in 1992.",
+          "p_support": 0.9795,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.431,
+      "llm_calls": 2,
+      "gen_tokens": 43,
+      "prompt_tokens": 829,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Wing Chun starred Michelle Yeoh and Donnie Yen.",
+          "p_support": 0.0635,
+          "supported": false
+        },
+        {
+          "claim": "Donnie Yen is a Hong Kong actor.",
+          "p_support": 0.9579,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a martial artist.",
+          "p_support": 0.923,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a film director.",
+          "p_support": 0.9399,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen won a tournament multiple times.",
+          "p_support": 0.9713,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.516,
+      "llm_calls": 2,
+      "gen_tokens": 38,
+      "prompt_tokens": 970,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0235,
+          "supported": false
+        },
+        {
+          "claim": "Nick Hexum of 311 helped produce Decomposer by The Matches.",
+          "p_support": 0.9656,
+          "supported": true
+        },
+        {
+          "claim": "Nick Hexum is a member of 311.",
+          "p_support": 0.9674,
+          "supported": true
+        },
+        {
+          "claim": "Decomposer is a song by The Matches.",
+          "p_support": 0.5641,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.57,
+      "llm_calls": 2,
+      "gen_tokens": 47,
+      "prompt_tokens": 841,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was the king of the empire that succeeded the Sasanian Empire.",
+          "p_support": 0.2975,
+          "supported": false
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was the king from March 631 to April 631.",
+          "p_support": 0.9214,
+          "supported": true
+        },
+        {
+          "claim": "The empire that succeeded the Sasanian Empire was the empire that Farrukhzad Khosrau V was the king of.",
+          "p_support": 0.2344,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 0.0,
+      "f1": 0.08695652173913045,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.72,
+      "llm_calls": 2,
+      "gen_tokens": 258,
+      "prompt_tokens": 872,
+      "claims": [
+        {
+          "claim": "The population of Gardnerville, Nevada, is greater than the population of Minden, Nevada, as of the 2010 census.",
+          "p_support": 0.8732,
+          "supported": true
+        },
+        {
+          "claim": "The population of Gardnerville, Nevada, as of the 2010 census, is 5,656.",
+          "p_support": 0.8245,
+          "supported": true
+        },
+        {
+          "claim": "The population of Minden, Nevada, as of the 2010 census, is 2,824.",
+          "p_support": 0.0282,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 0.0,
+      "f1": 0.33333333333333337,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.102,
+      "llm_calls": 2,
+      "gen_tokens": 132,
+      "prompt_tokens": 749,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0129,
+          "supported": false
+        },
+        {
+          "claim": "The English crime writer who wrote \"The Devil's Feather\" is Minette Walters.",
+          "p_support": 0.6261,
+          "supported": true
+        },
+        {
+          "claim": "The Devil's Feather was written by Minette Walters.",
+          "p_support": 0.9118,
+          "supported": true
+        },
+        {
+          "claim": "Minette Walters is an English crime writer.",
+          "p_support": 0.8766,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 4.565,
+      "llm_calls": 2,
+      "gen_tokens": 144,
+      "prompt_tokens": 933,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.018,
+          "supported": false
+        },
+        {
+          "claim": "Pyotr Ilyich Tchaikovsky will conduct the firing cannons in Victoria as part of a musical piece written to celebrate the defeat of Napoleon in Russia.",
+          "p_support": 0.0344,
+          "supported": false
+        },
+        {
+          "claim": "A musical piece was written to celebrate the defeat of Napoleon in Russia.",
+          "p_support": 0.9641,
+          "supported": true
+        },
+        {
+          "claim": "The musical piece will include the firing cannons in Victoria.",
+          "p_support": 0.9729,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.349,
+      "llm_calls": 2,
+      "gen_tokens": 42,
+      "prompt_tokens": 845,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0282,
+          "supported": false
+        },
+        {
+          "claim": "Bob Johnson played for Fulham Football Club.",
+          "p_support": 0.0122,
+          "supported": false
+        },
+        {
+          "claim": "Fulham Football Club was founded in 1928.",
+          "p_support": 0.0117,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.227,
+      "llm_calls": 2,
+      "gen_tokens": 126,
+      "prompt_tokens": 783,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "Kellyville Ridge is located in the city of Blacktown.",
+          "p_support": 0.9759,
+          "supported": true
+        },
+        {
+          "claim": "The city of Blacktown is located in the state of New South Wales.",
+          "p_support": 0.9792,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located in the state of New South Wales.",
+          "p_support": 0.9758,
+          "supported": true
+        },
+        {
+          "claim": "The state of New South Wales is located in Australia.",
+          "p_support": 0.9664,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.4,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.725,
+      "llm_calls": 2,
+      "gen_tokens": 121,
+      "prompt_tokens": 742,
+      "claims": [
+        {
+          "claim": "Maurice Tourneur was a French film director.",
+          "p_support": 0.9681,
+          "supported": true
+        },
+        {
+          "claim": "Greg Mottola was an American film director.",
+          "p_support": 0.9592,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur and Greg Mottola were both film directors.",
+          "p_support": 0.6893,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur and Greg Mottola were both American film directors.",
+          "p_support": 0.0284,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 0.0,
+      "f1": 0.16666666666666669,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.594,
+      "llm_calls": 2,
+      "gen_tokens": 115,
+      "prompt_tokens": 698,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0133,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr and Mate Pavić have both won a doubles title.",
+          "p_support": 0.2024,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr has won a doubles title.",
+          "p_support": 0.6531,
+          "supported": true
+        },
+        {
+          "claim": "Mate Pavić has won a doubles title.",
+          "p_support": 0.973,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.589,
+      "llm_calls": 2,
+      "gen_tokens": 40,
+      "prompt_tokens": 945,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0218,
+          "supported": false
+        },
+        {
+          "claim": "Used to This was included on the streaming version of the album released in 2017 on Epic Records.",
+          "p_support": 0.9752,
+          "supported": true
+        },
+        {
+          "claim": "The album released in 2017 was released on Epic Records.",
+          "p_support": 0.9691,
+          "supported": true
+        },
+        {
+          "claim": "The streaming version of the album released in 2017 included Used to This.",
+          "p_support": 0.9869,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 4.274,
+      "llm_calls": 2,
+      "gen_tokens": 71,
+      "prompt_tokens": 1294,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0188,
+          "supported": false
+        },
+        {
+          "claim": "The mother and daughter duo Indian actresses appear in Hindi films.",
+          "p_support": 0.0134,
+          "supported": false
+        },
+        {
+          "claim": "The mother and daughter duo Indian actresses are Indian actresses.",
+          "p_support": 0.9241,
+          "supported": true
+        },
+        {
+          "claim": "The mother and daughter duo appear in Hindi films.",
+          "p_support": 0.0145,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 0.0,
+      "f1": 0.11764705882352941,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.82,
+      "llm_calls": 2,
+      "gen_tokens": 126,
+      "prompt_tokens": 802,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0173,
+          "supported": false
+        },
+        {
+          "claim": "Kodaline was formed in Ireland.",
+          "p_support": 0.977,
+          "supported": true
+        },
+        {
+          "claim": "Ireland is closer to England than Mexico.",
+          "p_support": 0.1065,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya was formed in Mexico.",
+          "p_support": 0.0102,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.014,
+      "llm_calls": 2,
+      "gen_tokens": 72,
+      "prompt_tokens": 950,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The player who scored two goals in the 2006 KNVB Cup Final was Dutch.",
+          "p_support": 0.9526,
+          "supported": true
+        },
+        {
+          "claim": "The 2006 KNVB Cup Final had two goals scored by a player.",
+          "p_support": 0.9797,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.757,
+      "llm_calls": 2,
+      "gen_tokens": 73,
+      "prompt_tokens": 808,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The organization that hosted an event at Los Angeles Historic-Cultural Monument (No. 139) on October 12, 1991, was the Asian Pacific American Heritage Festival.",
+          "p_support": 0.0062,
+          "supported": false
+        },
+        {
+          "claim": "Los Angeles Historic-Cultural Monument (No. 139) hosted an event on October 12, 1991.",
+          "p_support": 0.6859,
+          "supported": true
+        },
+        {
+          "claim": "October 12, 1991, is the date when an event was hosted at Los Angeles Historic-Cultural Monument (No. 139).",
+          "p_support": 0.0522,
+          "supported": false
+        },
+        {
+          "claim": "The Asian Pacific American Heritage Festival is an organization.",
+          "p_support": 0.0127,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.2
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.575,
+      "llm_calls": 2,
+      "gen_tokens": 112,
+      "prompt_tokens": 801,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0359,
+          "supported": false
+        },
+        {
+          "claim": "The town linked by rail to Kendal, named after a lake of the same name, is called Windermere.",
+          "p_support": 0.9149,
+          "supported": true
+        },
+        {
+          "claim": "The town is linked by rail to Kendal.",
+          "p_support": 0.9693,
+          "supported": true
+        },
+        {
+          "claim": "The town is named after a lake of the same name.",
+          "p_support": 0.9643,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    }
+  ]
+}

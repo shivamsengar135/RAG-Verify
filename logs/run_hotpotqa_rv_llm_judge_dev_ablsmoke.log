@@ -1,0 +1,27 @@
+2026-10-29 06:23:13,734 start method=rv_llm_judge dataset=hotpotqa split=dev n=2 todo=2 cfg={"fn": "ragverify", "flags": {"verifier": "llm_judge"}}
+2026-10-29 06:23:15,847 Loading faiss with AVX512 support.
+2026-10-29 06:23:15,847 Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-10-29 06:23:15,847 Loading faiss with AVX2 support.
+2026-10-29 06:23:15,847 Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-10-29 06:23:15,857 Loading faiss.
+2026-10-29 06:23:15,885 Successfully loaded faiss.
+2026-10-29 06:23:22,269 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-29 06:23:22,414 Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-10-29 06:23:23,027 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-29 06:23:23,324 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-29 06:23:23,752 HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-29 06:23:25,160 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:26,536 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:27,323 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:27,907 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:28,124 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:29,275 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:29,286 [1/2] 5a83e98e5542992ef85e2387 pred='' abst=True 3.7s calls=5
+2026-10-29 06:23:30,383 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:31,034 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:31,440 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-29 06:23:31,441 [2/2] 5abee70a5542994516f45476 pred='Mistress of the Robes' abst=False 2.1s calls=3
+2026-10-29 06:23:31,441 peak_torch_vram_mib=137
+2026-10-29 06:23:31,441 done

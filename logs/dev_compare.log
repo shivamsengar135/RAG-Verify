@@ -1,0 +1,9 @@
+SELECTED = rv_hybrid_tau03 tau=0.3 rho=0.0  (n=200 pooled dev questions)
+        system  phi1_hotpotqa  phi1_triviaqa  phi1_mean  abstention  selected_minus_this  ci95_low  ci95_high
+           rag         -0.280          0.400      0.060       0.020                0.140     0.050      0.230
+   rag_abstain         -0.100          0.410      0.155       0.265                0.045    -0.035      0.125
+rv_no_verifier         -0.010          0.460      0.225       0.305               -0.025    -0.090      0.040
+  rv_no_decomp         -0.280          0.400      0.060       0.040                0.140     0.050      0.230
+     ragverify         -0.080          0.400      0.160       0.250                0.040    -0.035      0.115
+  rv_llm_judge         -0.020          0.360      0.170       0.410                0.030    -0.035      0.095
+      SELECTED         -0.070          0.470      0.200       0.420                0.000     0.000      0.000

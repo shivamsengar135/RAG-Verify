@@ -1,0 +1,33 @@
+# Named experiment grids for code/run_grid.py. Runs are executed in the listed order
+# (grouped by backbone to avoid swapping models in and out of VRAM), then evaluated.
+
+smoke:
+  datasets: [hotpotqa, triviaqa]
+  splits: [dev]
+  n: 20
+  tag: smoke
+  methods: [closed_book, rag, rag_abstain, cove, cove_rag, ragverify,
+            rv_no_retrieval, rv_no_decomp, rv_no_verifier, rv_no_revision, rv_no_abstain,
+            rv_llm_judge, rv_k10, ragverify_llama, selfrag]
+
+# Full 100-question dev block: method check + tau selection (rho is swept offline by code/tune_dev.py).
+devcheck:
+  datasets: [hotpotqa, triviaqa]
+  splits: [dev]
+  tag: full
+  methods: [rag, rag_abstain, ragverify, rv_no_verifier, rv_no_decomp, rv_tau03, rv_tau07, rv_tau09,
+            rv_hybrid, rv_hybrid_tau03, rv_hybrid_tau07, rv_hybrid_tau09, rv_llm_judge]
+
+main:
+  datasets: [hotpotqa, triviaqa]
+  splits: [seed0, seed1, seed2]
+  methods: [closed_book, rag, rag_abstain, rv_no_verifier, cove, cove_rag, ragverify,
+            closed_book_llama, rag_llama, rag_abstain_llama, rv_no_verifier_llama, ragverify_llama,
+            selfrag]
+
+ablations:
+  datasets: [hotpotqa, triviaqa]
+  splits: [seed0]
+  methods: [rv_no_retrieval, rv_no_decomp, rv_no_revision, rv_no_abstain,
+            rv_k1, rv_k3, rv_k10, rag_k1, rag_k3, rag_k10,
+            rv_tau05, rv_tau07, rv_tau09, rv_nli_only, rv_llm_judge]

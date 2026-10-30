@@ -1,0 +1,24 @@
+{
+  "hotpotqa": {
+    "lost answer": 156,
+    "lost answer: answer-claim flag": 149,
+    "lost answer: gold not in passages": 32,
+    "lost answer: support-claim flag": 7,
+    "n_questions": 900,
+    "wrong answer": 189,
+    "wrong answer: near miss": 47,
+    "wrong answer: retrieval miss": 60,
+    "wrong answer: verifier accept": 82
+  },
+  "triviaqa": {
+    "lost answer": 100,
+    "lost answer: answer-claim flag": 87,
+    "lost answer: gold not in passages": 18,
+    "lost answer: support-claim flag": 13,
+    "n_questions": 900,
+    "wrong answer": 71,
+    "wrong answer: near miss": 12,
+    "wrong answer: retrieval miss": 22,
+    "wrong answer: verifier accept": 37
+  }
+}

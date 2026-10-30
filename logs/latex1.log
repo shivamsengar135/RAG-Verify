@@ -1,0 +1,416 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Program Files\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+-- This is a 10 point document.
+)
+** ATTENTION: Overriding command lockouts (line 5).
+(C:\Program Files\MiKTeX\tex/latex/cite\cite.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+(C:\Program Files\MiKTeX\tex/latex/algorithms\algorithm.sty
+(C:\Program Files\MiKTeX\tex/latex/float\float.sty)
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty))
+(C:\Program Files\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
+(C:\Program Files\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def)))
+(C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def)
+No file main.aux.
+-- Lines per column: 56 (exact).
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg))
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd)
+
+LaTeX Warning: Citation `huang2023survey' on page 1 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `li2025capability' on page 1 undefined on input line 45
+.
+
+
+LaTeX Warning: Citation `lewis2020rag' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Citation `gao2023ragsurvey' on page 1 undefined on input line 45
+.
+
+
+LaTeX Warning: Citation `liu2023lost' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Citation `niu2023ragtruth' on page 1 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `dhuliawala2023cove' on page 1 undefined on input line 
+45.
+
+
+LaTeX Warning: Citation `gao2022rarr' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Citation `min2023factscore' on page 1 undefined on input line 45
+.
+
+
+LaTeX Warning: Citation `chern2023factool' on page 1 undefined on input line 45
+.
+
+
+LaTeX Warning: Citation `wei2024safe' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Citation `afev2025' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Citation `vladika2025medical' on page 1 undefined on input line 
+45.
+
+
+LaTeX Warning: Citation `asai2023selfrag' on page 1 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `lewis2020rag' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Citation `gao2023ragsurvey' on page 1 undefined on input line 58
+.
+
+
+LaTeX Warning: Citation `jiang2023flare' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Citation `yan2024crag' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Citation `asai2023selfrag' on page 1 undefined on input line 58.
+
+
+[1{C:/Users/shiva/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program 
+Files/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+
+LaTeX Warning: Citation `dhuliawala2023cove' on page 2 undefined on input line 
+60.
+
+
+LaTeX Warning: Citation `gao2022rarr' on page 2 undefined on input line 60.
+
+
+LaTeX Warning: Citation `min2023factscore' on page 2 undefined on input line 60
+.
+
+
+LaTeX Warning: Citation `chern2023factool' on page 2 undefined on input line 60
+.
+
+
+LaTeX Warning: Citation `wei2024safe' on page 2 undefined on input line 60.
+
+
+LaTeX Warning: Citation `afev2025' on page 2 undefined on input line 60.
+
+
+LaTeX Warning: Citation `vladika2025medical' on page 2 undefined on input line 
+60.
+
+
+LaTeX Warning: Citation `r2vc2026' on page 2 undefined on input line 60.
+
+
+LaTeX Warning: Citation `jia2026entity' on page 2 undefined on input line 60.
+
+
+LaTeX Warning: Citation `tang2024minicheck' on page 2 undefined on input line 6
+0.
+
+
+LaTeX Warning: Citation `laurer2023nli' on page 2 undefined on input line 60.
+
+
+LaTeX Warning: Citation `he2021debertav3' on page 2 undefined on input line 60.
+
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 60--61
+\OT1/ptm/m/n/10 ed-its un-sup-ported spans. Claim-level pipelines such as
+
+LaTeX Warning: Citation `manakul2023selfcheckgpt' on page 2 undefined on input 
+line 62.
+
+
+LaTeX Warning: Citation `farquhar2024semantic' on page 2 undefined on input lin
+e 62.
+
+
+LaTeX Warning: Citation `li2023halueval' on page 2 undefined on input line 62.
+
+
+LaTeX Warning: Citation `lin2021truthfulqa' on page 2 undefined on input line 6
+2.
+
+
+LaTeX Warning: Citation `niu2023ragtruth' on page 2 undefined on input line 62.
+
+
+
+LaTeX Warning: Citation `tamber2025faithjudge' on page 2 undefined on input lin
+e 62.
+
+
+LaTeX Warning: Citation `chen2026rethinking' on page 2 undefined on input line 
+62.
+
+
+LaTeX Warning: Citation `wen2024abstention' on page 2 undefined on input line 6
+2.
+
+
+LaTeX Warning: Citation `whitehead2022reliable' on page 2 undefined on input li
+ne 62.
+
+
+LaTeX Warning: Reference `alg:rv' on page 2 undefined on input line 69.
+
+
+LaTeX Warning: Reference `eq:label' on page 2 undefined on input line 77.
+
+
+LaTeX Warning: Citation `yang2018hotpotqa' on page 2 undefined on input line 10
+8.
+
+
+LaTeX Warning: Citation `joshi2017triviaqa' on page 2 undefined on input line 1
+08.
+
+[2]
+
+LaTeX Warning: Citation `qwen2024qwen25' on page 3 undefined on input line 110.
+
+
+
+LaTeX Warning: Citation `dubey2024llama3' on page 3 undefined on input line 110
+.
+
+
+LaTeX Warning: Citation `xiao2023cpack' on page 3 undefined on input line 110.
+
+
+LaTeX Warning: Citation `he2021debertav3' on page 3 undefined on input line 110
+.
+
+
+LaTeX Warning: Citation `thorne2018fever' on page 3 undefined on input line 110
+.
+
+
+LaTeX Warning: Citation `laurer2023nli' on page 3 undefined on input line 110.
+
+
+LaTeX Warning: Citation `asai2023selfrag' on page 3 undefined on input line 110
+.
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 110--111
+[]\OT1/ptm/b/n/10 Models. \OT1/ptm/m/n/10 Gen-er-a-tors are Qwen2.5-7B-Instruct
+ [\OT1/ptm/b/n/10 ?\OT1/ptm/m/n/10 ] and
+
+LaTeX Warning: Citation `dhuliawala2023cove' on page 3 undefined on input line 
+112.
+
+
+LaTeX Warning: Citation `asai2023selfrag' on page 3 undefined on input line 112
+.
+
+
+LaTeX Warning: Citation `rajpurkar2016squad' on page 3 undefined on input line 
+114.
+
+
+LaTeX Warning: Citation `whitehead2022reliable' on page 3 undefined on input li
+ne 114.
+
+
+LaTeX Warning: Citation `tang2024minicheck' on page 3 undefined on input line 1
+18.
+
+(tables/main_rows.tex
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.2 ...column{9}{l}{\textit{Backbone: Qwen2.5-7B}}
+                                                  \\
+)
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.134 \bottomrule
+                 
+! Missing } inserted.
+<inserted text> 
+                }
+l.135 \end
+          {tabular}
+! Missing } inserted.
+<inserted text> 
+                }
+l.135 \end
+          {tabular}
+! Missing } inserted.
+<inserted text> 
+                }
+l.135 \end
+          {tabular}
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.135 \end
+          {tabular}
+! Missing { inserted.
+<inserted text> 
+                {
+l.135 \end
+          {tabular}
+! Undefined control sequence.
+\@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
+                                                  
+l.135 \end
+          {tabular}
+! Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.135 \end{tabular}
+                   
+! Extra }, or forgotten $.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.135 \end{tabular}
+                   
+(tables/tests_rows.tex)
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.150 \end{tabular}}
+                    
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 \end{tabular}}
+                    
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 \end{tabular}}
+                    
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 \end{tabular}}
+                    
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.150 \end{tabular}}
+                    
+! Missing { inserted.
+<inserted text> 
+                {
+l.150 \end{tabular}}
+                    
+! Undefined control sequence.
+\@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
+                                                  
+l.150 \end{tabular}}
+                    
+! Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.150 \end{tabular}}
+                    
+! Extra }, or forgotten $.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.150 \end{tabular}}
+                    
+
+LaTeX Warning: Reference `tab:main' on page 3 undefined on input line 153.
+
+
+LaTeX Warning: Reference `tab:tests' on page 3 undefined on input line 153.
+
+
+Overfull \hbox (9.88623pt too wide) in paragraph at lines 169--183
+ [][] 
+
+LaTeX Warning: Reference `tab:trace' on page 3 undefined on input line 185.
+
+[3] (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pcr.fd)
+No file main.bbl.
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[4] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)<C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/M
+iKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/u
+rw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiK
+TeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 211140 bytes).
+Transcript written on main.log.

@@ -1,0 +1,832 @@
+{
+  "source": "hotpotqa/closed_book/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.15,
+    "f1": 0.175,
+    "accuracy": 0.15,
+    "coverage": 1.0,
+    "abstention_rate": 0.0,
+    "selective_accuracy": 0.15,
+    "hallucination_rate": 0.85,
+    "claim_precision": 0.25083333333333335,
+    "claims_per_answer": 4.7,
+    "latency_s": 3.00575,
+    "llm_calls": 1.0,
+    "gen_tokens": 38.25,
+    "prompt_tokens": 86.75
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.677,
+      "llm_calls": 1,
+      "gen_tokens": 39,
+      "prompt_tokens": 92,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0333,
+          "supported": false
+        },
+        {
+          "claim": "Christian Yelich is the American professional baseball right fielder born in 1987 who graduated from Nova Southeastern University.",
+          "p_support": 0.0147,
+          "supported": false
+        },
+        {
+          "claim": "Christian Yelich played for the Miami Marlins.",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "Christian Yelich was born in 1987.",
+          "p_support": 0.0205,
+          "supported": false
+        },
+        {
+          "claim": "Christian Yelich graduated from Nova Southeastern University.",
+          "p_support": 0.014,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 4.488,
+      "llm_calls": 1,
+      "gen_tokens": 41,
+      "prompt_tokens": 96,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0193,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, was appointed as a Lady in Waiting to Queen Victoria.",
+          "p_support": 0.0434,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker, Duchess of Roxburghe, was a daughter of the 7th Duke of Marlborough.",
+          "p_support": 0.977,
+          "supported": true
+        },
+        {
+          "claim": "A daughter of a Duke could have been appointed as a Lady in Waiting to Queen Victoria.",
+          "p_support": 0.8187,
+          "supported": true
+        },
+        {
+          "claim": "A Lady in Waiting serves as a companion and attendant.",
+          "p_support": 0.1156,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 5.223,
+      "llm_calls": 1,
+      "gen_tokens": 48,
+      "prompt_tokens": 84,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0199,
+          "supported": false
+        },
+        {
+          "claim": "Joseph Yablonski's union had 16,000 members in 2014.",
+          "p_support": 0.1499,
+          "supported": false
+        },
+        {
+          "claim": "Joseph Yablonski's union is the United Steelworkers (USW).",
+          "p_support": 0.0163,
+          "supported": false
+        },
+        {
+          "claim": "The United Steelworkers (USW) had approximately 16,000 members in West Virginia in 2014.",
+          "p_support": 0.0244,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.128,
+      "llm_calls": 1,
+      "gen_tokens": 44,
+      "prompt_tokens": 86,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is the musical fantasy film that is older.",
+          "p_support": 0.884,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks was released in 1971.",
+          "p_support": 0.9787,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol was released in 1992.",
+          "p_support": 0.9795,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.443,
+      "llm_calls": 1,
+      "gen_tokens": 34,
+      "prompt_tokens": 90,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Wing Chun starred Michelle Yeoh and Ip Man.",
+          "p_support": 0.0136,
+          "supported": false
+        },
+        {
+          "claim": "Ip Man won multiple Dragon Boat Racing tournaments.",
+          "p_support": 0.0102,
+          "supported": false
+        },
+        {
+          "claim": "Ip Man is a Hong Kong actor, martial artist, and film director.",
+          "p_support": 0.0172,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.679,
+      "llm_calls": 1,
+      "gen_tokens": 39,
+      "prompt_tokens": 81,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0235,
+          "supported": false
+        },
+        {
+          "claim": "Nick Hexum helped produce Decomposer by The Matches.",
+          "p_support": 0.9684,
+          "supported": true
+        },
+        {
+          "claim": "Nick Hexum is a member of the American rock band The Matches.",
+          "p_support": 0.9588,
+          "supported": true
+        },
+        {
+          "claim": "The American rock band The Matches co-produced the album \"Decomposer\".",
+          "p_support": 0.8791,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.549,
+      "llm_calls": 1,
+      "gen_tokens": 53,
+      "prompt_tokens": 98,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was the king of an empire that succeeded the Sassanid Empire.",
+          "p_support": 0.4017,
+          "supported": false
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was a member of the Sassanid dynasty.",
+          "p_support": 0.9698,
+          "supported": true
+        },
+        {
+          "claim": "The Sassanid dynasty ruled until the empire was succeeded by another empire.",
+          "p_support": 0.2516,
+          "supported": false
+        },
+        {
+          "claim": "The empire that succeeded the Sassanid Empire was the Rashidun Caliphate.",
+          "p_support": 0.0188,
+          "supported": false
+        },
+        {
+          "claim": "The empire was succeeded by the Rashidun Caliphate following internal conflicts and the Muslim conquests.",
+          "p_support": 0.017,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.16666666666666666
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.003,
+      "llm_calls": 1,
+      "gen_tokens": 30,
+      "prompt_tokens": 92,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Minden has a greater population than Gardnerville as of the 2010 census.",
+          "p_support": 0.1151,
+          "supported": false
+        },
+        {
+          "claim": "Minden had a greater population than Gardnerville as of the 2010 census.",
+          "p_support": 0.1049,
+          "supported": false
+        },
+        {
+          "claim": "Gardnerville is a town in Nevada.",
+          "p_support": 0.9372,
+          "supported": true
+        },
+        {
+          "claim": "Minden is a town in Nevada.",
+          "p_support": 0.9279,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.257,
+      "llm_calls": 1,
+      "gen_tokens": 45,
+      "prompt_tokens": 84,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0129,
+          "supported": false
+        },
+        {
+          "claim": "Patricia Highsmith wrote \"The Devil's Feather\".",
+          "p_support": 0.0108,
+          "supported": false
+        },
+        {
+          "claim": "Patricia Highsmith wrote \"The Devil's Feather\" under her pseudonym, A. B. Yancey.",
+          "p_support": 0.0093,
+          "supported": false
+        },
+        {
+          "claim": "Patricia Highsmith wrote a series featuring the character Tom Ripley.",
+          "p_support": 0.0178,
+          "supported": false
+        },
+        {
+          "claim": "\"The Devil's Feather\" is a 2005 psychological thriller.",
+          "p_support": 0.1298,
+          "supported": false
+        },
+        {
+          "claim": "\"The Devil's Feather\" is a book written by Patricia Highsmith.",
+          "p_support": 0.009,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.162,
+      "llm_calls": 1,
+      "gen_tokens": 30,
+      "prompt_tokens": 89,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.018,
+          "supported": false
+        },
+        {
+          "claim": "The Royal Marines will conduct the firing cannons in Victoria as part of a musical piece written to celebrate the defeat of Napoleon in Russia.",
+          "p_support": 0.0119,
+          "supported": false
+        },
+        {
+          "claim": "The Royal Marines are known for their ceremonial duties.",
+          "p_support": 0.0134,
+          "supported": false
+        },
+        {
+          "claim": "The Royal Marines fire cannon salutes in events like these.",
+          "p_support": 0.0169,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.62,
+      "llm_calls": 1,
+      "gen_tokens": 53,
+      "prompt_tokens": 82,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0282,
+          "supported": false
+        },
+        {
+          "claim": "Manchester United was the club that Bob Johnson played for.",
+          "p_support": 0.0169,
+          "supported": false
+        },
+        {
+          "claim": "Bob Johnson is a British footballer.",
+          "p_support": 0.5564,
+          "supported": true
+        },
+        {
+          "claim": "Manchester United was founded in 1878.",
+          "p_support": 0.0282,
+          "supported": false
+        },
+        {
+          "claim": "The question might have a year typo.",
+          "p_support": 0.7154,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.035,
+      "llm_calls": 1,
+      "gen_tokens": 28,
+      "prompt_tokens": 77,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "The city situated where Kellyville Ridge is located is Sydney, Australia.",
+          "p_support": 0.8758,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is a suburb.",
+          "p_support": 0.976,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located in the Greater Sydney region.",
+          "p_support": 0.9649,
+          "supported": true
+        },
+        {
+          "claim": "The Greater Sydney region is located in New South Wales, Australia.",
+          "p_support": 0.9137,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.406,
+      "llm_calls": 1,
+      "gen_tokens": 32,
+      "prompt_tokens": 80,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0177,
+          "supported": false
+        },
+        {
+          "claim": "Maurice Tourneur was a French director.",
+          "p_support": 0.9674,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur worked in the United States.",
+          "p_support": 0.0471,
+          "supported": false
+        },
+        {
+          "claim": "Greg Mottola is an American director.",
+          "p_support": 0.947,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur and Greg Mottola were both American film directors.",
+          "p_support": 0.0284,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.64,
+      "llm_calls": 1,
+      "gen_tokens": 37,
+      "prompt_tokens": 84,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0133,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr and Mate Pavić have both won a doubles title.",
+          "p_support": 0.2024,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr won a doubles title in 1976.",
+          "p_support": 0.0573,
+          "supported": false
+        },
+        {
+          "claim": "Mate Pavić has won multiple doubles titles in his career.",
+          "p_support": 0.955,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.624,
+      "llm_calls": 1,
+      "gen_tokens": 39,
+      "prompt_tokens": 88,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0218,
+          "supported": false
+        },
+        {
+          "claim": "The album \"Trench\" released in 2017 on Republic Records includes the song \"Used to\".",
+          "p_support": 0.0119,
+          "supported": false
+        },
+        {
+          "claim": "\"Used to\" is a song by Twenty One Pilots.",
+          "p_support": 0.0086,
+          "supported": false
+        },
+        {
+          "claim": "\"Trench\" is an album by Twenty One Pilots.",
+          "p_support": 0.015,
+          "supported": false
+        },
+        {
+          "claim": "\"Trench\" was released in 2017.",
+          "p_support": 0.0254,
+          "supported": false
+        },
+        {
+          "claim": "\"Trench\" was released on Republic Records.",
+          "p_support": 0.0096,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.026,
+      "llm_calls": 1,
+      "gen_tokens": 40,
+      "prompt_tokens": 78,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0188,
+          "supported": false
+        },
+        {
+          "claim": "The type of films that the mother and daughter duo Indian actresses appear in is Bollywood films.",
+          "p_support": 0.0145,
+          "supported": false
+        },
+        {
+          "claim": "Mother and daughter actresses in India typically appear in Bollywood films.",
+          "p_support": 0.0117,
+          "supported": false
+        },
+        {
+          "claim": "Bollywood films are produced in Mumbai.",
+          "p_support": 0.0138,
+          "supported": false
+        },
+        {
+          "claim": "Bollywood films are the largest segment of the Indian film industry.",
+          "p_support": 0.0096,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.4,
+      "llm_calls": 1,
+      "gen_tokens": 33,
+      "prompt_tokens": 84,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0173,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya was formed in a country closer to England than Kodaline.",
+          "p_support": 0.2111,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya was formed in Sri Lanka.",
+          "p_support": 0.011,
+          "supported": false
+        },
+        {
+          "claim": "Sri Lanka is closer to England than Ireland.",
+          "p_support": 0.0815,
+          "supported": false
+        },
+        {
+          "claim": "Kodaline is from Ireland.",
+          "p_support": 0.9741,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.2
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.091,
+      "llm_calls": 1,
+      "gen_tokens": 28,
+      "prompt_tokens": 85,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The player who scored two goals in the 2006 KNVB Cup Final was Dutch.",
+          "p_support": 0.9526,
+          "supported": true
+        },
+        {
+          "claim": "The 2006 KNVB Cup Final featured two goals scored by Nigel de Jong.",
+          "p_support": 0.0113,
+          "supported": false
+        },
+        {
+          "claim": "Nigel de Jong is Dutch.",
+          "p_support": 0.0213,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.418,
+      "llm_calls": 1,
+      "gen_tokens": 32,
+      "prompt_tokens": 97,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The J. Paul Getty Museum hosted an event at the Los Angeles Historic-Cultural Monument (No. 139) on October 12, 1991.",
+          "p_support": 0.0086,
+          "supported": false
+        },
+        {
+          "claim": "The J. Paul Getty Museum is part of the Getty Center in Los Angeles.",
+          "p_support": 0.0165,
+          "supported": false
+        },
+        {
+          "claim": "The Getty Center is in Los Angeles.",
+          "p_support": 0.0122,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.0
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.246,
+      "llm_calls": 1,
+      "gen_tokens": 40,
+      "prompt_tokens": 88,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0359,
+          "supported": false
+        },
+        {
+          "claim": "The town linked by rail to Kendal and named after a lake of the same name is Bowness.",
+          "p_support": 0.9012,
+          "supported": true
+        },
+        {
+          "claim": "Bowness-on-Solway is linked by rail to Kendal.",
+          "p_support": 0.0223,
+          "supported": false
+        },
+        {
+          "claim": "Bowness-on-Solway is named after the Solway Firth.",
+          "p_support": 0.016,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    }
+  ]
+}

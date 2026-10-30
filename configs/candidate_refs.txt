@@ -1,0 +1,42 @@
+# Candidate references (arXiv IDs or DOIs). Verified by code/verify_refs.py.
+# --- Baselines / closest methods
+2310.11511   # Self-RAG
+2309.11495   # Chain-of-Verification
+2401.15884   # Corrective RAG
+2210.08726   # RARR
+2305.06983   # FLARE
+# --- Claim-level factuality / verification
+2305.14251   # FActScore
+2307.13528   # FacTool
+2403.18802   # SAFE / long-form factuality
+2404.10774   # MiniCheck
+2303.08896   # SelfCheckGPT
+2506.07446   # AFEV atomic fact extraction & verification (2025)
+2505.24830   # Atomic fact checking in medical RAG (2025)
+2609.11955   # R2VC (2026)
+2609.08267   # Entity verification for RAG hallucination detection (2026)
+# --- Hallucination benchmarks & surveys
+2305.11747   # HaluEval
+2401.00396   # RAGTruth
+2505.04847   # FaithJudge / RAG faithfulness leaderboard (2025)
+2605.11330   # Rethinking hallucination detection evaluation (2026)
+2311.05232   # Hallucination survey (Huang et al.)
+2510.24476   # Application-oriented hallucination mitigation survey (2025)
+2312.10997   # RAG survey
+2407.18418   # Abstention survey
+2307.03172   # Lost in the middle
+# --- Foundations, datasets, models
+2005.11401   # RAG (Lewis et al.)
+1809.09600   # HotpotQA
+2109.07958   # TruthfulQA
+1705.03551   # TriviaQA
+1803.05355   # FEVER
+2111.09543   # DeBERTaV3
+2309.07597   # C-Pack / BGE
+2412.15115   # Qwen2.5
+2407.21783   # Llama 3
+10.1038/s41586-024-07421-0   # Semantic entropy (Nature)
+10.1017/pan.2023.20          # Laurer et al., NLI zero-shot classifier (DeBERTa NLI model)
+10.1162/tacl_a_00276         # Natural Questions
+2204.13631
+1606.05250

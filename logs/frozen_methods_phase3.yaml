@@ -1,0 +1,53 @@
+# Experiment registry. Each entry: fn (code/methods.py), optional flags, optional cfg overrides (merged into base.yaml).
+# Self-RAG runs through code/selfrag_run.py (own checkpoint), registered here for bookkeeping.
+# RAG-Verify variants inherit the FROZEN verifier (hybrid, tau 0.3, rho 0.0) from base.yaml unless they override it.
+
+# ---- main systems
+closed_book:     {fn: closed_book}
+rag:             {fn: rag}
+rag_abstain:     {fn: rag, flags: {abstain_prompt: true}}          # prompted abstention baseline
+rv_no_verifier:  {fn: ragverify, flags: {verifier: none}}          # unconditional self-revision baseline
+cove:            {fn: cove, flags: {retrieval: false}}
+cove_rag:        {fn: cove, flags: {retrieval: true}}
+ragverify:       {fn: ragverify}                                   # RAG-Verify (frozen hybrid)
+selfrag:         {fn: selfrag}
+
+# ---- component ablations (relative to the frozen hybrid RAG-Verify)
+rv_no_retrieval:  {fn: ragverify, flags: {retrieval: false}}     # verifier -> SelfCheck-style sample consistency
+rv_no_decomp:     {fn: ragverify, flags: {decompose: false}}
+rv_no_revision:   {fn: ragverify, flags: {revise: false}}
+rv_no_abstain:    {fn: ragverify, flags: {abstain: false}}
+# (rv_no_verifier above doubles as the "no verifier" ablation)
+
+# ---- retrieval depth
+rv_k1:   {fn: ragverify, cfg: {retriever: {k: 1}}}
+rv_k3:   {fn: ragverify, cfg: {retriever: {k: 3}}}
+rv_k10:  {fn: ragverify, cfg: {retriever: {k: 10}}}
+rag_k1:  {fn: rag, cfg: {retriever: {k: 1}}}
+rag_k3:  {fn: rag, cfg: {retriever: {k: 3}}}
+rag_k10: {fn: rag, cfg: {retriever: {k: 10}}}
+
+# ---- NLI threshold (main setting is 0.3; rho is swept offline from saved scores)
+rv_tau05: {fn: ragverify, cfg: {verifier: {tau: 0.5}}}
+rv_tau07: {fn: ragverify, cfg: {verifier: {tau: 0.7}}}
+rv_tau09: {fn: ragverify, cfg: {verifier: {tau: 0.9}}}
+
+# ---- verifier type
+rv_nli_only:  {fn: ragverify, flags: {verifier: nli}}
+rv_llm_judge: {fn: ragverify, flags: {verifier: llm_judge}}
+
+# ---- backbone swap
+closed_book_llama:    {fn: closed_book, cfg: {llm: {backbone: "llama3.1:8b-instruct-q4_K_M"}}}
+rag_llama:            {fn: rag,         cfg: {llm: {backbone: "llama3.1:8b-instruct-q4_K_M"}}}
+rag_abstain_llama:    {fn: rag,         flags: {abstain_prompt: true}, cfg: {llm: {backbone: "llama3.1:8b-instruct-q4_K_M"}}}
+rv_no_verifier_llama: {fn: ragverify,   flags: {verifier: none}, cfg: {llm: {backbone: "llama3.1:8b-instruct-q4_K_M"}}}
+ragverify_llama:      {fn: ragverify,   cfg: {llm: {backbone: "llama3.1:8b-instruct-q4_K_M"}}}
+
+# ---- dev-selection history (27 Oct; dev block only, kept so dev results stay reproducible)
+# NOTE: dev runs named ragverify / rv_tau07 / rv_tau09 / rv_no_decomp / rv_no_verifier were made with the
+# pre-freeze defaults (NLI verifier, tau 0.5, rho 0.5); their files live under split "dev" only.
+rv_tau03:        {fn: ragverify, flags: {verifier: nli}, cfg: {verifier: {tau: 0.3, rho: 0.5}}}
+rv_hybrid:       {fn: ragverify, flags: {verifier: hybrid}, cfg: {verifier: {tau: 0.5, rho: 0.5}}}
+rv_hybrid_tau03: {fn: ragverify, flags: {verifier: hybrid}, cfg: {verifier: {tau: 0.3, rho: 0.5}}}
+rv_hybrid_tau07: {fn: ragverify, flags: {verifier: hybrid}, cfg: {verifier: {tau: 0.7, rho: 0.5}}}
+rv_hybrid_tau09: {fn: ragverify, flags: {verifier: hybrid}, cfg: {verifier: {tau: 0.9, rho: 0.5}}}

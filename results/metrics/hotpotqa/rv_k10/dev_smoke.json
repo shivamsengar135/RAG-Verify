@@ -1,0 +1,703 @@
+{
+  "source": "hotpotqa/rv_k10/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.3,
+    "f1": 0.39166666666666666,
+    "accuracy": 0.35,
+    "coverage": 0.85,
+    "abstention_rate": 0.15000000000000002,
+    "selective_accuracy": 0.4117647058823529,
+    "hallucination_rate": 0.5,
+    "claim_precision": 0.6803921568627451,
+    "claims_per_answer": 4.117647058823529,
+    "latency_s": 4.029400000000001,
+    "llm_calls": 2.15,
+    "gen_tokens": 96.0,
+    "prompt_tokens": 2181.9
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 9.363,
+      "llm_calls": 3,
+      "gen_tokens": 184,
+      "prompt_tokens": 4118
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.907,
+      "llm_calls": 2,
+      "gen_tokens": 50,
+      "prompt_tokens": 1671,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0193,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker served as Mistress of the Robes to Queen Victoria.",
+          "p_support": 0.9519,
+          "supported": true
+        },
+        {
+          "claim": "Anne Innes-Ker is the daughter of the 7th Duke of Marlborough.",
+          "p_support": 0.9493,
+          "supported": true
+        },
+        {
+          "claim": "The 7th Duke of Marlborough is Anne Innes-Ker's father.",
+          "p_support": 0.9573,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.698,
+      "llm_calls": 3,
+      "gen_tokens": 150,
+      "prompt_tokens": 3965
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.723,
+      "llm_calls": 2,
+      "gen_tokens": 132,
+      "prompt_tokens": 1932,
+      "claims": [
+        {
+          "claim": "Here is the list of atomic claims:",
+          "p_support": 0.0205,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is the older musical fantasy film.",
+          "p_support": 0.8164,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks was released in 1971.",
+          "p_support": 0.9787,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol was released in 1992.",
+          "p_support": 0.9795,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.713,
+      "llm_calls": 2,
+      "gen_tokens": 126,
+      "prompt_tokens": 1708,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Wing Chun starred Michelle Yeoh and Yen Chi-tan.",
+          "p_support": 0.9735,
+          "supported": true
+        },
+        {
+          "claim": "Yen Chi-tan is the same as Donnie Yen.",
+          "p_support": 0.9526,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a multiple-time world wushu tournament champion.",
+          "p_support": 0.9458,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a Hong Kong actor, martial artist, and film director.",
+          "p_support": 0.9258,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.399,
+      "llm_calls": 2,
+      "gen_tokens": 72,
+      "prompt_tokens": 1880,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0235,
+          "supported": false
+        },
+        {
+          "claim": "Nick Hexum helped produce Decomposer by The Matches.",
+          "p_support": 0.9684,
+          "supported": true
+        },
+        {
+          "claim": "Nick Hexum is a member of the American rock band 311.",
+          "p_support": 0.9707,
+          "supported": true
+        },
+        {
+          "claim": "The American rock band 311 is the band that Nick Hexum is a member of.",
+          "p_support": 0.9686,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.185,
+      "llm_calls": 2,
+      "gen_tokens": 96,
+      "prompt_tokens": 2252,
+      "claims": [
+        {
+          "claim": "Farrukhzad Khosrau V was the king of the empire that succeeded the Parthian Empire from March 631 to April 631.",
+          "p_support": 0.931,
+          "supported": true
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire.",
+          "p_support": 0.9515,
+          "supported": true
+        },
+        {
+          "claim": "The Sasanian Empire succeeded the Parthian Empire.",
+          "p_support": 0.9871,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 3.708,
+      "llm_calls": 2,
+      "gen_tokens": 129,
+      "prompt_tokens": 1721,
+      "claims": [
+        {
+          "claim": "Gardnerville, Nevada has a greater population as of the 2010 census than Minden, Nevada.",
+          "p_support": 0.9033,
+          "supported": true
+        },
+        {
+          "claim": "The population of Minden, Nevada was 3,001 as of the 2010 census.",
+          "p_support": 0.4475,
+          "supported": false
+        },
+        {
+          "claim": "The population of Gardnerville, Nevada was 5,656 as of the 2010 census.",
+          "p_support": 0.848,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.947,
+      "llm_calls": 2,
+      "gen_tokens": 59,
+      "prompt_tokens": 1638,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0129,
+          "supported": false
+        },
+        {
+          "claim": "The English crime writer who wrote the 2005 psychological thriller \"The Devil's Feather\" is Minette Walters.",
+          "p_support": 0.2147,
+          "supported": false
+        },
+        {
+          "claim": "\"The Devil's Feather\" is a 2005 psychological thriller novel.",
+          "p_support": 0.0834,
+          "supported": false
+        },
+        {
+          "claim": "\"The Devil's Feather\" is a novel by Minette Walters.",
+          "p_support": 0.9012,
+          "supported": true
+        },
+        {
+          "claim": "Minette Walters is a British author.",
+          "p_support": 0.8366,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 4.02,
+      "llm_calls": 3,
+      "gen_tokens": 104,
+      "prompt_tokens": 3276
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.58,
+      "llm_calls": 2,
+      "gen_tokens": 70,
+      "prompt_tokens": 1912,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0282,
+          "supported": false
+        },
+        {
+          "claim": "Bob Johnson played for Derry City.",
+          "p_support": 0.9641,
+          "supported": true
+        },
+        {
+          "claim": "Derry City was founded in 1928.",
+          "p_support": 0.977,
+          "supported": true
+        },
+        {
+          "claim": "Bob Johnson played in Ireland.",
+          "p_support": 0.97,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.568,
+      "llm_calls": 2,
+      "gen_tokens": 56,
+      "prompt_tokens": 2061,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "The city situated where Kellyville Ridge is located is Sydney.",
+          "p_support": 0.8376,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is a suburb of Sydney.",
+          "p_support": 0.977,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located in New South Wales, Australia.",
+          "p_support": 0.975,
+          "supported": true
+        },
+        {
+          "claim": "Sydney is located in New South Wales, Australia.",
+          "p_support": 0.9522,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.426,
+      "llm_calls": 2,
+      "gen_tokens": 58,
+      "prompt_tokens": 1971,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0177,
+          "supported": false
+        },
+        {
+          "claim": "Maurice Tourneur was French.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "Greg Mottola is American.",
+          "p_support": 0.9462,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur and Greg Mottola were not both American film directors.",
+          "p_support": 0.83,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.72,
+      "llm_calls": 2,
+      "gen_tokens": 92,
+      "prompt_tokens": 1634,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0133,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr and Mate Pavić have both won a doubles title.",
+          "p_support": 0.2024,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr won over 60 doubles titles.",
+          "p_support": 0.9504,
+          "supported": true
+        },
+        {
+          "claim": "Mate Pavić won the 2016 US Open mixed doubles title.",
+          "p_support": 0.9553,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.895,
+      "llm_calls": 2,
+      "gen_tokens": 84,
+      "prompt_tokens": 1871,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0218,
+          "supported": false
+        },
+        {
+          "claim": "The streaming version of the album released in 2017 on which label included \"Used to This\".",
+          "p_support": 0.9672,
+          "supported": true
+        },
+        {
+          "claim": "\"Used to This\" was included on the streaming version of Future's album \"Future\" (2017).",
+          "p_support": 0.9826,
+          "supported": true
+        },
+        {
+          "claim": "Future's album \"Future\" (2017) was released on Epic Records.",
+          "p_support": 0.9742,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 3.14,
+      "llm_calls": 2,
+      "gen_tokens": 52,
+      "prompt_tokens": 2769,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0188,
+          "supported": false
+        },
+        {
+          "claim": "A mother and daughter duo of Indian actresses appear in a type of films.",
+          "p_support": 0.9504,
+          "supported": true
+        },
+        {
+          "claim": "The provided passages do not mention any mother and daughter duo Indian actresses.",
+          "p_support": 0.0554,
+          "supported": false
+        },
+        {
+          "claim": "The provided passages do not mention any mother and daughter duo Indian actresses appearing in the same type of films.",
+          "p_support": 0.0594,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.25
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 4.502,
+      "llm_calls": 2,
+      "gen_tokens": 66,
+      "prompt_tokens": 1704,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0173,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya was formed in a country closer to England than Kodaline.",
+          "p_support": 0.2111,
+          "supported": false
+        },
+        {
+          "claim": "Rivermaya was formed in the Philippines.",
+          "p_support": 0.9656,
+          "supported": true
+        },
+        {
+          "claim": "Kodaline was formed in Ireland.",
+          "p_support": 0.977,
+          "supported": true
+        },
+        {
+          "claim": "Ireland is closer to England than the Philippines.",
+          "p_support": 0.1076,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.4
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 5.47,
+      "llm_calls": 2,
+      "gen_tokens": 84,
+      "prompt_tokens": 1904,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0151,
+          "supported": false
+        },
+        {
+          "claim": "The player who scored both goals in the 2006 KNVB Cup Final was Dutch.",
+          "p_support": 0.9515,
+          "supported": true
+        },
+        {
+          "claim": "Klaas-Jan Huntelaar scored both goals for Ajax in the 2006 KNVB Cup Final.",
+          "p_support": 0.9806,
+          "supported": true
+        },
+        {
+          "claim": "Klaas-Jan Huntelaar is Dutch.",
+          "p_support": 0.9372,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.373,
+      "llm_calls": 2,
+      "gen_tokens": 119,
+      "prompt_tokens": 1959,
+      "claims": [
+        {
+          "claim": "Here is the list of atomic claims:",
+          "p_support": 0.0168,
+          "supported": false
+        },
+        {
+          "claim": "The organization that hosted an event at the Los Angeles Historic-Cultural Monument (No. 139) on October 12, 1991, was the Shrine Auditorium.",
+          "p_support": 0.3381,
+          "supported": false
+        },
+        {
+          "claim": "The Shrine Auditorium is designated as a Los Angeles Historic-Cultural Monument (No. 139).",
+          "p_support": 0.9726,
+          "supported": true
+        },
+        {
+          "claim": "The Shrine Auditorium hosted the 1991 Ms. Olympia contest on October 12, 1991.",
+          "p_support": 0.9641,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 7.251,
+      "llm_calls": 2,
+      "gen_tokens": 137,
+      "prompt_tokens": 1692,
+      "claims": [
+        {
+          "claim": "The town linked by rail to Kendal and named after a lake of the same name is Windermere.",
+          "p_support": 0.9654,
+          "supported": true
+        },
+        {
+          "claim": "The Windermere Hotel opened at the time the railway link with Kendal was established.",
+          "p_support": 0.9835,
+          "supported": true
+        },
+        {
+          "claim": "The railway link with Kendal was established in 1847.",
+          "p_support": 0.9833,
+          "supported": true
+        },
+        {
+          "claim": "The town of Windermere took its name from the nearby lake, Windermere.",
+          "p_support": 0.9607,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    }
+  ]
+}

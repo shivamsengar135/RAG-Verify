@@ -1,0 +1,54 @@
+# Global settings shared by every run. Method variants live in configs/methods.yaml.
+paths:
+  data: data
+  results: results
+  logs: logs
+
+subsets:
+  permutation_seed: 2026      # fixed shuffle of each validation split
+  test_size: 300              # questions per seed (seeds 0,1,2 are disjoint blocks)
+  num_test_seeds: 3
+  dev_size: 100               # held-out block after the test blocks; used for smoke tests / prompt debugging only
+
+llm:
+  backbone: qwen2.5:7b-instruct-q4_K_M
+  num_ctx: 8192
+  max_new_tokens: 256
+  temperature: 0.0
+
+retriever:
+  model: BAAI/bge-small-en-v1.5
+  query_instruction: "Represent this sentence for searching relevant passages: "
+  k: 5
+  triviaqa_chunk_words: 100
+  triviaqa_distractor_questions: 1100
+
+verifier:
+  nli_model: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+  nli_max_len: 512
+  # FROZEN for Phase 3 (27 Oct 2026), selected on the dev block by code/tune_dev.py (see paper/dev_selection_report.md)
+  kind: hybrid                # question-aware LLM check on the answer claim + NLI on the other claims
+  tau: 0.3                    # NLI entailment / contradiction threshold
+  rho: 0.0                    # minimum fraction of supported claims to answer (0 = only the answer claim gates)
+  joint_premise_top: 3        # also verify against the concatenation of the top-3 passages (multi-hop)
+  selfcheck_samples: 5
+  selfcheck_temperature: 0.7
+
+cove:
+  max_verification_questions: 5
+
+selfrag:
+  model: selfrag/selfrag_llama2_7b
+  mode: adaptive_retrieval
+  threshold: 0.2
+  max_new_tokens: 100
+  w_rel: 1.0
+  w_sup: 1.0
+  w_use: 1.0
+  use_seqscore: true
+
+evaluation:
+  claim_extractor: llama3.1:8b-instruct-q4_K_M   # fixed for all systems, differs from the default backbone
+  minicheck_model: lytang/MiniCheck-Flan-T5-Large
+  minicheck_chunk_words: 400
+  triviaqa_gold_chunks_per_claim: 5               # FActScore-style: top passages from the gold pages per claim

@@ -1,0 +1,9 @@
+{
+  "design": "hybrid",
+  "method": "rv_hybrid_tau03",
+  "tau": 0.3,
+  "rho": 0.0,
+  "avg_phi1": 0.20000000000000007,
+  "best_phi1": 0.20500000000000002,
+  "rule": "max mean Phi1 over dev; tie (<=0.01) -> higher coverage, fewer LLM calls, tau near 0.5"
+}

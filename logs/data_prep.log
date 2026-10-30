@@ -1,0 +1,5 @@
+﻿Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits 
+and faster downloads.
+hotpotqa {'questions': 7405, 'corpus_passages': 66635, 'seed0': 300, 'seed1': 300, 'seed2': 300, 'dev': 100}
+triviaqa {'validation_with_pages': 7993, 'questions_kept': 1000, 'distractor_questions': 1100, 'pages': 3120, 'corpus_passages': 135517, 'seed0': 300, 'seed1': 300, 'seed2': 300, 'dev': 100}
+halueval 2000 items

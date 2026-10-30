@@ -1,0 +1,57 @@
+>> code/run.py --dataset hotpotqa --split dev --method closed_book --n 20 --tag smoke
+   exit=0 in 69s
+>> code/run.py --dataset triviaqa --split dev --method closed_book --n 20 --tag smoke
+   exit=0 in 59s
+>> code/run.py --dataset hotpotqa --split dev --method rag --n 20 --tag smoke
+   exit=0 in 88s
+>> code/run.py --dataset triviaqa --split dev --method rag --n 20 --tag smoke
+   exit=0 in 84s
+>> code/run.py --dataset hotpotqa --split dev --method rag_abstain --n 20 --tag smoke
+   exit=0 in 82s
+>> code/run.py --dataset triviaqa --split dev --method rag_abstain --n 20 --tag smoke
+   exit=0 in 88s
+>> code/run.py --dataset hotpotqa --split dev --method cove --n 20 --tag smoke
+   exit=0 in 126s
+>> code/run.py --dataset triviaqa --split dev --method cove --n 20 --tag smoke
+   exit=0 in 113s
+>> code/run.py --dataset hotpotqa --split dev --method cove_rag --n 20 --tag smoke
+   exit=0 in 159s
+>> code/run.py --dataset triviaqa --split dev --method cove_rag --n 20 --tag smoke
+   exit=0 in 171s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify --n 20 --tag smoke
+   exit=0 in 69s
+>> code/run.py --dataset triviaqa --split dev --method ragverify --n 20 --tag smoke
+   exit=0 in 71s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_retrieval --n 20 --tag smoke
+   exit=0 in 138s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_retrieval --n 20 --tag smoke
+   exit=0 in 127s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_decomp --n 20 --tag smoke
+   exit=0 in 39s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_decomp --n 20 --tag smoke
+   exit=0 in 40s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_verifier --n 20 --tag smoke
+   exit=0 in 54s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_verifier --n 20 --tag smoke
+   exit=0 in 54s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_revision --n 20 --tag smoke
+   exit=0 in 126s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_revision --n 20 --tag smoke
+   exit=0 in 67s
+>> code/run.py --dataset hotpotqa --split dev --method rv_no_abstain --n 20 --tag smoke
+   exit=0 in 82s
+>> code/run.py --dataset triviaqa --split dev --method rv_no_abstain --n 20 --tag smoke
+   exit=0 in 76s
+>> code/run.py --dataset hotpotqa --split dev --method rv_llm_judge --n 20 --tag smoke
+   exit=0 in 78s
+>> code/run.py --dataset triviaqa --split dev --method rv_llm_judge --n 20 --tag smoke
+   exit=0 in 76s
+>> code/run.py --dataset hotpotqa --split dev --method rv_k10 --n 20 --tag smoke
+   exit=0 in 101s
+>> code/run.py --dataset triviaqa --split dev --method rv_k10 --n 20 --tag smoke
+   exit=0 in 99s
+>> code/run.py --dataset hotpotqa --split dev --method ragverify_llama --n 20 --tag smoke
+   exit=0 in 171s
+>> code/run.py --dataset triviaqa --split dev --method ragverify_llama --n 20 --tag smoke
+   exit=0 in 200s
+>> code/selfrag_run.py --dataset hotpotqa --split dev --n 20 --tag smoke

@@ -1,0 +1,12 @@
+{
+ "lost answer: judge rejects explicitly supported answer": 9,
+ "wrong answer: scoring artefact (acceptable answer)": 6,
+ "lost answer: comparison / yes-no needs combining passages": 5,
+ "wrong answer: answers a different slot (judge accepts)": 9,
+ "wrong answer: retrieval miss (answer from wrong passage)": 4,
+ "wrong answer: reasoning or reading error over evidence": 6,
+ "lost answer: draft not grounded in passages (prior knowledge)": 7,
+ "lost answer: scoring artefact (noisy gold alias, draft wrong)": 3,
+ "lost answer: supporting-claim flag": 1,
+ "n": 50
+}

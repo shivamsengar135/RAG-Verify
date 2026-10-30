@@ -1,0 +1,611 @@
+{
+  "source": "hotpotqa/rv_no_verifier/dev_smoke.jsonl",
+  "summary": {
+    "n": 20,
+    "errors": 0,
+    "em": 0.35,
+    "f1": 0.4,
+    "accuracy": 0.35,
+    "coverage": 0.65,
+    "abstention_rate": 0.35,
+    "selective_accuracy": 0.5384615384615384,
+    "hallucination_rate": 0.3,
+    "claim_precision": 0.7377289377289377,
+    "claims_per_answer": 4.153846153846154,
+    "latency_s": 2.0705999999999998,
+    "llm_calls": 2.0,
+    "gen_tokens": 81.9,
+    "prompt_tokens": 1540.45
+  },
+  "per_example": [
+    {
+      "id": "5a83e98e5542992ef85e2387",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.234,
+      "llm_calls": 2,
+      "gen_tokens": 78,
+      "prompt_tokens": 1878
+    },
+    {
+      "id": "5abee70a5542994516f45476",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.665,
+      "llm_calls": 2,
+      "gen_tokens": 64,
+      "prompt_tokens": 1455,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0193,
+          "supported": false
+        },
+        {
+          "claim": "Anne Innes-Ker served as Mistress of the Robes to Queen Victoria.",
+          "p_support": 0.9519,
+          "supported": true
+        },
+        {
+          "claim": "Anne Innes-Ker is the daughter of the 7th Duke of Marlborough.",
+          "p_support": 0.9493,
+          "supported": true
+        },
+        {
+          "claim": "The 7th Duke of Marlborough is Anne Innes-Ker's father.",
+          "p_support": 0.9573,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab5627b5542992aa134a2ff",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.201,
+      "llm_calls": 2,
+      "gen_tokens": 89,
+      "prompt_tokens": 1573
+    },
+    {
+      "id": "5a738225554299623ed4abc3",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.546,
+      "llm_calls": 2,
+      "gen_tokens": 103,
+      "prompt_tokens": 1815,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Bedknobs and Broomsticks is the musical fantasy film that is older.",
+          "p_support": 0.884,
+          "supported": true
+        },
+        {
+          "claim": "Bedknobs and Broomsticks was released in 1971.",
+          "p_support": 0.9787,
+          "supported": true
+        },
+        {
+          "claim": "The Muppet Christmas Carol was released in 1992.",
+          "p_support": 0.9795,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a8b50475542997f31a41cd4",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.308,
+      "llm_calls": 2,
+      "gen_tokens": 97,
+      "prompt_tokens": 1376,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0185,
+          "supported": false
+        },
+        {
+          "claim": "Donnie Yen starred in Wing Chun.",
+          "p_support": 0.7432,
+          "supported": true
+        },
+        {
+          "claim": "Michelle Yeoh starred in Wing Chun.",
+          "p_support": 0.9595,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a Hong Kong actor.",
+          "p_support": 0.9579,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a martial artist.",
+          "p_support": 0.923,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a film director.",
+          "p_support": 0.9399,
+          "supported": true
+        },
+        {
+          "claim": "Donnie Yen is a multiple-time world wushu tournament champion.",
+          "p_support": 0.9458,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8571428571428571
+    },
+    {
+      "id": "5a7653d25542992db9473765",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.3,
+      "llm_calls": 2,
+      "gen_tokens": 93,
+      "prompt_tokens": 1684,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0235,
+          "supported": false
+        },
+        {
+          "claim": "Nick Hexum is the vocalist and guitarist for the band 311.",
+          "p_support": 0.9667,
+          "supported": true
+        },
+        {
+          "claim": "Nick Hexum was one of the nine producers who helped produce Decomposer by The Matches.",
+          "p_support": 0.9804,
+          "supported": true
+        },
+        {
+          "claim": "The band 311 is an American rock band.",
+          "p_support": 0.9649,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.884,
+      "llm_calls": 2,
+      "gen_tokens": 126,
+      "prompt_tokens": 1420,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0157,
+          "supported": false
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was the king of the Sasanian Empire from March 631 to April 631.",
+          "p_support": 0.9208,
+          "supported": true
+        },
+        {
+          "claim": "The Sasanian Empire succeeded the Parthian Empire.",
+          "p_support": 0.9871,
+          "supported": true
+        },
+        {
+          "claim": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire from March 631 to April 631.",
+          "p_support": 0.9508,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a7125b95542994082a3e5d5",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.309,
+      "llm_calls": 2,
+      "gen_tokens": 97,
+      "prompt_tokens": 1489,
+      "claims": [
+        {
+          "claim": "Gardnerville has a greater population than Minden as of the 2010 census.",
+          "p_support": 0.8758,
+          "supported": true
+        },
+        {
+          "claim": "Gardnerville had a population of 5,656 as of the 2010 census.",
+          "p_support": 0.8791,
+          "supported": true
+        },
+        {
+          "claim": "Minden had a population of 3,001 as of the 2010 census.",
+          "p_support": 0.4073,
+          "supported": false
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5a7f0be055429930675135fe",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.214,
+      "llm_calls": 2,
+      "gen_tokens": 94,
+      "prompt_tokens": 1254
+    },
+    {
+      "id": "5abd14c455429924427fceec",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.078,
+      "llm_calls": 2,
+      "gen_tokens": 81,
+      "prompt_tokens": 1595,
+      "claims": [
+        {
+          "claim": "Here is the list of atomic claims:",
+          "p_support": 0.0173,
+          "supported": false
+        },
+        {
+          "claim": "Tania Miller will conduct the firing cannons in Victoria as part of a musical piece written to celebrate the defeat of Napoleon in Russia.",
+          "p_support": 0.9105,
+          "supported": true
+        },
+        {
+          "claim": "The Victoria Symphony Splash event includes live cannon fire during the 1812 Overture.",
+          "p_support": 0.9857,
+          "supported": true
+        },
+        {
+          "claim": "The Victoria Symphony Splash event is led by Victoria Symphony Music Director Tania Miller.",
+          "p_support": 0.9805,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5ae4843455429970de88d997",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.761,
+      "llm_calls": 2,
+      "gen_tokens": 67,
+      "prompt_tokens": 1503
+    },
+    {
+      "id": "5ae537895542990ba0bbb234",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.423,
+      "llm_calls": 2,
+      "gen_tokens": 52,
+      "prompt_tokens": 1357,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0183,
+          "supported": false
+        },
+        {
+          "claim": "The city situated where Kellyville Ridge is located is the City of Blacktown.",
+          "p_support": 0.8625,
+          "supported": true
+        },
+        {
+          "claim": "Kellyville Ridge is located in the local government area of City of Blacktown.",
+          "p_support": 0.98,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6666666666666666
+    },
+    {
+      "id": "5addf05a5542997dc79070cd",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.234,
+      "llm_calls": 2,
+      "gen_tokens": 44,
+      "prompt_tokens": 1313,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0177,
+          "supported": false
+        },
+        {
+          "claim": "Maurice Tourneur was French.",
+          "p_support": 0.9638,
+          "supported": true
+        },
+        {
+          "claim": "Greg Mottola is American.",
+          "p_support": 0.9462,
+          "supported": true
+        },
+        {
+          "claim": "Maurice Tourneur and Greg Mottola were not both American film directors.",
+          "p_support": 0.83,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.75
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.861,
+      "llm_calls": 2,
+      "gen_tokens": 76,
+      "prompt_tokens": 1287,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0133,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr and Mate Pavić have both won a doubles title.",
+          "p_support": 0.2024,
+          "supported": false
+        },
+        {
+          "claim": "Françoise Dürr won over 60 doubles titles.",
+          "p_support": 0.9504,
+          "supported": true
+        },
+        {
+          "claim": "Mate Pavić won the 2016 US Open mixed doubles title.",
+          "p_support": 0.9553,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.5
+    },
+    {
+      "id": "5addd5795542990dbb2f7e9d",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 1.969,
+      "llm_calls": 2,
+      "gen_tokens": 76,
+      "prompt_tokens": 1647,
+      "claims": [
+        {
+          "claim": "Here are the atomic claims:",
+          "p_support": 0.0218,
+          "supported": false
+        },
+        {
+          "claim": "The streaming version of the album released in 2017 on which label included \"Used to This\".",
+          "p_support": 0.9672,
+          "supported": true
+        },
+        {
+          "claim": "\"Used to This\" was included on the streaming version of Future's 2017 album.",
+          "p_support": 0.9774,
+          "supported": true
+        },
+        {
+          "claim": "Future's 2017 album was released on Epic Records.",
+          "p_support": 0.9693,
+          "supported": true
+        },
+        {
+          "claim": "Future released an album in 2017.",
+          "p_support": 0.9566,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.8
+    },
+    {
+      "id": "5a84bbb35542991dd0999dc0",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.92,
+      "llm_calls": 2,
+      "gen_tokens": 64,
+      "prompt_tokens": 2276
+    },
+    {
+      "id": "5a7e31c055429934daa2fbee",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.918,
+      "llm_calls": 2,
+      "gen_tokens": 74,
+      "prompt_tokens": 1405
+    },
+    {
+      "id": "5ab66a3555429954757d3290",
+      "em": 1.0,
+      "f1": 1.0,
+      "match": 1.0,
+      "correct": true,
+      "answered": true,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 1.634,
+      "llm_calls": 2,
+      "gen_tokens": 57,
+      "prompt_tokens": 1742,
+      "claims": [
+        {
+          "claim": "The player who scored both goals in the 2006 KNVB Cup Final was Dutch.",
+          "p_support": 0.9515,
+          "supported": true
+        },
+        {
+          "claim": "Klaas-Jan Huntelaar scored both goals for Ajax in the 2006 KNVB Cup Final.",
+          "p_support": 0.9806,
+          "supported": true
+        },
+        {
+          "claim": "Klaas-Jan Huntelaar is Dutch.",
+          "p_support": 0.9372,
+          "supported": true
+        }
+      ],
+      "claim_precision": 1.0
+    },
+    {
+      "id": "5a7c0dab5542997c3ec972d2",
+      "em": 0.0,
+      "f1": 0.5,
+      "match": 0.0,
+      "correct": false,
+      "answered": true,
+      "hallucinated": true,
+      "error": null,
+      "latency_s": 2.585,
+      "llm_calls": 2,
+      "gen_tokens": 110,
+      "prompt_tokens": 1350,
+      "claims": [
+        {
+          "claim": "Here is the list of atomic claims:",
+          "p_support": 0.0168,
+          "supported": false
+        },
+        {
+          "claim": "The organization that hosted an event at the Los Angeles Historic-Cultural Monument (No. 139) on October 12, 1991, is the IFBB.",
+          "p_support": 0.2085,
+          "supported": false
+        },
+        {
+          "claim": "The Shrine Auditorium is designated as Los Angeles Historic-Cultural Monument (No. 139).",
+          "p_support": 0.9709,
+          "supported": true
+        },
+        {
+          "claim": "The 1991 Ms. Olympia contest was an event organized by the IFBB.",
+          "p_support": 0.9796,
+          "supported": true
+        },
+        {
+          "claim": "The 1991 Ms. Olympia contest was hosted at the Shrine Auditorium.",
+          "p_support": 0.9843,
+          "supported": true
+        }
+      ],
+      "claim_precision": 0.6
+    },
+    {
+      "id": "5abefa5b5542997ec76fd3a3",
+      "em": 0.0,
+      "f1": 0.0,
+      "match": 0.0,
+      "correct": false,
+      "answered": false,
+      "hallucinated": false,
+      "error": null,
+      "latency_s": 2.368,
+      "llm_calls": 2,
+      "gen_tokens": 96,
+      "prompt_tokens": 1390
+    }
+  ]
+}

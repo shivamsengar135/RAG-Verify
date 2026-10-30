@@ -1,0 +1,65 @@
+{
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch": "2.11.0+cu128",
+  "torch_cuda": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "transformers": "5.21.0",
+  "vram_idle_mib": 0,
+  "llms": {
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "answer": "The capital of Australia is Canberra.",
+      "gen_tok_per_s": 48.2
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+      "answer": "Canberra is the capital of Australia.",
+      "gen_tok_per_s": 45.5
+    }
+  },
+  "vram_with_llm_mib": 4641,
+  "nli": {
+    "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "labels": [
+      "entailment",
+      "neutral",
+      "contradiction"
+    ],
+    "predictions": [
+      {
+        "hypothesis": "Jane Austen wrote Pride and Prejudice.",
+        "pred": "entailment",
+        "probs": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "hypothesis": "Charles Dickens wrote Pride and Prejudice.",
+        "pred": "contradiction",
+        "probs": [
+          0.0,
+          0.0,
+          0.999
+        ]
+      },
+      {
+        "hypothesis": "Jane Austen was born in Hampshire.",
+        "pred": "neutral",
+        "probs": [
+          0.001,
+          0.999,
+          0.0
+        ]
+      }
+    ]
+  },
+  "embedder": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "dim": 384,
+    "passages_per_s": 429.6
+  },
+  "vram_peak_all_loaded_mib": 5770,
+  "vram_total_mib": 8187
+}

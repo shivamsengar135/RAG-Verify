@@ -1,0 +1,120 @@
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_no_retrieval
+   exit=0 in 25577s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_no_retrieval
+   exit=0 in 1735s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_no_decomp
+   exit=0 in 1014s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_no_decomp
+   exit=0 in 1047s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_no_revision
+   exit=0 in 1416s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_no_revision
+   exit=0 in 2430s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_no_abstain
+   exit=0 in 2185s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_no_abstain
+   exit=0 in 2829s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_k1
+   exit=0 in 1063s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_k1
+   exit=0 in 993s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_k3
+   exit=0 in 3697s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_k3
+   exit=0 in 2027s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_k10
+   exit=0 in 2180s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_k10
+   exit=0 in 2666s
+>> code/run.py --dataset hotpotqa --split seed0 --method rag_k1
+   exit=0 in 419s
+>> code/run.py --dataset triviaqa --split seed0 --method rag_k1
+   exit=0 in 387s
+>> code/run.py --dataset hotpotqa --split seed0 --method rag_k3
+   exit=0 in 488s
+>> code/run.py --dataset triviaqa --split seed0 --method rag_k3
+   exit=0 in 474s
+>> code/run.py --dataset hotpotqa --split seed0 --method rag_k10
+   exit=0 in 675s
+>> code/run.py --dataset triviaqa --split seed0 --method rag_k10
+   exit=0 in 670s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_tau05
+   exit=0 in 1864s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_tau05
+   exit=0 in 2574s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_tau07
+   exit=0 in 1828s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_tau07
+   exit=0 in 2544s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_tau09
+   exit=0 in 1838s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_tau09
+   exit=0 in 2601s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_nli_only
+   exit=0 in 1174s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_nli_only
+   exit=0 in 1592s
+>> code/run.py --dataset hotpotqa --split seed0 --method rv_llm_judge
+   exit=0 in 1415s
+>> code/run.py --dataset triviaqa --split seed0 --method rv_llm_judge
+   exit=0 in 1316s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_retrieval --split seed0 --no-claims
+   exit=0 in 4s
+>> code/evaluate.py --dataset triviaqa --method rv_no_retrieval --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_decomp --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_no_decomp --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_revision --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_no_revision --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_no_abstain --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_no_abstain --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_k1 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_k1 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_k3 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_k3 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_k10 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_k10 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rag_k1 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rag_k1 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rag_k3 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rag_k3 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rag_k10 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rag_k10 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau05 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau05 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau07 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau07 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_tau09 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_tau09 --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_nli_only --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_nli_only --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset hotpotqa --method rv_llm_judge --split seed0 --no-claims
+   exit=0 in 3s
+>> code/evaluate.py --dataset triviaqa --method rv_llm_judge --split seed0 --no-claims
+   exit=0 in 3s

@@ -1,0 +1,2 @@
+hotpotqa {"n": 900, "flagged_initial": 466, "idk_by_model": 399, "idk_after_revision": 380, "idk_first_draft": 19, "gate_abstain": 44, "gate_withheld_correct": 24, "answered": 457, "initial_correct": 425, "flagged_initial_correct": 164}
+triviaqa {"n": 900, "flagged_initial": 282, "idk_by_model": 240, "idk_after_revision": 233, "idk_first_draft": 7, "gate_abstain": 7, "gate_withheld_correct": 3, "answered": 653, "initial_correct": 682, "flagged_initial_correct": 134}

@@ -1,0 +1,3 @@
+rag_llama  n=20 identical_text=20 identical_final_answer=20
+rag        n=20 identical_text=13 identical_final_answer=20
+ragverify  n=20 identical_text=12 identical_final_answer=20

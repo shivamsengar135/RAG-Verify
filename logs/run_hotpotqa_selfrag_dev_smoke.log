@@ -1,0 +1,50 @@
+2026-10-27 15:57:11,542 HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-10-27 15:57:11,552 HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-10-27 15:57:12,400 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b "HTTP/1.1 200 OK"
+2026-10-27 15:57:14,241 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-27 15:57:14,539 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-27 15:57:14,811 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/tokenizer.json "HTTP/1.1 404 Not Found"
+2026-10-27 15:57:14,812 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-27 15:57:15,133 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-10-27 15:57:17,011 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b "HTTP/1.1 200 OK"
+2026-10-27 15:57:21,540 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/model.safetensors "HTTP/1.1 404 Not Found"
+2026-10-27 15:57:21,947 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-10-27 15:57:22,539 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/pytorch_model.bin "HTTP/1.1 404 Not Found"
+2026-10-27 15:57:23,059 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-10-27 15:57:23,481 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b "HTTP/1.1 200 OK"
+2026-10-27 15:57:24,027 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b/commits/main "HTTP/1.1 200 OK"
+2026-10-27 15:57:24,572 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b/discussions?p=0 "HTTP/1.1 200 OK"
+2026-10-27 15:57:24,981 HTTP Request: GET https://huggingface.co/api/models/selfrag/selfrag_llama2_7b/commits/refs%2Fpr%2F7 "HTTP/1.1 200 OK"
+2026-10-27 15:57:25,535 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/refs%2Fpr%2F7/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-27 15:57:25,910 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/selfrag/selfrag_llama2_7b/59021db0137d3802ffc30f1dde1b50e5aa97d7f6/model.safetensors.index.json?%2Fselfrag%2Fselfrag_llama2_7b%2Fresolve%2Frefs%2Fpr%2F7%2Fmodel.safetensors.index.json=&etag=%22cd3b8fb46c4d5616e91520a7a7d9a5a75af759a8%22 "HTTP/1.1 200 OK"
+2026-10-27 15:57:26,363 HTTP Request: HEAD https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/refs%2Fpr%2F7/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-27 15:57:26,575 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/selfrag/selfrag_llama2_7b/59021db0137d3802ffc30f1dde1b50e5aa97d7f6/model.safetensors.index.json?%2Fselfrag%2Fselfrag_llama2_7b%2Fresolve%2Frefs%2Fpr%2F7%2Fmodel.safetensors.index.json=&etag=%22cd3b8fb46c4d5616e91520a7a7d9a5a75af759a8%22 "HTTP/1.1 200 OK"
+2026-10-27 15:57:26,869 HTTP Request: GET https://huggingface.co/api/resolve-cache/models/selfrag/selfrag_llama2_7b/59021db0137d3802ffc30f1dde1b50e5aa97d7f6/model.safetensors.index.json?%2Fselfrag%2Fselfrag_llama2_7b%2Fresolve%2Frefs%2Fpr%2F7%2Fmodel.safetensors.index.json=&etag=%22cd3b8fb46c4d5616e91520a7a7d9a5a75af759a8%22 "HTTP/1.1 200 OK"
+2026-10-27 18:48:02,978 HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-10-27 18:48:29,395 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-27 18:48:29,457 Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-10-27 18:48:29,997 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-27 18:48:30,345 HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-27 18:48:30,723 HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-27 18:48:30,724 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-27 18:48:36,066 [1/20] 5a83e98e5542992ef85e2387 pred='Jason Heyward' 5.1s
+2026-10-27 18:48:44,791 [2/20] 5abee70a5542994516f45476 pred='Anne Innes-Ker, Duchess of Roxburghe (1839-1892), was the da' 8.7s
+2026-10-27 18:48:49,359 [3/20] 5ab5627b5542992aa134a2ff pred="I'm sorry, but I don't have access to current information. C" 4.6s
+2026-10-27 18:48:52,643 [4/20] 5a738225554299623ed4abc3 pred='Bedknobs and Broomsticks is older than The Muppet Christmas ' 3.3s
+2026-10-27 18:48:54,071 [5/20] 5a8b50475542997f31a41cd4 pred='Donnie Yen' 1.4s
+2026-10-27 18:48:55,593 [6/20] 5a7653d25542992db9473765 pred='311' 1.5s
+2026-10-27 18:48:57,163 [7/20] 5ab2659e554299340b5254b2 pred='Sasanian Empire' 1.6s
+2026-10-27 18:49:02,885 [8/20] 5a7125b95542994082a3e5d5 pred='According to the 2010 census, the population of Gardnerville' 5.7s
+2026-10-27 18:49:05,987 [9/20] 5a7f0be055429930675135fe pred="The Devil's Feather was written by Minette Walters, an Engli" 3.1s
+2026-10-27 18:49:10,550 [10/20] 5abd14c455429924427fceec pred='Pyotr Ilyich Tchaikovsky' 4.6s
+2026-10-27 18:49:11,901 [11/20] 5ae4843455429970de88d997 pred='Fulham Football Club' 1.3s
+2026-10-27 18:49:15,131 [12/20] 5ae537895542990ba0bbb234 pred='Kellyville Ridge is located in the City of Blacktown, in the' 3.2s
+2026-10-27 18:49:17,856 [13/20] 5addf05a5542997dc79070cd pred='Maurice Tourneur was a French film director. Greg Mottola wa' 2.7s
+2026-10-27 18:49:20,452 [14/20] 5a89e8035542992e4fca846d pred='Yes, both Françoise Dürr and Mate Pavi\u0107 have won a doubles t' 2.6s
+2026-10-27 18:49:22,042 [15/20] 5addd5795542990dbb2f7e9d pred='Epic Records' 1.6s
+2026-10-27 18:49:26,317 [16/20] 5a84bbb35542991dd0999dc0 pred='Hindi films.' 4.3s
+2026-10-27 18:49:29,137 [17/20] 5a7e31c055429934daa2fbee pred='Kodaline was formed in Ireland, which is closer to England t' 2.8s
+2026-10-27 18:49:32,149 [18/20] 5ab66a3555429954757d3290 pred='Dutch' 3.0s
+2026-10-27 18:49:35,908 [19/20] 5a7c0dab5542997c3ec972d2 pred='Asian Pacific American Heritage Festival' 3.8s
+2026-10-27 18:49:38,486 [20/20] 5abefa5b5542997ec76fd3a3 pred='The town is called Windermere.' 2.6s
+2026-10-27 18:49:38,487 peak_torch_vram_mib=5481
