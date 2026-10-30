@@ -102,7 +102,7 @@ for k, phrase in [("lost answer: judge rejects explicitly supported answer", "{}
     expect(phrase.format(M[k]), k)
 HE = json.loads((ROOT / "results/halueval/summary.json").read_text(encoding="utf-8"))
 HR = [json.loads(l) for l in (ROOT / "results/halueval/scores.jsonl").open(encoding="utf-8")]
-expect(f"AUROC {HE['nli']['auroc']:.3f} (95\\% CI {HE['nli']['auroc_ci'][0]:.3f}--{HE['nli']['auroc_ci'][1]:.3f})", "HaluEval NLI AUROC")
+expect(f"{HE['nli']['auroc']:.3f} (95\\% CI {HE['nli']['auroc_ci'][0]:.3f}--{HE['nli']['auroc_ci'][1]:.3f})", "HaluEval NLI AUROC")
 expect(f"flags only {sum(r['label'] == 'hallucinated' and r['nli_ent'] < HE['tau'] for r in HR)} of the 1{{,}}000 hallucinated", "NLI recall")
 expect(f"with {sum(r['label'] == 'correct' and r['nli_ent'] < HE['tau'] for r in HR)} false alarms", "NLI FP")
 expect(f"accuracy {HE['llm_judge']['accuracy']:.3f}, F1 {HE['llm_judge']['f1']:.3f} vs.\\ {HE['nli']['f1']:.3f}", "judge acc/F1")
