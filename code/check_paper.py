@@ -1,7 +1,8 @@
 """Phase-6 style checks on a paper version: every number quoted in the prose is recomputed from results/,
 every label is referenced, every citation key is in the verified bibliography, plus the venue's format rules
 (paper/ = IEEE conference version: abstract 150-250 words, at most 6 pages; paper_ictcs/ = ICTCS 2026, Springer:
-abstract at most 250 words with no citations or first person, 4-6 keywords, main text >= 3500 words or >= 10 pages).
+abstract at most 250 words with no citations or first person, 4-6 keywords, main text >= 3500 words or >= 10 pages,
+at most 10 pages to avoid the over-length charge).
 
 Usage: .venv\\Scripts\\python.exe code\\check_paper.py [--paper paper_ictcs]      (exit code 1 if any check fails)
 """
@@ -99,7 +100,8 @@ for k, phrase in [("lost answer: judge rejects explicitly supported answer", "{}
                   ("wrong answer: reasoning or reading error over evidence", "{} were reasoning"),
                   ("wrong answer: retrieval miss (answer from wrong passage)", "{} followed a retrieval"),
                   ("wrong answer: scoring artefact (acceptable answer)", "{} were acceptable")]:
-    expect(phrase.format(M[k]), k)
+    if not ICTCS or k.endswith(("explicitly supported answer", "different slot (judge accepts)")):  # 10-page version quotes two
+        expect(phrase.format(M[k]), k)
 HE = json.loads((ROOT / "results/halueval/summary.json").read_text(encoding="utf-8"))
 HR = [json.loads(l) for l in (ROOT / "results/halueval/scores.jsonl").open(encoding="utf-8")]
 expect(f"{HE['nli']['auroc']:.3f} (95\\% CI {HE['nli']['auroc_ci'][0]:.3f}--{HE['nli']['auroc_ci'][1]:.3f})", "HaluEval NLI AUROC")
@@ -109,7 +111,7 @@ expect(f"accuracy {HE['llm_judge']['accuracy']:.3f}, F1 {HE['llm_judge']['f1']:.
 expect(f"flags {sum(r['label'] == 'correct' and not r['judge_supported'] for r in HR)} of the 1{{,}}000 correct", "judge FP")
 LC = {(r["dataset"], r["method"]): r for r in csv.DictReader((ROOT / "results/tables/latency_claims.csv").open(encoding="utf-8"))}
 for ds in (H, Q):
-    for m in ["closed_book", "rag", "rag_abstain", "rv_no_verifier", "cove_rag", "ragverify"]:
+    for m in (["rag", "rv_no_verifier", "ragverify"] if ICTCS else ["closed_book", "rag", "rag_abstain", "rv_no_verifier", "cove_rag", "ragverify"]):
         expect(f"{100 * float(LC[(ds, m)]['claim_precision']):.1f}\\%", f"{ds} {m} claim precision")
     for m in ["rag", "rv_no_verifier", "cove_rag", "ragverify"]:
         expect(f"{float(LC[(ds, m)]['latency_median']):.1f}\\,s", f"{ds} {m} median latency")
@@ -153,6 +155,8 @@ if ICTCS:
     body_words = len([w for w in re.sub(r"\\[a-zA-Z]+\*?|[{}\[\]]", " ", body).split() if re.search(r"[A-Za-z0-9]", w)])
     if body_words < 3500 and pages < 10:
         fails.append(f"main text has {body_words} words and {pages} pages (ICTCS needs >= 3500 words or >= 10 pages)")
+    if pages > 10:
+        fails.append(f"{pages} pages (ICTCS charges INR 1800 per page beyond 10)")
 elif pages > 6:
     fails.append(f"{pages} pages")
 for bad in ["undefined", "Overfull"]:

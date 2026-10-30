@@ -11,12 +11,6 @@ Asai, A., Wu, Z., Wang, Y., et~al.: {Self-RAG: Learning to Retrieve, Generate,
   and Critique through Self-Reflection} (2023).
 \newblock {arXiv}:2310.11511
 
-\bibitem{chern2023factool}
-Chern, I.C., Chern, S., Chen, S., et~al.: {FacTool: Factuality Detection in
-  Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain
-  Scenarios} (2023).
-\newblock {arXiv}:2307.13528
-
 \bibitem{dhuliawala2023cove}
 Dhuliawala, S., Komeili, M., Xu, J., et~al.: {Chain-of-Verification Reduces
   Hallucination in Large Language Models} (2023).
@@ -27,31 +21,15 @@ Dixit, D., Pandey, P.: {R2VC: Modular Fact-Checking with Retrieval,
   Verification, and Confidence Calibration} (2026).
 \newblock {arXiv}:2609.11955
 
-\bibitem{farquhar2024semantic}
-Farquhar, S., Kossen, J., Kuhn, L., et~al.: {Detecting hallucinations in large
-  language models using semantic entropy}.
-\newblock Nature  (2024).
-\newblock \doi{10.1038/s41586-024-07421-0}
-
 \bibitem{gao2022rarr}
 Gao, L., Dai, Z., Pasupat, P., et~al.: {RARR: Researching and Revising What
   Language Models Say, Using Language Models} (2022).
 \newblock {arXiv}:2210.08726
 
-\bibitem{gao2023ragsurvey}
-Gao, Y., Xiong, Y., Gao, X., et~al.: {Retrieval-Augmented Generation for Large
-  Language Models: A Survey} (2023).
-\newblock {arXiv}:2312.10997
-
 \bibitem{dubey2024llama3}
 Grattafiori, A., Dubey, A., Jauhri, A., et~al.: {The Llama 3 Herd of Models}
   (2024).
 \newblock {arXiv}:2407.21783
-
-\bibitem{he2021debertav3}
-He, P., Gao, J., Chen, W.: {DeBERTaV3: Improving DeBERTa using ELECTRA-Style
-  Pre-Training with Gradient-Disentangled Embedding Sharing} (2021).
-\newblock {arXiv}:2111.09543
 
 \bibitem{huang2023survey}
 Huang, L., Yu, W., Ma, W., et~al.: {A Survey on Hallucination in Large Language
@@ -65,11 +43,6 @@ Jia, R., Fang, Z., Wu, M., et~al.: {Evidence-Aligned Entity Verification for
 \newblock In: Findings of the Association for Computational Linguistics: ACL
   2026, pp. 29,538--29,554 (2026).
 \newblock \doi{10.18653/v1/2026.findings-acl.1477}
-
-\bibitem{jiang2023flare}
-Jiang, Z., Xu, F.F., Gao, L., et~al.: {Active Retrieval Augmented Generation}
-  (2023).
-\newblock {arXiv}:2305.06983
 
 \bibitem{joshi2017triviaqa}
 Joshi, M., Choi, E., Weld, D.S., et~al.: {TriviaQA: A Large Scale Distantly
@@ -92,16 +65,6 @@ Lewis, P., Perez, E., Piktus, A., et~al.: {Retrieval-Augmented Generation for
 Li, J., Cheng, X., Zhao, W.X., et~al.: {HaluEval: A Large-Scale Hallucination
   Evaluation Benchmark for Large Language Models} (2023).
 \newblock {arXiv}:2305.11747
-
-\bibitem{lin2021truthfulqa}
-Lin, S., Hilton, J., Evans, O.: {TruthfulQA: Measuring How Models Mimic Human
-  Falsehoods} (2021).
-\newblock {arXiv}:2109.07958
-
-\bibitem{liu2023lost}
-Liu, N.F., Lin, K., Hewitt, J., et~al.: {Lost in the Middle: How Language
-  Models Use Long Contexts} (2023).
-\newblock {arXiv}:2307.03172
 
 \bibitem{manakul2023selfcheckgpt}
 Manakul, P., Liusie, A., Gales, M.J.F.: {SelfCheckGPT: Zero-Resource Black-Box
@@ -127,26 +90,10 @@ Rajpurkar, P., Zhang, J., Lopyrev, K., et~al.: {SQuAD: 100,000+ Questions for
   Machine Comprehension of Text} (2016).
 \newblock {arXiv}:1606.05250
 
-\bibitem{tamber2025faithjudge}
-Tamber, M.S., Bao, F.S., Xu, C., et~al.: {Benchmarking LLM Faithfulness in RAG
-  with Evolving Leaderboards} (2025).
-\newblock {arXiv}:2505.04847
-
 \bibitem{tang2024minicheck}
 Tang, L., Laban, P., Durrett, G.: {MiniCheck: Efficient Fact-Checking of LLMs
   on Grounding Documents} (2024).
 \newblock {arXiv}:2404.10774
-
-\bibitem{thorne2018fever}
-Thorne, J., Vlachos, A., Christodoulopoulos, C., et~al.: {FEVER: a large-scale
-  dataset for Fact Extraction and VERification} (2018).
-\newblock {arXiv}:1803.05355
-
-\bibitem{vladika2025medical}
-Vladika, J., Domres, A., Nguyen, M., et~al.: {Improving Reliability and
-  Explainability of Medical Question Answering through Atomic Fact Checking in
-  Retrieval-Augmented LLMs} (2025).
-\newblock {arXiv}:2505.24830
 
 \bibitem{wei2024safe}
 Wei, J., Yang, C., Song, X., et~al.: {Long-form factuality in large language
@@ -168,19 +115,9 @@ Xiao, S., Liu, Z., Zhang, P., et~al.: {C-Pack: Packed Resources For General
   Chinese Embeddings} (2023).
 \newblock {arXiv}:2309.07597
 
-\bibitem{yan2024crag}
-Yan, S.Q., Gu, J.C., Zhu, Y., et~al.: {Corrective Retrieval Augmented
-  Generation} (2024).
-\newblock {arXiv}:2401.15884
-
 \bibitem{yang2018hotpotqa}
 Yang, Z., Qi, P., Zhang, S., et~al.: {HotpotQA: A Dataset for Diverse,
   Explainable Multi-hop Question Answering} (2018).
 \newblock {arXiv}:1809.09600
-
-\bibitem{afev2025}
-Zheng, L., Li, C., Liu, Z., et~al.: {Fact in Fragments: Deconstructing Complex
-  Claims via LLM-based Atomic Fact Extraction and Verification} (2025).
-\newblock {arXiv}:2506.07446
 
 \end{thebibliography}

@@ -19,6 +19,10 @@ def main():
     (DST / "tables").mkdir(exist_ok=True)
     for f in (SRC / "tables").glob("*.tex"):
         shutil.copy2(f, DST / "tables" / f.name)
+    # 10-page budget: the printed ablation table keeps the component and verifier groups; the tau and k groups are
+    # reported in the prose and stay in full in results/tables/ablations.csv and paper/tables
+    rows = (DST / "tables" / "ablation_rows.tex").read_text(encoding="utf-8").split("\\midrule\n")
+    (DST / "tables" / "ablation_rows.tex").write_text("\\midrule\n".join(rows[:2]), encoding="utf-8")
     # Springer style: arXiv preprints are cited by their arXiv number alone (the note field), so drop the URL line
     bib = (SRC / "refs.bib").read_text(encoding="utf-8")
     bib = re.sub(r",\n  url = \{https://arxiv\.org/abs/[^}]*\}", "", bib)

@@ -25,7 +25,7 @@ def main():
             if r["backbone"] == "Qwen2.5-7B"}
     plt.rcParams.update({"font.size": 7.5, "font.family": "serif", "axes.edgecolor": INK, "axes.labelcolor": INK,
                          "xtick.color": INK, "ytick.color": INK, "pdf.fonttype": 42})
-    fig, axes = plt.subplots(1, 2, figsize=(4.8, 2.0), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(4.8, 1.7), sharey=True)
     ys = range(len(SYSTEMS))[::-1]
     for ax, (ds, title) in zip(axes, [("hotpotqa", "HotpotQA"), ("triviaqa", "TriviaQA")]):
         for y, (m, _) in zip(ys, SYSTEMS):
