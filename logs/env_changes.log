@@ -18,3 +18,4 @@
 2026-10-30 05:32 extras chain finished (EXTRAS FAILURES: none); latency_table.py run; claim precision + latency added to paper; human_check sheet made (100 items); paper 6 pages, check_paper passed; submission repackaged 2026-10-30
 2026-10-30 05:37 user chose to drop human validation: todo replaced by limitation sentence; error-analysis sample marked single reading; repackaged 2026-10-30
 2026-10-30 05:42 removed stale 'pend.: run in progress' note from Table I caption; repackaged 2026-10-30
+2026-10-30 06:09 pushed to https://github.com/shivamsengar135/RAG-Verify (commit 328014a); URL added to paper; repackaged 2026-10-30
