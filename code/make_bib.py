@@ -3,6 +3,7 @@
 Usage: .venv\\Scripts\\python.exe code\\make_bib.py
 """
 import json
+import re
 
 from common import ROOT
 
@@ -22,6 +23,23 @@ KEYS = {  # verified id -> citation key used in the paper
     "10.1017/pan.2023.20": "laurer2023nli", "10.1162/tacl_a_00276": "kwiatkowski2019nq",
 }
 
+# arXiv entries whose peer-reviewed version exists; cited as that version (fields checked against Crossref, 30 Oct 2026)
+PUBLISHED = {
+    "10.1145/3703155": {"kind": "article", "journal": "ACM Transactions on Information Systems", "volume": "43",
+                        "number": "2", "pages": "1--55", "year": "2025"},
+    "10.18653/v1/2026.findings-acl.1477": {"kind": "inproceedings", "pages": "29538--29554", "year": "2026",
+                                           "booktitle": "Findings of the Association for Computational Linguistics: ACL 2026"},
+}
+
+
+def bibname(name):
+    """'Family, Given' when a given name has a lower-case hyphenated part (e.g. Wen-tau), which BibTeX would
+    otherwise read as a 'von' particle; other names are left as 'Given Family'."""
+    parts = name.split()
+    if len(parts) > 1 and re.search(r"-[a-z]", " ".join(parts[:-1])):
+        return f"{parts[-1]}, {' '.join(parts[:-1])}"
+    return name
+
 
 def tex(s):
     return s.replace("&", "\\&").replace("%", "\\%").replace("_", "\\_").replace("#", "\\#")
@@ -36,13 +54,20 @@ def main():
         names = [a for a in r["authors"] if a.strip(" :")]  # arXiv lists e.g. "Qwen", ":" for team papers
         if len(names) > 6:  # IEEE style: long author lists shortened to "et al."
             names = names[:6] + ["others"]
-        authors = " and ".join(tex(a) for a in names)
-        fields = [f"  author = {{{authors}}}", f"  title = {{{{{tex(r['title'])}}}}}", f"  year = {{{r['year']}}}"]
-        if r["id"].startswith("doi:"):
+        authors = " and ".join(tex(bibname(a)) for a in names)
+        pub = PUBLISHED.get(r.get("doi"))
+        fields = [f"  author = {{{authors}}}", f"  title = {{{{{tex(r['title'])}}}}}",
+                  f"  year = {{{pub['year'] if pub else r['year']}}}"]
+        if pub:
+            fields += [f"  {k} = {{{tex(v)}}}" for k, v in pub.items() if k not in ("kind", "year")]
+            fields.append(f"  doi = {{{r['doi']}}}")
+            kind = pub["kind"]
+        elif r["id"].startswith("doi:"):
             fields += [f"  journal = {{{tex(r['venue'])}}}", f"  doi = {{{rid}}}"]
             kind = "article"
         else:  # IEEE template style for preprints: "year, arXiv:ID. [Online]. Available: URL"
-            fields += [f"  note = {{arXiv:{rid}}}", f"  url = {{https://arxiv.org/abs/{rid}}}"]
+            # braces keep "arXiv" lower-case in styles that capitalise the note (Springer spmpsci)
+            fields += [f"  note = {{{{arXiv}}:{rid}}}", f"  url = {{https://arxiv.org/abs/{rid}}}"]
             if r.get("doi"):
                 fields.append(f"  doi = {{{r['doi']}}}")
             kind = "misc"

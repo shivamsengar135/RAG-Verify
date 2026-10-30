@@ -28,6 +28,7 @@ All settings, seeds and model names are in `configs/base.yaml`; the experiment g
 .venv\Scripts\python.exe code\run_extras.py            # HaluEval, latency, claim precision, ablation table
 .venv\Scripts\python.exe code\aggregate.py             # tables in results/tables and paper/tables
 .venv\Scripts\python.exe code\check_paper.py           # checks every number in paper/main.tex against results/
+.venv\Scripts\python.exe code\build_ictcs.py           # builds and checks the ICTCS 2026 (Springer) version in paper_ictcs/
 ```
 
 Self-RAG needs `code\fetch_selfrag.py` before its runs.
@@ -39,6 +40,7 @@ Self-RAG needs `code\fetch_selfrag.py` before its runs.
 - `results/raw/`: generated outputs per question; `results/metrics/`: scored outputs; `results/tables/`: summaries
 - `results/error_analysis/`, `results/halueval/`: analyses reported in the paper
 - `logs/`: run logs and `env_changes.log`
-- `paper/`: LaTeX source (IEEE template) and tables generated from `results/`
+- `paper/`: LaTeX source (IEEE template), the verified bibliography, and tables generated from `results/`
+- `paper_ictcs/`: the ICTCS 2026 submission (Springer SVProc template), built from the same tables and bibliography
 
 `data/` (about 17 GB of benchmarks, indexes and model weights) is not included; `code/data_prep.py` rebuilds it.

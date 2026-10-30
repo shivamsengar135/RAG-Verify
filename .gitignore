@@ -10,3 +10,8 @@ paper/*.log
 paper/*.blg
 paper/*.out
 paper/submission/*.zip
+paper_ictcs/*.aux
+paper_ictcs/*.log
+paper_ictcs/*.blg
+paper_ictcs/*.out
+paper_ictcs/submission/*.zip

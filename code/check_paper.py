@@ -1,8 +1,11 @@
-"""Phase-6 style checks on paper/main.tex: every number quoted in the prose is recomputed from results/,
-every label is referenced, every citation key is in the verified bibliography, abstract length, page count.
+"""Phase-6 style checks on a paper version: every number quoted in the prose is recomputed from results/,
+every label is referenced, every citation key is in the verified bibliography, plus the venue's format rules
+(paper/ = IEEE conference version: abstract 150-250 words, at most 6 pages; paper_ictcs/ = ICTCS 2026, Springer:
+abstract at most 250 words with no citations or first person, 4-6 keywords, main text >= 3500 words or >= 10 pages).
 
-Usage: .venv\\Scripts\\python.exe code\\check_paper.py      (exit code 1 if any check fails)
+Usage: .venv\\Scripts\\python.exe code\\check_paper.py [--paper paper_ictcs]      (exit code 1 if any check fails)
 """
+import argparse
 import csv
 import json
 import re
@@ -10,7 +13,11 @@ import sys
 
 from common import ROOT
 
-tex = (ROOT / "paper" / "main.tex").read_text(encoding="utf-8")
+ap = argparse.ArgumentParser()
+ap.add_argument("--paper", default="paper", choices=["paper", "paper_ictcs"])
+PAPER = ROOT / ap.parse_args().paper
+ICTCS = PAPER.name == "paper_ictcs"
+tex = (PAPER / "main.tex").read_text(encoding="utf-8")
 S = {(r["dataset"], r["method"]): r for r in csv.DictReader((ROOT / "results/tables/main_summary.csv").open(encoding="utf-8"))}
 T = {(r["dataset"], r["a"], r["b"]): r for r in csv.DictReader((ROOT / "results/tables/main_tests.csv").open(encoding="utf-8"))}
 B = json.loads((ROOT / "results/tables/abstention_breakdown.json").read_text(encoding="utf-8"))
@@ -28,7 +35,7 @@ def delta(ds, a, b):
 
 
 def expect(text, why):
-    if text not in tex:
+    if text not in tex and text.replace("artefacts", "artifacts") not in tex:  # British (IEEE) vs American (Springer)
         fails.append(f"missing '{text}' ({why})")
 
 
@@ -121,24 +128,39 @@ expect(f"{SEL.get('avg_phi1', SEL.get('mean_phi1', 0.2)):.3f}", "dev selected ph
 for lab in re.findall(r"\\label\{([^}]+)\}", tex):
     if f"ref{{{lab}}}" not in tex:
         fails.append(f"label never referenced: {lab}")
-bib = (ROOT / "paper" / "refs.bib").read_text(encoding="utf-8")
+bib = (PAPER / "refs.bib").read_text(encoding="utf-8")
 for keys in re.findall(r"\\cite\{([^}]+)\}", tex):
     for k in keys.split(","):
         if f"{{{k.strip()},".replace("{", "{", 1) not in bib:
             fails.append(f"citation not in verified bib: {k}")
 abstract = re.search(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", tex, re.S).group(1)
-words = len(re.sub(r"\\[a-z]+|[{}$\\]", " ", abstract).split())
+kw = re.search(r"\\keywords\{(.*)\}\s*$", abstract.strip(), re.S)
+abstract_text = abstract.strip()[:kw.start()] if kw else abstract
+words = len(re.sub(r"\\[a-z]+|[{}$\\]", " ", abstract_text).split())
 if not 150 <= words <= 250:
     fails.append(f"abstract has {words} words")
-log = (ROOT / "paper" / "main.log").read_text(encoding="latin-1")
+log = (PAPER / "main.log").read_text(encoding="latin-1")
 pages = int(re.search(r"Output written on main\.pdf \((\d+) pages", log).group(1))
-if pages > 6:
+body_words = None
+if ICTCS:
+    if "\\cite" in abstract_text or re.search(r"\b(we|our|us)\b", abstract_text, re.I):
+        fails.append("abstract has a citation or first-person wording")
+    if not kw or not 4 <= len(kw.group(1).split("$\\cdot$")) <= 6:
+        fails.append("need 4-6 keywords")
+    body = tex[tex.index("\\section{Introduction}"):tex.index("\\bibliographystyle")]
+    body = re.sub(r"\\begin\{(table|algorithm)\}.*?\\end\{\1\}|(?<!\\)%[^\n]*|\$[^$]*\$|\\(cite|ref|label|url)\{[^}]*\}", " ",
+                  body, flags=re.S)
+    body_words = len([w for w in re.sub(r"\\[a-zA-Z]+\*?|[{}\[\]]", " ", body).split() if re.search(r"[A-Za-z0-9]", w)])
+    if body_words < 3500 and pages < 10:
+        fails.append(f"main text has {body_words} words and {pages} pages (ICTCS needs >= 3500 words or >= 10 pages)")
+elif pages > 6:
     fails.append(f"{pages} pages")
 for bad in ["undefined", "Overfull"]:
     if bad in log:
         fails.append(f"LaTeX log contains '{bad}'")
-pending = len(re.findall(r"\\todo\{|\\pending\{\}", tex)) + (ROOT / "paper/tables/main_rows.tex").read_text().count("\\pending")
+pending = len(re.findall(r"\\todo\{|\\pending\{\}", tex)) + (PAPER / "tables/main_rows.tex").read_text().count("\\pending")
 
-print(f"abstract words: {words} | pages: {pages} | citations checked | PENDING markers: {pending}")
+print(f"{PAPER.name}: abstract words: {words} | pages: {pages}" + (f" | main-text words: {body_words}" if ICTCS else "")
+      + f" | citations checked | PENDING markers: {pending}")
 print("FAILED:\n  " + "\n  ".join(fails) if fails else "all checks passed")
 sys.exit(1 if fails else 0)
