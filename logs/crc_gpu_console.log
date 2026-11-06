@@ -1,0 +1,229 @@
+waiting for free GPU since Fri Nov  6 17:01:43 IST 2026
+GPU free at Fri Nov  6 17:09:07 IST 2026
+>> stage_profile Fri Nov  6 17:09:07 IST 2026
+W1106 17:10:17.846000 1044 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  10%|#         | 40/394 [00:00<00:00, 386.89it/s]Loading weights:  20%|##        | 79/394 [00:00<00:00, 362.90it/s]Loading weights:  29%|##9       | 116/394 [00:00<00:00, 340.74it/s]Loading weights:  38%|###8      | 151/394 [00:00<00:00, 315.78it/s]Loading weights: 100%|##########| 394/394 [00:00<00:00, 728.07it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 2065.04it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  hotpotqa 10/50 last=2.6s
+  hotpotqa 20/50 last=4.3s
+  hotpotqa 30/50 last=4.4s
+  hotpotqa 40/50 last=3.5s
+  hotpotqa 50/50 last=4.1s
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  34%|###4      | 68/199 [00:00<00:00, 662.09it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1657.92it/s]
+  triviaqa 10/50 last=4.6s
+  triviaqa 20/50 last=3.2s
+  triviaqa 30/50 last=4.4s
+  triviaqa 40/50 last=2.6s
+  triviaqa 50/50 last=2.0s
+{'info': {'ollama_version': '0.40.15', 'gpu': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'backbone': 'qwen2.5:7b-instruct-q4_K_M', 'split': 'dev', 'n_per_dataset': 50}, 'memory': {'device_total_mib': 8188, 'before_anything_mib': 0, 'after_cuda_context_mib': 99, 'ollama_size_vram_mib': 4910, 'ollama_size_mib': 4910, 'after_llm_mib': 5116, 'nli_weights_mib': 838, 'after_nli_mib': 5990, 'retriever_weights_mib_hotpotqa': 127, 'retriever_weights_mib_triviaqa': 127, 'device_peak_by_stage_mib': {'between stages': 6347, 'answer': 6347, 'decomposition': 6347, 'nli': 6347, 'answer_check': 6347, 'revision': 6347, 'retrieval': 6347}, 'device_peak_mib': 6347}, 'datasets': {'hotpotqa': {'n': 50, 'total_median_s': 3.4827, 'total_mean_s': 3.5532099999999995, 'other_mean_s': 0.0015299999999999825, 'stages': {'retrieval': {'mean_s_per_question': 0.018938, 'share_of_mean_total': 0.005329828521252615, 'questions_with_stage': 50, 'median_s_when_run': 0.01695, 'calls_per_question': 1.0, 'torch_peak_mib': 967}, 'answer': {'mean_s_per_question': 1.1546399999999999, 'share_of_mean_total': 0.3249568699851684, 'questions_with_stage': 50, 'median_s_when_run': 1.0768, 'calls_per_question': 1.0, 'torch_peak_mib': 966}, 'decomposition': {'mean_s_per_question': 1.063378, 'share_of_mean_total': 0.29927248881996843, 'questions_with_stage': 50, 'median_s_when_run': 0.9573, 'calls_per_question': 1.1, 'torch_peak_mib': 966}, 'answer_check': {'mean_s_per_question': 0.387354, 'share_of_mean_total': 0.10901522848354024, 'questions_with_stage': 50, 'median_s_when_run': 0.38365, 'calls_per_question': 1.1, 'torch_peak_mib': 966}, 'nli': {'mean_s_per_question': 0.37537800000000004, 'share_of_mean_total': 0.10564475502433014, 'questions_with_stage': 50, 'median_s_when_run': 0.33815, 'calls_per_question': 1.1, 'torch_peak_mib': 1925}, 'revision': {'mean_s_per_question': 0.5519919999999999, 'share_of_mean_total': 0.15535023260657266, 'questions_with_stage': 25, 'median_s_when_run': 1.0885, 'calls_per_question': 0.5, 'torch_peak_mib': 966}}, 'same_output_as_latency_run': 34}, 'triviaqa': {'n': 50, 'total_median_s': 3.23055, 'total_mean_s': 3.47982, 'other_mean_s': 0.0017440000000000255, 'stages': {'retrieval': {'mean_s_per_question': 0.024770000000000004, 'share_of_mean_total': 0.007118184273899226, 'questions_with_stage': 50, 'median_s_when_run': 0.0202, 'calls_per_question': 1.0, 'torch_peak_mib': 1094}, 'answer': {'mean_s_per_question': 1.2111600000000002, 'share_of_mean_total': 0.34805248547338663, 'questions_with_stage': 50, 'median_s_when_run': 1.12065, 'calls_per_question': 1.0, 'torch_peak_mib': 1094}, 'decomposition': {'mean_s_per_question': 0.9120999999999999, 'share_of_mean_total': 0.2621112586283198, 'questions_with_stage': 50, 'median_s_when_run': 0.86965, 'calls_per_question': 1.06, 'torch_peak_mib': 1094}, 'answer_check': {'mean_s_per_question': 0.42595200000000005, 'share_of_mean_total': 0.122406331361967, 'questions_with_stage': 50, 'median_s_when_run': 0.42190000000000005, 'calls_per_question': 1.06, 'torch_peak_mib': 1094}, 'nli': {'mean_s_per_question': 0.44075000000000003, 'share_of_mean_total': 0.12665885017041112, 'questions_with_stage': 50, 'median_s_when_run': 0.43274999999999997, 'calls_per_question': 1.06, 'torch_peak_mib': 2237}, 'revision': {'mean_s_per_question': 0.46334400000000003, 'share_of_mean_total': 0.13315171474386606, 'questions_with_stage': 19, 'median_s_when_run': 1.1577, 'calls_per_question': 0.38, 'torch_peak_mib': 1094}}, 'same_output_as_latency_run': 28}}}
+>> judge_confidence Fri Nov  6 17:17:38 IST 2026
+hotpotqa dev: 100 to score
+  100/100
+hotpotqa seed0: 300 to score
+  100/300
+  200/300
+  300/300
+hotpotqa seed1: 300 to score
+  100/300
+  200/300
+  300/300
+hotpotqa seed2: 300 to score
+  100/300
+  200/300
+  300/300
+triviaqa dev: 100 to score
+  100/100
+triviaqa seed0: 300 to score
+  100/300
+  200/300
+  300/300
+triviaqa seed1: 300 to score
+  100/300
+  200/300
+  300/300
+triviaqa seed2: 300 to score
+  100/300
+  200/300
+  300/300
+{
+ "note": "post-hoc analysis added after review",
+ "agreement": {
+  "hotpotqa": {
+   "n": 881,
+   "same_verdict": 855
+  },
+  "triviaqa": {
+   "n": 893,
+   "same_verdict": 877
+  }
+ },
+ "auroc": {
+  "hotpotqa": 0.657874097007224,
+  "triviaqa": 0.8432127420049756
+ },
+ "gate": {
+  "threshold": 0.9476198390897393,
+  "dev_phi1": 0.22999999999999998,
+  "dev_coverage": 0.54,
+  "hotpotqa": {
+   "phi1_mean": 0.09555555555555556,
+   "phi1_std": 0.05210388483419269,
+   "abstention": 0.5311111111111111,
+   "hallucination": 0.18666666666666668,
+   "accuracy": 0.2822222222222222,
+   "lost_correct_drafts": 171,
+   "wrong_drafts_answered": 168,
+   "vs_ragverify": {
+    "delta": 0.0077777777777777776,
+    "ci_lo": -0.01,
+    "ci_hi": 0.02666666666666667
+   },
+   "vs_rv_no_verifier": {
+    "delta": -0.06333333333333334,
+    "ci_lo": -0.09777777777777778,
+    "ci_hi": -0.028888888888888888
+   }
+  },
+  "triviaqa": {
+   "phi1_mean": 0.5766666666666667,
+   "phi1_std": 0.06110100926607786,
+   "abstention": 0.27666666666666667,
+   "hallucination": 0.07333333333333333,
+   "accuracy": 0.65,
+   "lost_correct_drafts": 97,
+   "wrong_drafts_answered": 66,
+   "vs_ragverify": {
+    "delta": 0.008888888888888889,
+    "ci_lo": -0.0033333333333333335,
+    "ci_hi": 0.021111111111111112
+   },
+   "vs_rv_no_verifier": {
+    "delta": -0.022222222222222223,
+    "ci_lo": -0.043333333333333335,
+    "ci_hi": -0.0011111111111111111
+   }
+  }
+ },
+ "revise": {
+  "threshold": 0.011069981546920482,
+  "dev_phi1": 0.225,
+  "dev_coverage": 0.765,
+  "hotpotqa": {
+   "phi1_mean": 0.11888888888888888,
+   "phi1_std": 0.09912580857640418,
+   "abstention": 0.29,
+   "hallucination": 0.29555555555555557,
+   "accuracy": 0.41444444444444445,
+   "lost_correct_drafts": 56,
+   "wrong_drafts_answered": 262,
+   "vs_ragverify": {
+    "delta": 0.03111111111111111,
+    "ci_lo": 0.0,
+    "ci_hi": 0.06111111111111111
+   },
+   "vs_rv_no_verifier": {
+    "delta": -0.04,
+    "ci_lo": -0.06222222222222222,
+    "ci_hi": -0.02
+   }
+  },
+  "triviaqa": {
+   "phi1_mean": 0.5966666666666667,
+   "phi1_std": 0.06765927710061484,
+   "abstention": 0.19666666666666666,
+   "hallucination": 0.10333333333333333,
+   "accuracy": 0.7,
+   "lost_correct_drafts": 53,
+   "wrong_drafts_answered": 93,
+   "vs_ragverify": {
+    "delta": 0.028888888888888888,
+    "ci_lo": 0.011111111111111112,
+    "ci_hi": 0.04777777777777778
+   },
+   "vs_rv_no_verifier": {
+    "delta": -0.0022222222222222222,
+    "ci_lo": -0.017777777777777778,
+    "ci_hi": 0.013333333333333334
+   }
+  }
+ }
+}
+>> claim_judge_check Fri Nov  6 17:32:26 IST 2026
+W1106 17:32:41.855000 6688 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights:  16%|#5        | 89/560 [00:00<00:00, 884.96it/s]Loading weights:  32%|###1      | 178/560 [00:00<00:00, 807.68it/s]Loading weights:  46%|####6     | 260/560 [00:00<00:00, 798.29it/s]Loading weights:  61%|######    | 341/560 [00:00<00:00, 558.81it/s]Loading weights:  81%|########1 | 454/560 [00:00<00:00, 707.09it/s]Loading weights:  95%|#########5| 534/560 [00:00<00:00, 667.45it/s]Loading weights: 100%|##########| 560/560 [00:00<00:00, 610.07it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+{'halueval_minicheck': {'n_items': 2000, 'accuracy': 0.7465, 'auroc': 0.8197245, 'accepted_correct': 0.734, 'rejected_hallucinated': 0.759, 'accuracy_ci': [0.7275, 0.7655], 'auroc_ci': [0.8012564875, 0.8358485499999999]}}
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:   7%|6         | 27/394 [00:00<00:01, 264.68it/s]Loading weights:  16%|#5        | 63/394 [00:00<00:01, 316.12it/s]Loading weights:  30%|##9       | 117/394 [00:00<00:00, 411.58it/s]Loading weights:  41%|####1     | 163/394 [00:00<00:00, 423.36it/s]Loading weights:  52%|#####2    | 206/394 [00:00<00:00, 387.40it/s]Loading weights: 100%|##########| 394/394 [00:00<00:00, 709.42it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 2267.73it/s]
+hotpotqa rag {'answers': 292, 'claim_precision_minicheck': 0.6199595020656664, 'claim_precision_nli': 0.6560570232659274}
+hotpotqa rv_no_verifier {'answers': 198, 'claim_precision_minicheck': 0.685393618726952, 'claim_precision_nli': 0.7212441879108544}
+hotpotqa ragverify {'answers': 159, 'claim_precision_minicheck': 0.7251422581611261, 'claim_precision_nli': 0.7441599281221921}
+triviaqa rag {'answers': 299, 'claim_precision_minicheck': 0.6146573233529755, 'claim_precision_nli': 0.6464431703562139}
+triviaqa rv_no_verifier {'answers': 230, 'claim_precision_minicheck': 0.6769237405106969, 'claim_precision_nli': 0.7126708074534163}
+triviaqa ragverify {'answers': 215, 'claim_precision_minicheck': 0.7122351421188631, 'claim_precision_nli': 0.7321299372462162}
+{
+ "halueval_minicheck": {
+  "n_items": 2000,
+  "accuracy": 0.7465,
+  "auroc": 0.8197245,
+  "accepted_correct": 0.734,
+  "rejected_hallucinated": 0.759,
+  "accuracy_ci": [
+   0.7275,
+   0.7655
+  ],
+  "auroc_ci": [
+   0.8012564875,
+   0.8358485499999999
+  ]
+ },
+ "second_judge_nli": {
+  "hotpotqa": {
+   "claims": 2925,
+   "agreement": 0.9117948717948718,
+   "kappa": 0.7973335524757454,
+   "systems": {
+    "rag": {
+     "answers": 292,
+     "claim_precision_minicheck": 0.6199595020656664,
+     "claim_precision_nli": 0.6560570232659274
+    },
+    "rv_no_verifier": {
+     "answers": 198,
+     "claim_precision_minicheck": 0.685393618726952,
+     "claim_precision_nli": 0.7212441879108544
+    },
+    "ragverify": {
+     "answers": 159,
+     "claim_precision_minicheck": 0.7251422581611261,
+     "claim_precision_nli": 0.7441599281221921
+    }
+   }
+  },
+  "triviaqa": {
+   "claims": 3263,
+   "agreement": 0.8786392889978547,
+   "kappa": 0.7271786365646011,
+   "systems": {
+    "rag": {
+     "answers": 299,
+     "claim_precision_minicheck": 0.6146573233529755,
+     "claim_precision_nli": 0.6464431703562139
+    },
+    "rv_no_verifier": {
+     "answers": 230,
+     "claim_precision_minicheck": 0.6769237405106969,
+     "claim_precision_nli": 0.7126708074534163
+    },
+    "ragverify": {
+     "answers": 215,
+     "claim_precision_minicheck": 0.7122351421188631,
+     "claim_precision_nli": 0.7321299372462162
+    }
+   }
+  }
+ }
+}
+ALL DONE Fri Nov  6 17:40:48 IST 2026

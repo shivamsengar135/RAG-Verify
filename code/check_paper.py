@@ -15,9 +15,10 @@ import sys
 from common import ROOT
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--paper", default="paper", choices=["paper", "paper_ictcs"])
+ap.add_argument("--paper", default="paper", choices=["paper", "paper_ictcs", "paper_ictcs_crc"])
 PAPER = ROOT / ap.parse_args().paper
-ICTCS = PAPER.name == "paper_ictcs"
+ICTCS = PAPER.name.startswith("paper_ictcs")
+CRC = PAPER.name == "paper_ictcs_crc"  # camera-ready copy: adds the analyses asked for by the reviewers
 tex = (PAPER / "main.tex").read_text(encoding="utf-8")
 S = {(r["dataset"], r["method"]): r for r in csv.DictReader((ROOT / "results/tables/main_summary.csv").open(encoding="utf-8"))}
 T = {(r["dataset"], r["a"], r["b"]): r for r in csv.DictReader((ROOT / "results/tables/main_tests.csv").open(encoding="utf-8"))}
@@ -62,9 +63,16 @@ for ds in (H, Q):
     expect(f"{float(S[(ds, 'ragverify')]['llm_calls_mean']):.1f}", f"{ds} RV calls")
 for ds in (H, Q):
     expect(pct(ds, "ragverify_llama", "hallucination_rate") + "\\%", f"{ds} llama RV hall")
-    expect(pct(ds, "selfrag", "hallucination_rate") + "\\%", f"{ds} selfrag hall")
-    expect(pct(ds, "selfrag", "abstention_rate") + "\\%", f"{ds} selfrag abst")
-    for m in ["ragverify_llama", "rv_no_verifier_llama", "selfrag"]:
+    if CRC:  # the camera-ready text only says Self-RAG abstains least and hallucinates most among retrieval-based systems
+        retr = [r for (d, m), r in S.items() if d == ds and r.get("status") == "done"
+                and not m.startswith("closed_book") and m != "cove"]
+        if min(retr, key=lambda r: float(r["abstention_rate_mean"]))["method"] != "selfrag" or \
+                max(retr, key=lambda r: float(r["hallucination_rate_mean"]))["method"] != "selfrag":
+            fails.append(f"{ds}: Self-RAG is not the lowest-abstention, highest-hallucination retrieval system")
+    else:
+        expect(pct(ds, "selfrag", "hallucination_rate") + "\\%", f"{ds} selfrag hall")
+        expect(pct(ds, "selfrag", "abstention_rate") + "\\%", f"{ds} selfrag abst")
+    for m in ["ragverify_llama", "rv_no_verifier_llama"] + ([] if CRC else ["selfrag"]):
         expect(pct(ds, m, "phi1").replace("-", "$-$"), f"{ds} {m} phi1")
     expect(delta(ds, "ragverify_llama", "rag_llama"), f"{ds} llama RV-RAG delta")
     expect(f"{float(S[(ds, 'ragverify_llama')]['llm_calls_mean']):.1f} ", f"{ds} llama RV calls")
@@ -89,9 +97,10 @@ E = json.loads((ROOT / "results/error_analysis/summary.json").read_text(encoding
 M = json.loads((ROOT / "results/error_analysis/manual_summary.json").read_text(encoding="utf-8"))
 expect(f"there are {E[H]['lost answer']} on HotpotQA and {E[Q]['lost answer']} on TriviaQA", "lost answers")
 expect(f"in {E[H]['lost answer: answer-claim flag']} and {E[Q]['lost answer: answer-claim flag']} of them", "judge lost")
-expect(f"Of the {E[H]['wrong answer']} and {E[Q]['wrong answer']} wrong answers, {E[H]['wrong answer: retrieval miss']} "
-       f"and {E[Q]['wrong answer: retrieval miss']}", "wrong / retrieval miss")
-expect(f"in {E[H]['wrong answer: verifier accept']} and {E[Q]['wrong answer: verifier accept']} the judge", "verifier accept")
+if not CRC:  # the camera-ready copy splits wrong answers per first draft instead (verdict breakdown below)
+    expect(f"Of the {E[H]['wrong answer']} and {E[Q]['wrong answer']} wrong answers, {E[H]['wrong answer: retrieval miss']} "
+           f"and {E[Q]['wrong answer: retrieval miss']}", "wrong / retrieval miss")
+    expect(f"in {E[H]['wrong answer: verifier accept']} and {E[Q]['wrong answer: verifier accept']} the judge", "verifier accept")
 for k, phrase in [("lost answer: judge rejects explicitly supported answer", "{} were rejected although"),
                   ("lost answer: comparison / yes-no needs combining passages", "{} were comparison"),
                   ("lost answer: draft not grounded in passages (prior knowledge)", "in {} the draft"),
@@ -125,6 +134,86 @@ for ds in (H, Q):
     expect(f"{round(100 * c['idk_after_revision'] / c['flagged_initial'])}\\%", f"{ds} % flagged -> refusal")
 expect(f"{B[H]['gate_withheld_correct']} of {B[H]['gate_abstain']}", "gate withheld correct")
 expect(f"{SEL.get('avg_phi1', SEL.get('mean_phi1', 0.2)):.3f}", "dev selected phi1")
+
+
+def thousands(n):
+    return f"{n:,}".replace(",", "{,}")
+
+
+if CRC:  # reviewer analyses (camera-ready)
+    V = json.loads((ROOT / "results/error_analysis/verdicts.json").read_text(encoding="utf-8"))
+    d, c, w = ({ds: V[ds][k] for ds in (H, Q)} for k in ("drafts", "correct", "passed_wrong"))
+    expect(f"contradicting evidence for {d[H]['contradicted']} and {d[Q]['contradicted']} drafts", "verdict contradicted")
+    expect(f"no evidence for {d[H]['no evidence']} and {d[Q]['no evidence']}", "verdict no evidence")
+    expect(f"yet {c[H]['contradicted'] + c[H]['no evidence']} and {c[Q]['contradicted'] + c[Q]['no evidence']} of these",
+           "answer-check false alarms")
+    det = {ds: d[ds]["detail contradicted"] + d[ds]["partially supported"] for ds in (H, Q)}
+    expect(f"({det[H]} and {det[Q]} drafts)", "detail flags")
+    expect(f"({c[Q]['detail contradicted'] + c[Q]['partially supported']} of {det[Q]})", "detail false alarms TQ")
+    expect(f"{w[H]['missing evidence']} and {w[Q]['missing evidence']} had no gold answer", "passed wrong: missing evidence")
+    expect(f"{w[H]['wrong entity']} and {w[Q]['wrong entity']} gave another entity or value", "passed wrong: entity")
+    expect(f"{w[H]['near miss']} and {w[Q]['near miss']} were near misses", "passed wrong: near miss")
+    for ds in (H, Q):
+        if V[ds]["flagged_correct"] != B[ds]["flagged_initial_correct"]:
+            fails.append(f"{ds}: verdict breakdown disagrees with abstention breakdown")
+    cl = {ds: V[ds]["claims"] for ds in (H, Q)}
+    expect(f"median of {cl[H]['median']:.0f} (HotpotQA) and {cl[Q]['median']:.0f} (TriviaQA)", "claims per decomposition")
+    expect(f"{cl[H]['at_cap'] + cl[Q]['at_cap']} of {thousands(cl[H]['decompositions'] + cl[Q]['decompositions'])} reached",
+           "12-claim cap")
+    PR = json.loads((ROOT / "results/profile/summary.json").read_text(encoding="utf-8"))
+    st, mem = {ds: PR["datasets"][ds]["stages"] for ds in (H, Q)}, PR["memory"]
+    expect(f"Ollama release ({PR['info']['ollama_version']}; mean {PR['datasets'][H]['total_mean_s']:.1f}\\,s and "
+           f"{PR['datasets'][Q]['total_mean_s']:.1f}\\,s per question)", "profile totals")
+    for stage, phrase in [("answer", "drafting takes"), ("decomposition", "decomposition"), ("answer_check", "the answer check"),
+                          ("nli", "NLI"), ("revision", "revision")]:
+        expect(f"{phrase} {st[H][stage]['mean_s_per_question']:.2f} and {st[Q][stage]['mean_s_per_question']:.2f}\\,s",
+               f"profile {stage}")
+    expect(f"({st[H]['revision']['median_s_when_run']:.1f} and {st[Q]['revision']['median_s_when_run']:.1f}\\,s when triggered)",
+           "revision when triggered")
+    if {f"{st[ds]['retrieval']['mean_s_per_question']:.2f}" for ds in (H, Q)} != {"0.02"}:
+        fails.append("retrieval time is not 0.02 s on both datasets")
+    expect(f"resident generator ({mem['ollama_size_vram_mib'] / 1024:.1f}\\,GB", "generator memory")
+    expect(f"adds {mem['nli_weights_mib'] / 1024:.1f}\\,GB of weights", "NLI weights")
+    expect(f"peak at {max(st[ds]['nli']['torch_peak_mib'] for ds in (H, Q)) / 1024:.1f}\\,GB during verification", "NLI peak")
+    expect(f"device peak was {mem['device_peak_mib'] / 1024:.1f} of 8\\,GB", "device peak")
+    J = json.loads((ROOT / "results/judge_conf/summary.json").read_text(encoding="utf-8"))
+    ag = {ds: 100 * J["agreement"][ds]["same_verdict"] / J["agreement"][ds]["n"] for ds in (H, Q)}
+    expect(f"({ag[H]:.0f}\\% and {ag[Q]:.0f}\\% of verdicts reproduced)", "judge re-run agreement")
+    expect(f"AUROC {J['auroc'][H]:.2f} and {J['auroc'][Q]:.2f} for draft correctness", "confidence AUROC")
+    g, rv = J["gate"], J["revise"]
+    expect(f"confident drafts gives $\\Phi_1$ of {100 * g[H]['phi1_mean']:.1f} and {100 * g[Q]['phi1_mean']:.1f}, level with",
+           "gate phi1")
+    for ds in (H, Q):
+        if g[ds]["vs_ragverify"]["ci_lo"] > 0 or g[ds]["vs_ragverify"]["ci_hi"] < 0:
+            fails.append(f"{ds}: calibrated gate differs significantly from RAG-Verify, but the text says level")
+    expect(f"self-revision gives {100 * rv[H]['phi1_mean']:.1f} and {100 * rv[Q]['phi1_mean']:.1f}", "revise phi1")
+    lb = J["lost_correct_drafts_baselines"]
+    expect(f"({rv[H]['lost_correct_drafts']} and {rv[Q]['lost_correct_drafts']}, against {lb[H]['ragverify']} and "
+           f"{lb[Q]['ragverify']} for RAG-Verify)", "lost drafts")
+    if not all(rv[ds]["hallucination"] > g[ds]["hallucination"] for ds in (H, Q)):
+        fails.append("'lets more wrong ones through' is not supported")
+
+    def sgn(x):
+        return f"{100 * x:+.1f}".replace("-", "$-$").replace("+", "$+$")
+
+    def ci(t):
+        return f"{sgn(t['delta'])} [{sgn(t['ci_lo'])}, {sgn(t['ci_hi'])}]"
+
+    expect(f"($\\Delta$ {ci(rv[H]['vs_rv_no_verifier'])} and {ci(rv[Q]['vs_rv_no_verifier'])})", "revise vs self-revision")
+    for ds in (H, Q):
+        if rv[ds]["vs_rv_no_verifier"]["ci_hi"] > 0 and rv[ds]["vs_rv_no_verifier"]["ci_lo"] > 0:
+            fails.append(f"{ds}: confidence-guided revision beats self-revision, but the text says it does not")
+    K = json.loads((ROOT / "results/claim_judge_check/summary.json").read_text(encoding="utf-8"))
+    hm, sj = K["halueval_minicheck"], K["second_judge_nli"]
+    expect(f"MiniCheck is right on {100 * hm['accuracy']:.1f}\\% of answers (AUROC {hm['auroc']:.3f})", "MiniCheck on HaluEval")
+    expect(f"agrees with it on {100 * sj[H]['agreement']:.1f}\\% and {100 * sj[Q]['agreement']:.1f}\\% (Cohen's $\\kappa$ "
+           f"{sj[H]['kappa']:.2f} and {sj[Q]['kappa']:.2f})", "second judge agreement")
+    for ds in (H, Q):
+        sy = sj[ds]["systems"]
+        if sorted(sy, key=lambda m: sy[m]["claim_precision_minicheck"]) != sorted(sy, key=lambda m: sy[m]["claim_precision_nli"]):
+            fails.append(f"{ds}: NLI judge does not rank the systems in the same order")
+        if any(f"{100 * sy[m]['claim_precision_minicheck']:.1f}" != f"{100 * float(LC[(ds, m)]['claim_precision']):.1f}" for m in sy):
+            fails.append(f"{ds}: re-read MiniCheck precision differs from the reported one")
 
 # structure
 for lab in re.findall(r"\\label\{([^}]+)\}", tex):
@@ -163,6 +252,11 @@ for bad in ["undefined", "Overfull"]:
     if bad in log:
         fails.append(f"LaTeX log contains '{bad}'")
 pending = len(re.findall(r"\\todo\{|\\pending\{\}", tex)) + (PAPER / "tables/main_rows.tex").read_text().count("\\pending")
+if CRC:  # the organisers want the final PDF without page numbers, headers or footers, and nothing may be pending
+    if not re.search(r"\\documentclass\[[^]]*norunningheads[^]]*\]\{svproc\}", tex):
+        fails.append("camera-ready copy must use the norunningheads option (no headers or page numbers)")
+    if pending:
+        fails.append(f"{pending} PENDING markers left")
 
 print(f"{PAPER.name}: abstract words: {words} | pages: {pages}" + (f" | main-text words: {body_words}" if ICTCS else "")
       + f" | citations checked | PENDING markers: {pending}")

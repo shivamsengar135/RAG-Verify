@@ -1,0 +1,68 @@
+{
+  "hotpotqa": {
+    "n": 900,
+    "drafts": {
+      "refused": 19,
+      "contradicted": 171,
+      "no evidence": 243,
+      "detail contradicted": 15,
+      "partially supported": 18,
+      "fully supported": 434
+    },
+    "correct": {
+      "refused": 0,
+      "contradicted": 67,
+      "no evidence": 85,
+      "detail contradicted": 6,
+      "partially supported": 6,
+      "fully supported": 261
+    },
+    "flagged": 447,
+    "flagged_correct": 164,
+    "passed_wrong": {
+      "missing evidence": 53,
+      "wrong entity": 75,
+      "near miss": 45
+    },
+    "claims": {
+      "decompositions": 967,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 9,
+      "at_cap": 0
+    }
+  },
+  "triviaqa": {
+    "n": 900,
+    "drafts": {
+      "refused": 7,
+      "contradicted": 45,
+      "no evidence": 181,
+      "detail contradicted": 31,
+      "partially supported": 19,
+      "fully supported": 617
+    },
+    "correct": {
+      "refused": 0,
+      "contradicted": 18,
+      "no evidence": 69,
+      "detail contradicted": 29,
+      "partially supported": 18,
+      "fully supported": 548
+    },
+    "flagged": 276,
+    "flagged_correct": 134,
+    "passed_wrong": {
+      "missing evidence": 21,
+      "wrong entity": 37,
+      "near miss": 11
+    },
+    "claims": {
+      "decompositions": 943,
+      "median": 2.0,
+      "p95": 5.0,
+      "max": 12,
+      "at_cap": 1
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "info": {
+    "ollama_version": "0.40.15",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "backbone": "qwen2.5:7b-instruct-q4_K_M",
+    "split": "dev",
+    "n_per_dataset": 50
+  },
+  "memory": {
+    "device_total_mib": 8188,
+    "before_anything_mib": 0,
+    "after_cuda_context_mib": 99,
+    "ollama_size_vram_mib": 4910,
+    "ollama_size_mib": 4910,
+    "after_llm_mib": 5116,
+    "nli_weights_mib": 838,
+    "after_nli_mib": 5990,
+    "retriever_weights_mib_hotpotqa": 127,
+    "retriever_weights_mib_triviaqa": 127,
+    "device_peak_by_stage_mib": {
+      "between stages": 6347,
+      "answer": 6347,
+      "decomposition": 6347,
+      "nli": 6347,
+      "answer_check": 6347,
+      "revision": 6347,
+      "retrieval": 6347
+    },
+    "device_peak_mib": 6347
+  },
+  "datasets": {
+    "hotpotqa": {
+      "n": 50,
+      "total_median_s": 3.4827,
+      "total_mean_s": 3.5532099999999995,
+      "other_mean_s": 0.0015299999999999825,
+      "stages": {
+        "retrieval": {
+          "mean_s_per_question": 0.018938,
+          "share_of_mean_total": 0.005329828521252615,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.01695,
+          "calls_per_question": 1.0,
+          "torch_peak_mib": 967
+        },
+        "answer": {
+          "mean_s_per_question": 1.1546399999999999,
+          "share_of_mean_total": 0.3249568699851684,
+          "questions_with_stage": 50,
+          "median_s_when_run": 1.0768,
+          "calls_per_question": 1.0,
+          "torch_peak_mib": 966
+        },
+        "decomposition": {
+          "mean_s_per_question": 1.063378,
+          "share_of_mean_total": 0.29927248881996843,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.9573,
+          "calls_per_question": 1.1,
+          "torch_peak_mib": 966
+        },
+        "answer_check": {
+          "mean_s_per_question": 0.387354,
+          "share_of_mean_total": 0.10901522848354024,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.38365,
+          "calls_per_question": 1.1,
+          "torch_peak_mib": 966
+        },
+        "nli": {
+          "mean_s_per_question": 0.37537800000000004,
+          "share_of_mean_total": 0.10564475502433014,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.33815,
+          "calls_per_question": 1.1,
+          "torch_peak_mib": 1925
+        },
+        "revision": {
+          "mean_s_per_question": 0.5519919999999999,
+          "share_of_mean_total": 0.15535023260657266,
+          "questions_with_stage": 25,
+          "median_s_when_run": 1.0885,
+          "calls_per_question": 0.5,
+          "torch_peak_mib": 966
+        }
+      },
+      "same_output_as_latency_run": 34
+    },
+    "triviaqa": {
+      "n": 50,
+      "total_median_s": 3.23055,
+      "total_mean_s": 3.47982,
+      "other_mean_s": 0.0017440000000000255,
+      "stages": {
+        "retrieval": {
+          "mean_s_per_question": 0.024770000000000004,
+          "share_of_mean_total": 0.007118184273899226,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.0202,
+          "calls_per_question": 1.0,
+          "torch_peak_mib": 1094
+        },
+        "answer": {
+          "mean_s_per_question": 1.2111600000000002,
+          "share_of_mean_total": 0.34805248547338663,
+          "questions_with_stage": 50,
+          "median_s_when_run": 1.12065,
+          "calls_per_question": 1.0,
+          "torch_peak_mib": 1094
+        },
+        "decomposition": {
+          "mean_s_per_question": 0.9120999999999999,
+          "share_of_mean_total": 0.2621112586283198,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.86965,
+          "calls_per_question": 1.06,
+          "torch_peak_mib": 1094
+        },
+        "answer_check": {
+          "mean_s_per_question": 0.42595200000000005,
+          "share_of_mean_total": 0.122406331361967,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.42190000000000005,
+          "calls_per_question": 1.06,
+          "torch_peak_mib": 1094
+        },
+        "nli": {
+          "mean_s_per_question": 0.44075000000000003,
+          "share_of_mean_total": 0.12665885017041112,
+          "questions_with_stage": 50,
+          "median_s_when_run": 0.43274999999999997,
+          "calls_per_question": 1.06,
+          "torch_peak_mib": 2237
+        },
+        "revision": {
+          "mean_s_per_question": 0.46334400000000003,
+          "share_of_mean_total": 0.13315171474386606,
+          "questions_with_stage": 19,
+          "median_s_when_run": 1.1577,
+          "calls_per_question": 0.38,
+          "torch_peak_mib": 1094
+        }
+      },
+      "same_output_as_latency_run": 28
+    }
+  }
+}

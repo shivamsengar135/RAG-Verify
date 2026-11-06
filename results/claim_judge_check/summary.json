@@ -1,0 +1,63 @@
+{
+  "halueval_minicheck": {
+    "n_items": 2000,
+    "accuracy": 0.7465,
+    "auroc": 0.8197245,
+    "accepted_correct": 0.734,
+    "rejected_hallucinated": 0.759,
+    "accuracy_ci": [
+      0.7275,
+      0.7655
+    ],
+    "auroc_ci": [
+      0.8012564875,
+      0.8358485499999999
+    ]
+  },
+  "second_judge_nli": {
+    "hotpotqa": {
+      "claims": 2925,
+      "agreement": 0.9117948717948718,
+      "kappa": 0.7973335524757454,
+      "systems": {
+        "rag": {
+          "answers": 292,
+          "claim_precision_minicheck": 0.6199595020656664,
+          "claim_precision_nli": 0.6560570232659274
+        },
+        "rv_no_verifier": {
+          "answers": 198,
+          "claim_precision_minicheck": 0.685393618726952,
+          "claim_precision_nli": 0.7212441879108544
+        },
+        "ragverify": {
+          "answers": 159,
+          "claim_precision_minicheck": 0.7251422581611261,
+          "claim_precision_nli": 0.7441599281221921
+        }
+      }
+    },
+    "triviaqa": {
+      "claims": 3263,
+      "agreement": 0.8786392889978547,
+      "kappa": 0.7271786365646011,
+      "systems": {
+        "rag": {
+          "answers": 299,
+          "claim_precision_minicheck": 0.6146573233529755,
+          "claim_precision_nli": 0.6464431703562139
+        },
+        "rv_no_verifier": {
+          "answers": 230,
+          "claim_precision_minicheck": 0.6769237405106969,
+          "claim_precision_nli": 0.7126708074534163
+        },
+        "ragverify": {
+          "answers": 215,
+          "claim_precision_minicheck": 0.7122351421188631,
+          "claim_precision_nli": 0.7321299372462162
+        }
+      }
+    }
+  }
+}

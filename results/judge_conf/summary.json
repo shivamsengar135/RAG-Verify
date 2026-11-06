@@ -1,0 +1,113 @@
+{
+  "note": "post-hoc analysis added after review",
+  "agreement": {
+    "hotpotqa": {
+      "n": 881,
+      "same_verdict": 855
+    },
+    "triviaqa": {
+      "n": 893,
+      "same_verdict": 877
+    }
+  },
+  "auroc": {
+    "hotpotqa": 0.657874097007224,
+    "triviaqa": 0.8432127420049756
+  },
+  "lost_correct_drafts_baselines": {
+    "hotpotqa": {
+      "ragverify": 160,
+      "rv_no_verifier": 73
+    },
+    "triviaqa": {
+      "ragverify": 101,
+      "rv_no_verifier": 70
+    }
+  },
+  "gate": {
+    "threshold": 0.9476198390897393,
+    "dev_phi1": 0.22999999999999998,
+    "dev_coverage": 0.54,
+    "hotpotqa": {
+      "phi1_mean": 0.09555555555555556,
+      "phi1_std": 0.05210388483419269,
+      "abstention": 0.5311111111111111,
+      "hallucination": 0.18666666666666668,
+      "accuracy": 0.2822222222222222,
+      "lost_correct_drafts": 171,
+      "wrong_drafts_answered": 168,
+      "vs_ragverify": {
+        "delta": 0.0077777777777777776,
+        "ci_lo": -0.01,
+        "ci_hi": 0.02666666666666667
+      },
+      "vs_rv_no_verifier": {
+        "delta": -0.06333333333333334,
+        "ci_lo": -0.09777777777777778,
+        "ci_hi": -0.028888888888888888
+      }
+    },
+    "triviaqa": {
+      "phi1_mean": 0.5766666666666667,
+      "phi1_std": 0.06110100926607786,
+      "abstention": 0.27666666666666667,
+      "hallucination": 0.07333333333333333,
+      "accuracy": 0.65,
+      "lost_correct_drafts": 97,
+      "wrong_drafts_answered": 66,
+      "vs_ragverify": {
+        "delta": 0.008888888888888889,
+        "ci_lo": -0.0033333333333333335,
+        "ci_hi": 0.021111111111111112
+      },
+      "vs_rv_no_verifier": {
+        "delta": -0.022222222222222223,
+        "ci_lo": -0.043333333333333335,
+        "ci_hi": -0.0011111111111111111
+      }
+    }
+  },
+  "revise": {
+    "threshold": 0.011069981546920482,
+    "dev_phi1": 0.225,
+    "dev_coverage": 0.765,
+    "hotpotqa": {
+      "phi1_mean": 0.11888888888888888,
+      "phi1_std": 0.09912580857640418,
+      "abstention": 0.29,
+      "hallucination": 0.29555555555555557,
+      "accuracy": 0.41444444444444445,
+      "lost_correct_drafts": 56,
+      "wrong_drafts_answered": 262,
+      "vs_ragverify": {
+        "delta": 0.03111111111111111,
+        "ci_lo": 0.0,
+        "ci_hi": 0.06111111111111111
+      },
+      "vs_rv_no_verifier": {
+        "delta": -0.04,
+        "ci_lo": -0.06222222222222222,
+        "ci_hi": -0.02
+      }
+    },
+    "triviaqa": {
+      "phi1_mean": 0.5966666666666667,
+      "phi1_std": 0.06765927710061484,
+      "abstention": 0.19666666666666666,
+      "hallucination": 0.10333333333333333,
+      "accuracy": 0.7,
+      "lost_correct_drafts": 53,
+      "wrong_drafts_answered": 93,
+      "vs_ragverify": {
+        "delta": 0.028888888888888888,
+        "ci_lo": 0.011111111111111112,
+        "ci_hi": 0.04777777777777778
+      },
+      "vs_rv_no_verifier": {
+        "delta": -0.0022222222222222222,
+        "ci_lo": -0.017777777777777778,
+        "ci_hi": 0.013333333333333334
+      }
+    }
+  }
+}

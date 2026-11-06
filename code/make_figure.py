@@ -1,10 +1,11 @@
 """Figure: effective reliability Phi_1 (mean +/- std over the three test blocks) of the Qwen2.5-7B systems, from
 results/tables/main_summary.csv. One panel per dataset; vector PDF, readable in black and white.
 
-Usage: .venv\\Scripts\\python.exe code\\make_figure.py
-Output: paper_ictcs/figures/phi1.pdf (+ .png preview)
+Usage: .venv\\Scripts\\python.exe code\\make_figure.py [paper folder, default paper_ictcs] [height in inches, default 1.7]
+Output: <paper folder>/figures/phi1.pdf (+ .png preview)
 """
 import csv
+import sys
 
 import matplotlib
 
@@ -25,7 +26,7 @@ def main():
             if r["backbone"] == "Qwen2.5-7B"}
     plt.rcParams.update({"font.size": 7.5, "font.family": "serif", "axes.edgecolor": INK, "axes.labelcolor": INK,
                          "xtick.color": INK, "ytick.color": INK, "pdf.fonttype": 42})
-    fig, axes = plt.subplots(1, 2, figsize=(4.8, 1.7), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(4.8, float(sys.argv[2]) if len(sys.argv) > 2 else 1.7), sharey=True)
     ys = range(len(SYSTEMS))[::-1]
     for ax, (ds, title) in zip(axes, [("hotpotqa", "HotpotQA"), ("triviaqa", "TriviaQA")]):
         for y, (m, _) in zip(ys, SYSTEMS):
@@ -48,7 +49,7 @@ def main():
     axes[1].set_xlim(0, 75)
     axes[0].set_yticks(list(ys), [label for _, label in SYSTEMS])
     fig.tight_layout(pad=0.3, w_pad=1.2)
-    out = ROOT / "paper_ictcs" / "figures" / "phi1.pdf"
+    out = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "paper_ictcs") / "figures" / "phi1.pdf"
     out.parent.mkdir(exist_ok=True)
     fig.savefig(out, bbox_inches="tight", pad_inches=0.02)
     fig.savefig(out.with_suffix(".png"), dpi=200, bbox_inches="tight", pad_inches=0.02)

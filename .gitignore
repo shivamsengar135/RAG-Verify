@@ -15,3 +15,8 @@ paper_ictcs/*.log
 paper_ictcs/*.blg
 paper_ictcs/*.out
 paper_ictcs/submission/*.zip
+paper_ictcs_crc/*.aux
+paper_ictcs_crc/*.log
+paper_ictcs_crc/*.blg
+paper_ictcs_crc/*.out
+paper_ictcs_crc/submission/*.zip
